@@ -1,6 +1,33 @@
 This is the home for a new, radically open-access & open-reviewed journal.
 
-### Subtitle ideas:
+## Planning
+
+### Site areas
+
+* Home (announcement/invitation to start) -> `index.html`
+* Contribute -> `contribute/`
+  * World’s most direct CFP -> `contribute/index.html`
+  * Submission guidelines -> `contribute/guidelines.html`
+  * Submission instructions -> `contribute/instructions.html`
+  * Setup instrux -> `contribute/setup.html`
+* Issues (once there are some...) -> `issues/`
+* Blog -> `blog/`
+* About -> `about/`
+  * ? -> `about/index.html`
+  * People -> `about/people.html`
+  * Colophon -> `about/colophon.html
+
+## Layout templates
+
+* Core site pages -> `_layouts/page.html`
+* Articles -> `_layouts/article.html`
+* Blog posts -> `_layouts/post.html`
+
+## Includes
+
+* Footer -> `_includes/footer.html`
+
+### Subtitle ideas
 * Push: A Journal of Source-Literate Digital Writing
 * Push: A Journal of Source-Level Digital Writing & Rhetoric
 * Push: A Journal of Writing at the Source Level

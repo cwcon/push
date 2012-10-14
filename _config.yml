@@ -1,2 +1,2 @@
-exclude: README.md, _site/, _tmp/
+exclude: README.md, _site/, _tmp/, Gemfile, Gemfile.lock
 destination: _tmp/

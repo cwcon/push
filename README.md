@@ -38,3 +38,10 @@ This is the home for a new, radically open-access & open-reviewed journal.
 * Push: Theory and Application of Source-Level Writing
 * Push: The Journal of Writing and Source Code
 * Push: The Journal of Writing in Source Code
+
+## Known issues
+
+1. Once the ``_tmp/`` site directory has been generated, running ``$ jekyll --server --auto`` will
+cause file regeneration, even when nothing has been changed. This is
+[a known bug](https://github.com/mojombo/jekyll/issues/340) originating with directory_watcher. The
+temporary fix is to just run ``$ rm -rf _tmp/`` before firing up the Jekyll server again.

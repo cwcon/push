@@ -1,2 +1,2 @@
-exclude: README.md
+exclude: README.md, _site/, _tmp/
 destination: _tmp/

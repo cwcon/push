@@ -44,4 +44,4 @@ This is the home for a new, radically open-access & open-reviewed journal.
 1. Once the ``_tmp/`` site directory has been generated, running ``$ jekyll --server --auto`` will
 cause file regeneration, even when nothing has been changed. This is
 [a known bug](https://github.com/mojombo/jekyll/issues/340) originating with directory_watcher. The
-temporary fix is to just run ``$ rm -rf _tmp/`` before firing up the Jekyll server again.
+temporary fix is to just run ``$ rm -rf _tmp/`` before firing up the Jekyll server again. Or, just run ``$ ./serve.sh``

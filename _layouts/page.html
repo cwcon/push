@@ -3,10 +3,26 @@
 <head>
   <meta charset="utf-8">
   <title>Push: {{ page.title}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/push.css">
+  <script type="text/javascript" src="//use.typekit.net/gnd2jel.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
-<h1>{{ page.title }}</h1>
-{{ content }}
+<div id="page">
+  <header id="page_header">
+    <hgroup>
+      <h1>Push</h1>
+      <h2>Applied Research into Writers Writing Source</h2>
+    </hgroup>
+  </header>
+  <div id="content">
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+  </div>
+  <footer id="page_footer">
+    <p>Who needs a footer?</p>
+  </footer>
+</div>
 </body>
 </html>

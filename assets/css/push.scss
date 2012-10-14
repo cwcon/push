@@ -1,1 +1,27 @@
+@import 'variables';
+@import 'mixins';
 @import 'normalize';
+html {
+  background-color: $black;
+}
+body {
+  background-color: $white;
+  color: $black;
+  font-family: $serifFont;
+  font-size: $baseFontSize;
+  margin: 10px;
+  padding: 10px;
+}
+
+hgroup {
+  * { @include reset-spacing; }
+  h1 {
+    font-family: $accentFont;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  h2 {
+    font-weight: normal;
+    text-align: center;
+  }
+}

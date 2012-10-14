@@ -14,16 +14,19 @@ matter to *Push*.
 
 Here are some questions to ask yourself before you submit (and even before you start to draft):
 
-**How deeply does this matter to you?** Be passionate about your argument. *Push* isn’t for
+1. **How deeply does this matter to you?** Be passionate about your argument. *Push* isn’t for
 publishing comfortable, arm-chair critical perspectives. Believe in what you’re writing. Be willing
 to fight to defend your perspective. Compell your audience to act on what you say.
 
-**How will this make the world better?** *Push* is a venue for applied research into source-level
+2. **How will this make the world better?** *Push* is a venue for applied research into source-level
 digital writing, research that’s meant to do more than show everyone how smart you are. Your
 submission can be as theoretically rich as you’d like, but it must do something to make the world
 better for writers and the teaching of writing.
 
-
+3. **Does this reflect best practices?** It’s one thing to write with source code in a slipshod way
+that gets the job done. It’s another to highlight the intensive research component of writing source
+code that reflects best practices. “Best practices” are always moving targets, but strive to include
+the best known practices, especially practices you’ve discovered, in your submission.
 
 ## How to write and submit
 
@@ -46,11 +49,13 @@ nothing that isn’t subject to public scrutiny and review–and improvement. Co
 [Fork the codebase](https://github.com/cwcon/push/fork), and then
 [submit a pull request](https://github.com/cwcon/push/pulls) with your contribution for discussion,
 refinement, and ultimately inclusion in the journal’s codebase.
+
 * **Open Review**: For publications that want to be medieval, gate-keeping organizations and nothing
 more, double-blind peer review (usually by only a couple of people, chosen at the whim of an editor)
 will suffice, particularly in established areas of inquiry. But *Push* is not just some gate-keeper;
 its purpose isn’t to block ideas so much as to help develop ideas and researchers working in a very
 new area of inquiry, with few established experts.
+
 * **Open Communication**: *Push* will not use any communication channels that are not publically
 available and open. No secret communiques. No backchannel. All communication regarding the journal’s
 development, the review of blog posts and articles, and changes to the fundamental structure of

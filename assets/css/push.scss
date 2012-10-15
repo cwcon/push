@@ -10,16 +10,16 @@ body {
   font-family: $serifFont;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
-  position: relative;
-  margin: .5em;
+  margin: 10.5em .5em .5em .5em;
 }
 
 /* Page Header */
 header#page_header {
   padding-top: $baseLineHeight * 2;
+  background-color: $basicBackground;
+  padding: 5.55555%;
+  padding-bottom: 2em;
   hgroup {
-    background-color: $basicBackground;
-    padding: $baseLineHeight * 2 5.55555%;
     * { @include reset-spacing; }
     h1 {
       font-family: $accentFont;
@@ -34,20 +34,43 @@ header#page_header {
     }
   }
   nav#site_nav {
+    @include border-box;
     font-family: $accentFont;
     text-transform: uppercase;
-    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 0em;
+    left: 0em;
+    padding: .5em;
     ul {
       @include reset-spacing;
+
       li {
         font-weight: normal;
         list-style-type: none;
-        display: inline;
+        //float: left;
+        //margin-left: .1em;
+        margin-bottom: .5em;
         a {
+          @include rounded-corners(.25em);
           text-decoration: none;
+          text-align: right;
           color: #8BA58B;
+          background-color: darken($black, 4%);
+          display: block;
+          line-height: 1;
+          padding: .525em 5.55555% .475em .5em;
+          &:active,&:hover,&:focus {
+            background-color: lighten($black, 4%);
+          }
         }
       }
     }
   }
+}
+/* Content Area */
+div#content {
+  margin: 0 5.55555%;
+  padding: 0 0.75em;
+  * { @include reset-spacing }
 }

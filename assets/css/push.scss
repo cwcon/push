@@ -18,19 +18,24 @@ header#page_header {
   padding-top: $baseLineHeight * 2;
   background-color: $basicBackground;
   padding: 5.55555%;
-  padding-bottom: 2em;
   hgroup {
     * { @include reset-spacing; }
     h1 {
       font-family: $accentFont;
-      font-size: 2em;
+      font-size: 4em;
+      line-height: .75em;
+      margin-left: -0.1em;
       text-transform: uppercase;
     }
     h2 {
       font-family: $accentFont;
       font-weight: normal;
+      font-size: $baseFontSize * .9;
+      line-height: 1.66666666666667em;
       text-transform: uppercase;
-      border-top: 1px solid lighten($darkGray, 40%);
+      padding: 0.55555555555556em 0 1.11111111111111em 0;
+      padding-bottom: 0;
+      //border-top: 1px solid lighten($darkGray, 40%);
     }
   }
   nav#site_nav {

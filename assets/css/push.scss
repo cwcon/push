@@ -9,19 +9,45 @@ body {
   color: $black;
   font-family: $serifFont;
   font-size: $baseFontSize;
-  margin: 10px;
-  padding: 10px;
+  line-height: $baseLineHeight;
+  position: relative;
+  margin: .5em;
 }
 
-hgroup {
-  * { @include reset-spacing; }
-  h1 {
+/* Page Header */
+header#page_header {
+  padding-top: $baseLineHeight * 2;
+  hgroup {
+    background-color: $basicBackground;
+    padding: $baseLineHeight * 2 5.55555%;
+    * { @include reset-spacing; }
+    h1 {
+      font-family: $accentFont;
+      font-size: 2em;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-family: $accentFont;
+      font-weight: normal;
+      text-transform: uppercase;
+      border-top: 1px solid lighten($darkGray, 40%);
+    }
+  }
+  nav#site_nav {
     font-family: $accentFont;
     text-transform: uppercase;
     text-align: center;
-  }
-  h2 {
-    font-weight: normal;
-    text-align: center;
+    ul {
+      @include reset-spacing;
+      li {
+        font-weight: normal;
+        list-style-type: none;
+        display: inline;
+        a {
+          text-decoration: none;
+          color: #8BA58B;
+        }
+      }
+    }
   }
 }

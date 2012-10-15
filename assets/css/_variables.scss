@@ -3,8 +3,12 @@ $sansFont: "adelle-sans", Georgia, Helvetica, Arial, sans-serif;
 $accentFont: "brandon-grotesque", Helvetica, Arial, sans-serif;
 $monoFont: Monaco, Menlo, "Lucida Console", "Courier New", monospace;
 
-$baseFontSize: 18px;
+$baseFontSize: 1em; /* 16px */
+$baseLineHeight: 1.5em; /* 24px */
 
-$black: #222;
+$black: #444;
 $darkGray: #444;
 $white: #F9F9F9;
+
+$basicBackground: #E4F2E4;
+$accentBackground: #B25957;

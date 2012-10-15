@@ -26,6 +26,17 @@ header#page_header {
       line-height: .75em;
       margin-left: -0.1em;
       text-transform: uppercase;
+      a {
+        color: $secondaryAccent;
+        text-decoration: none;
+        small {
+          font-size: .75em;
+          color: lighten($black, 10%);
+        }
+        small:before {
+          content: "// ";
+        }
+      }
     }
     h2 {
       font-family: $accentFont;
@@ -60,7 +71,7 @@ header#page_header {
           @include rounded-corners(.25em);
           text-decoration: none;
           text-align: right;
-          color: #8BA58B;
+          color: $primaryAccent;
           background-color: darken($black, 4%);
           display: block;
           line-height: 1;

@@ -10,7 +10,7 @@ body {
   font-family: $serifFont;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
-  margin: 10.5em .5em .5em .5em;
+  margin: 13em .5em .5em .5em;
 }
 
 /* Basic Styles */
@@ -58,10 +58,10 @@ header#page_header {
   div#logo {
     @include border-box;
     position: absolute;
-    top: 1.75em;
-    left: .5em;
-    width: 25%;
-    padding-right: .5em;
+    top: .5em;
+    left: 0em;
+    padding-left: .5em;
+    width: 100%;
     img {
       width: 2em;
       margin: 0 auto;
@@ -73,8 +73,8 @@ header#page_header {
     text-transform: uppercase;
     position: absolute;
     width: 100%;
-    top: 0em;
-    left: 0em;
+    top: 2.575em;
+    right: 0em;
     padding: .5em;
     ul {
       @include reset-spacing;
@@ -85,7 +85,6 @@ header#page_header {
         //float: left;
         //margin-left: .1em;
         margin-bottom: .5em;
-        margin-left: .5em;
         a {
           @include rounded-corners(.25em);
           text-decoration: none;
@@ -95,7 +94,6 @@ header#page_header {
           display: block;
           line-height: 1;
           padding: .525em 5.55555% .475em .5em;
-          margin-left: 25%;
           &:active,&:hover,&:focus {
             background-color: lighten($black, 4%);
           }

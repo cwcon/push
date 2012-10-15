@@ -33,6 +33,7 @@ This is the home for a new, radically open-access & open-reviewed journal.
 * Push: A Journal of Writing at the Source Level
 * Push: Research on Writing at the Source Level
 * Push: Applied Research in Writing with Source Code
+* Push: Applied Research into Writers Writing Source
 * Push: Research on Writing with Source
 * Push: Research on Writing & Source Code
 * Push: Theory and Application of Source-Level Writing

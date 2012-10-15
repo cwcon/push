@@ -13,6 +13,12 @@ body {
   margin: 10.5em .5em .5em .5em;
 }
 
+/* Basic Styles */
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /* Page Header */
 header#page_header {
   padding-top: $baseLineHeight * 2;
@@ -49,6 +55,18 @@ header#page_header {
       //border-top: 1px solid lighten($darkGray, 40%);
     }
   }
+  div#logo {
+    @include border-box;
+    position: absolute;
+    top: 1.75em;
+    left: .5em;
+    width: 25%;
+    padding-right: .5em;
+    img {
+      width: 2em;
+      margin: 0 auto;
+    }
+  }
   nav#site_nav {
     @include border-box;
     font-family: $accentFont;
@@ -67,6 +85,7 @@ header#page_header {
         //float: left;
         //margin-left: .1em;
         margin-bottom: .5em;
+        margin-left: .5em;
         a {
           @include rounded-corners(.25em);
           text-decoration: none;
@@ -76,6 +95,7 @@ header#page_header {
           display: block;
           line-height: 1;
           padding: .525em 5.55555% .475em .5em;
+          margin-left: 25%;
           &:active,&:hover,&:focus {
             background-color: lighten($black, 4%);
           }

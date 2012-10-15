@@ -1,6 +1,8 @@
 ---
 title: Submission Instructions
 layout: page
+category: contribute
+identifier: instructions
 ---
 
 ## How to write and submit an article for *Push*

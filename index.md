@@ -1,6 +1,8 @@
 ---
 title: Home
 layout: page
+category: home
+identifier: home
 ---
 
 ## Radically Open

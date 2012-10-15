@@ -1,6 +1,8 @@
 ---
 title: Contribute
 layout: page
+category: contribute
+identifier: contribute
 ---
 
 ## The world’s shortest CFP

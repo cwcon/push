@@ -5,8 +5,6 @@ category: contribute
 identifier: contribute
 ---
 
-## The world’s shortest CFP
-
 If your writing or your students’ writing happens in plain text and there’s some computer language
 involved, whether its for markup, design, or full-on scripting and programming, *Push* wants to help
 you develop and publish an openly reviewed article about it. Whether you’ve gained some insights

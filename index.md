@@ -5,6 +5,7 @@ category: home
 identifier: home
 ---
 
+
 ## Radically Open
 
 *Push* aims to set a new standard for openness.
@@ -20,12 +21,15 @@ identifier: home
   [submit a pull request](https://github.com/cwcon/push/pulls) with your contribution for
   discussion, refinement, and ultimately inclusion in the journal’s codebase.
 
-* **Open Review**: For publications in established areas of inquiry that serve as gate-keeping
-  organizations, double-blind peer review (usually by only a couple of people, at the discretion of
-  an editor) will suffice. But *Push* is not just some gate-keeper; its purpose isn’t simply to
-  block research. All who wish to [contribute](/contribute/) to *Push* should be as invested in
-  producing a quality publication with quality articles as much as they are invested in helping
-  develop researchers who submit their work.
+* **Open Review**: Publications in established areas of inquiry can rely on double-blind peer review
+  (usually by only a couple of people, at the discretion of an editor) to accomplish their
+  gate-keeping function.
+
+  *Push* is not just a gate-keeper; in addition to reviewing research, contributors to the journal
+  will to explicitly and directly help develop the work of others prior to publication. Anyone who
+  wishes to [contribute](/contribute/) to *Push* should be as invested in producing a quality
+  publication with quality articles as much as they are invested in helping develop researchers who
+  submit their work.
 
   Research into source code as part of the written rhetorical act represents a very new area of
   inquiry, with few established experts. *Push* aims to identify and develop those experts through a

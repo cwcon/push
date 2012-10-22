@@ -107,7 +107,15 @@ header#page_header {
 }
 /* Content Area */
 div#content {
-  h1 { font-size: $baseFontSize; }
+  h1 {
+    font-size: $baseFontSize * 1.1;
+    font-weight: normal;
+    border-left: 1px solid $primaryAccent;
+    border-right: 1px solid $primaryAccent;
+    text-align: center;
+    margin: $baseLineHeight 0;
+    width: 25%;
+  }
   margin: 0 5.55555%;
   * { @include reset-spacing }
   ul,ol,p {
@@ -117,7 +125,7 @@ div#content {
     margin-left: 12.5%;
     b,strong {
       font-family: $sansFont;
-      font-weight: normal;
+      font-weight: 600; /*Adelle Sans semi-bold*/
     }
   }
 }

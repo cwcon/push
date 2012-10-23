@@ -14,3 +14,15 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+@mixin box-shadow($h_off,$y_off,$blur,$spread, $color) {
+  -webkit-box-shadow: $h_off $y_off $blur $spread $color;
+  -moz-box-shadow: $h_off $y_off $blur $spread $color;
+  box-shadow: $h_off $y_off $blur $spread $color;
+}
+
+@mixin text-shadow($h_off,$y_off,$blur,$color) {
+  -webkit-text-shadow: $h_off $y_off $blur $color;
+  -moz-text-shadow: $h_off $y_off $blur $color;
+  text-shadow: $h_off $y_off $blur $color;
+}

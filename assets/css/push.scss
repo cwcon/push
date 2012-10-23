@@ -2,22 +2,25 @@
 @import 'mixins';
 @import 'normalize';
 html {
-  background-color: $black;
+  background-color:  lighten($black,8%);
 }
 body {
-  background-color: $white;
   color: $black;
   font-family: $serifFont;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   margin: 10.5em .5em .5em .5em;
 }
-
+div#page {
+  background-color: $white;
+  @include box-shadow(.15em, .15em, .5em, .1em, #222);
+}
 /* Basic Styles */
 img {
   display: block;
   max-width: 100%;
 }
+
 
 /* Page Header */
 header#page_header {
@@ -25,7 +28,9 @@ header#page_header {
   padding: 5.55555%;
   hgroup {
     * { @include reset-spacing; }
+    margin-right: 25%;
     h1 {
+      @include text-shadow(0.02em,0.02em,.045em,#777);
       font-family: $accentFont;
       font-size: 4em;
       line-height: .75em;
@@ -61,8 +66,8 @@ header#page_header {
     @include border-box;
     float: right;
     img {
-      height: 3 * $baseFontSize;
-      opacity: .5;
+      height: 4.5 * $baseFontSize;
+      opacity: .8;
     }
   }
   nav#site_nav {
@@ -102,6 +107,23 @@ header#page_header {
 }
 /* Content Area */
 div#content {
+  a {
+    color: $secondaryAccent;
+    text-decoration: none;
+    border-bottom: 1px dotted $secondaryAccent;
+    &:hover,&:focus,&:active {
+      border-bottom: 1px solid $secondaryAccent;
+      background: lighten($secondaryAccent,35%);
+    }
+    &:visited {
+      color: darken($primaryAccent,5%);
+      border-bottom: 1px dotted $primaryAccent;
+      &:hover,&:focus,&:active {
+        border-bottom: 1px solid $primaryAccent;
+        background: lighten($primaryAccent,35%);
+      }
+    }
+  }
   h1 {
     font-size: $baseFontSize * 1.1;
     font-weight: normal;
@@ -112,6 +134,7 @@ div#content {
     width: 25%;
   }
   margin: 0 5.55555%;
+  padding-bottom: 2em;
   * { @include reset-spacing }
   ul,ol,p {
     margin-bottom: $baseLineHeight / 2;
@@ -121,6 +144,96 @@ div#content {
     b,strong {
       font-family: $sansFont;
       font-weight: 600; /*Adelle Sans semi-bold*/
+    }
+  }
+}
+
+/* Footer */
+footer#page_footer {
+  @include border-box;
+  width: 100%;
+  position: absolute;
+  padding: 2em 1em 1em 1em;
+  left: 0;
+  color: $white;
+  * { @include reset-spacing; }
+  p {
+    padding-bottom: 2em;
+  }
+}
+
+/* 21em = just larger than a default iPhone vertical */
+@media screen and (min-width: 21em) {
+  body {
+    margin: 3em .5em .5em .5em;
+  }
+  header#page_header {
+    nav#site_nav {
+      ul {
+        li {
+          width: 25%;
+          float: left;
+          a {
+            margin: 0 .25em;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+/* 36em = just larger than a default iPhone horizontal */
+@media screen and (min-width: 36em) {
+  header#page_header {
+    div#logo {
+    }
+  }
+}
+
+/* 49em = just larger than a default iPad vertical */
+@media screen and (min-width: 49em) {
+  body {
+  }
+  header#page_header {
+    hgroup {
+      width: 75%;
+    }
+    div#logo {
+      img {
+        margin: 0 auto;
+      }
+    }
+    nav#site_nav {
+      left: 0;
+    }
+  }
+  div#page {
+  }
+}
+/* 64em = just larger than a default iPad horizontal */
+@media screen and (min-width: 64em) {
+body {
+  margin: 1em;
+}
+div#page {
+  width: 48em;
+}
+header#page_header {
+  nav#site_nav {
+      top: .75em;
+      left: 49.5em;
+      padding-right: .75em; //1em looks funny w/ the content shadow
+      width: auto;
+      ul {
+        li {
+          width: auto;
+          float: none;
+          a {
+            margin: 0;
+            text-align: right;
+          }
+        }
+      }
     }
   }
 }

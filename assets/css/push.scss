@@ -10,7 +10,7 @@ body {
   font-family: $serifFont;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
-  margin: 13em .5em .5em .5em;
+  margin: 10.5em .5em .5em .5em;
 }
 
 /* Basic Styles */
@@ -21,7 +21,6 @@ img {
 
 /* Page Header */
 header#page_header {
-  padding-top: $baseLineHeight * 2;
   background-color: $basicBackground;
   padding: 5.55555%;
   hgroup {
@@ -72,7 +71,7 @@ header#page_header {
     text-transform: uppercase;
     position: absolute;
     width: 100%;
-    top: 2.575em;
+    top: 0em;
     right: 0em;
     padding: .5em;
     ul {

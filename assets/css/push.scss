@@ -60,14 +60,10 @@ header#page_header {
   }
   div#logo {
     @include border-box;
-    position: absolute;
-    top: .5em;
-    left: 0em;
-    padding-left: .5em;
-    width: 100%;
+    float: right;
     img {
-      width: 2em;
-      margin: 0 auto;
+      height: 3 * $baseFontSize;
+      opacity: .5;
     }
   }
   nav#site_nav {

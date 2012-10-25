@@ -1,6 +1,8 @@
 @import 'variables';
 @import 'mixins';
 @import 'normalize';
+@import 'github';
+
 html {
   background-color:  lighten($black,8%);
   -webkit-font-smoothing: antialiased;
@@ -109,6 +111,9 @@ header#page_header {
 }
 /* Content Area */
 div#content {
+  margin: 2.5em 5.55555% 0em;
+  padding-bottom: 2em;
+  * { @include reset-spacing }
   a {
     color: $secondaryAccent;
     text-decoration: none;
@@ -129,12 +134,25 @@ div#content {
   h1 {
     font-size: $baseFontSize * 1.5;
     font-family: $sansFont;
-    margin: $baseLineHeight 0 $baseLineHeight/2 0;
+    font-weight: normal;
+    color: green;
+    margin: 0 0 $baseLineHeight/2 0;
     color: lighten($black, 25%);
   }
-  margin: 0 5.55555%;
-  padding-bottom: 2em;
-  * { @include reset-spacing }
+  h2,h3,h4,h5,h6 {
+    font-family: $serifFont;
+    font-weight: 600; /*Adelle semi-bold*/
+  }
+  h2 {
+    font-size: $baseFontSize * 1.4;
+  }
+  h3 {
+    font-size: $baseFontSize * 1.2;
+  }
+  h4 {
+    font-size: $baseFontSize * 1.1;
+    text-transform: uppercase;
+  }
   ul,ol,p {
     margin-bottom: $baseLineHeight / 2;
   }
@@ -144,6 +162,24 @@ div#content {
       font-family: $sansFont;
       font-weight: 600; /*Adelle Sans semi-bold*/
     }
+  }
+  div {
+    background: #EEE;
+  }
+  pre,code {
+    font-family: $monoFont;
+    font-size: $baseFontSize * .95;
+    line-height: $baseLineHeight;
+  }
+  div pre {
+    padding: $baseLineHeight * .25;
+    margin-bottom: $baseLineHeight / 2;
+    /*
+    white-space: pre-wrap;                 /* CSS3 browsers  */
+	  white-space: -moz-pre-wrap !important; /* 1999+ Mozilla  */
+	  white-space: -pre-wrap;                /* Opera 4 thru 6 */
+	  white-space: -o-pre-wrap;              /* Opera 7 and up */
+	  word-wrap: break-word;                 /* IE 5.5+ and up */
   }
 }
 

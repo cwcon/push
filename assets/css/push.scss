@@ -153,12 +153,18 @@ footer#page_footer {
   @include border-box;
   width: 100%;
   position: absolute;
-  padding: 2em 1em 1em 1em;
+  padding: 3em 1em 1em 1em;
   left: 0;
   color: $white;
   * { @include reset-spacing; }
+  img {
+    height: 4em;
+    width: 4em;
+    float: left;
+  }
   p {
     padding-bottom: 2em;
+    margin-left: 5em;
   }
 }
 

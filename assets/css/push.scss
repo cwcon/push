@@ -3,6 +3,8 @@
 @import 'normalize';
 html {
   background-color:  lighten($black,8%);
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
 }
 body {
   color: $black;
@@ -92,7 +94,7 @@ header#page_header {
           @include rounded-corners(.25em);
           text-decoration: none;
           text-align: right;
-          color: $primaryAccent;
+          color: $secondaryAccent;
           background-color: darken($black, 4%);
           display: block;
           line-height: 1;
@@ -125,13 +127,10 @@ div#content {
     }
   }
   h1 {
-    font-size: $baseFontSize * 1.1;
-    font-weight: normal;
-    border-left: 1px solid $primaryAccent;
-    border-right: 1px solid $primaryAccent;
-    text-align: center;
-    margin: $baseLineHeight 0;
-    width: 25%;
+    font-size: $baseFontSize * 1.5;
+    font-family: $sansFont;
+    margin: $baseLineHeight 0 $baseLineHeight/2 0;
+    color: lighten($black, 25%);
   }
   margin: 0 5.55555%;
   padding-bottom: 2em;
@@ -151,7 +150,9 @@ div#content {
 /* Footer */
 footer#page_footer {
   @include border-box;
+  font-family: $sansFont;
   width: 100%;
+  max-width: 48em;
   position: absolute;
   padding: 3em 1em 1em 1em;
   left: 0;
@@ -163,8 +164,14 @@ footer#page_footer {
     float: left;
   }
   p {
+    padding-top: .5em;
     padding-bottom: 2em;
     margin-left: 3em;
+    font-weight: 300;
+  }
+  a {
+    color: lighten($primaryAccent, 10%);
+    text-decoration: none;
   }
 }
 

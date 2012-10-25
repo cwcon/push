@@ -158,13 +158,13 @@ footer#page_footer {
   color: $white;
   * { @include reset-spacing; }
   img {
-    height: 4em;
-    width: 4em;
+    height: 2em;
+    width: 2em;
     float: left;
   }
   p {
     padding-bottom: 2em;
-    margin-left: 5em;
+    margin-left: 3em;
   }
 }
 

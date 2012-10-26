@@ -132,26 +132,42 @@ header#page_header {
       }
     }
   }
+  sup {
+    font-size: $baseFontSize * .85;
+    font-weight: 600;
+    margin-right: .25em;
+    a {
+    padding: 0 .25em;
+    border-bottom: 0px;
+    }
+  }
   h1 {
     font-size: $baseFontSize * 1.5;
     font-family: $sansFont;
     font-weight: normal;
     margin: 0 0 $baseLineHeight/2 0;
     color: lighten($black, 25%);
+    letter-spacing: .02em;
   }
   h2,h3,h4,h5,h6 {
     font-family: $serifFont;
     font-weight: 600; /*Adelle semi-bold*/
+    margin: $baseLineHeight * .75 0 $baseLineHeight * .25;
+    letter-spacing: .03em;
   }
   h2 {
     font-size: $baseFontSize * 1.4;
+    border-bottom: 1px solid lighten($black, 50%);
+    padding-bottom: $baseLineHeight * .10;
+    margin-top: $baseLineHeight * .65;
   }
   h3 {
     font-size: $baseFontSize * 1.2;
   }
   h4 {
-    font-size: $baseFontSize * 1.1;
+    font-size: $baseFontSize;
     text-transform: uppercase;
+    letter-spacing: .05em;
   }
   header {
     h1 {
@@ -177,25 +193,33 @@ header#page_header {
       text-transform: uppercase;
     }
   }
+  blockquote {
+    margin: $baseLineHeight / 2;
+    margin-left: 12.5%;
+    border-left: 1px solid $primaryAccent;
+    padding: $baseLineHeight / 2;
+    padding-bottom: $baseLineHeight * .2;
+  }
   ul,ol,p {
     margin-bottom: $baseLineHeight / 2;
   }
   li {
     margin-left: 12.5%;
+    padding-bottom: $baseLineHeight / 2;
     b,strong {
       font-family: $sansFont;
       font-weight: 600; /*Adelle Sans semi-bold*/
+      color: darken($black, 20%);
     }
   }
-  div {
-    background: #EEE;
-  }
+  ul li { list-style-type: square; }
   pre,code {
+    background: #EEE;
     font-family: $monoFont;
     font-size: $baseFontSize * .95;
     line-height: $baseLineHeight;
   }
-  div pre {
+  pre {
     padding: $baseLineHeight * .25;
     margin-bottom: $baseLineHeight / 2;
     /*
@@ -205,7 +229,45 @@ header#page_header {
 	  white-space: -o-pre-wrap;              /* Opera 7 and up */
 	  word-wrap: break-word;                 /* IE 5.5+ and up */
   }
+
+/* Footnotes */
+div.footnotes {
+  margin-top: $baseLineHeight;
+  padding: $baseLineHeight;
+  padding-left: $baseLineHeight * 2;
+  background-color: lighten($primaryAccent, 30%);
+  hr { display: none; }
+  ol {
+    position: relative;
+    li {
+      margin-left: 0;
+      margin-bottom: $baseLineHeight;
+      p {
+        margin-right: 12.5%;
+      }
+      p + a {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
 }
+
+/* Specific page content-area styles */
+
+  #style_guide_page & {
+    p + h1,
+    h1 + h2,
+    h2 + h3,
+    h3 + h4 {
+      //margin-bottom: $baseLineHeight;
+    }
+  }
+}
+
+
 
 /* Footer */
 footer#page_footer {

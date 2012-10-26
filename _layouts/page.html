@@ -3,51 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>Push{% unless page.title == 'Home' %}: {{ page.title}}{% endunless %}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/push.css">
-  <script type="text/javascript" src="//use.typekit.net/gnd2jel.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
-  <link rel="apple-touch-icon-precomposed" href="/assets/img/apple-touch-icon-precomposed.png">
+  {% include head.html %}
 </head>
 <body id="{{page.id}}_page">
 <div id="page">
-  <header id="page_header">
-    <div id="logo">
-      <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo.png" alt="Push logo" /></a>
-    </div>
-    <hgroup>
-      <h1><a href="http://push.cwcon.org/" rel="home">Push</a></h1>
-      <h2>Theory <i>&amp;</i> Applied Research in Writing with Source</h2>
-    </hgroup>
-    <nav id="site_nav">
-      <ul>
-        <li><a href="/issues/">Issues</a></li>
-        <li><a href="/contribute/">Contribute</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/about/">About</a></li>
-      </ul>
-    </nav>
-  </header>
+  {% include header.html %}
   <div id="content">
     {{ content }}
   </div>
-  <footer id="page_footer">
-    <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo-mono-orange.png" alt="Push logo monochrome"></a>
-    <p>
-    Design &amp; content &copy; Push.
-    Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative
-    Commons</a>. Hosted care of <a href="http://pages.github.com/">GitHub Pages</a>. Complete source
-    available at <a href="https://github.com/cwcon/push">available on GitHub</a>. Powered by
-    <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
-    <a href="http://sass-lang.com/">SASS</a>,
-    <a href="https://github.com/hendricius/jekyll-sass">Jekyll-Sass</a>
-    <a href="https://github.com/necolas/normalize.css">normalize.css</a>,
-    <a href="http://daringfireball.net/projects/markdown/">Markdown</a>,
-    <a href="https://typekit.com/">TypeKit</a>,
-    and <a href="http://github.com/">GitHub</a>.
-    </p>
-  </footer>
+  {% include footer.html %}
 </div>
 </body>
 </html>

@@ -45,6 +45,7 @@ header#page_header {
         text-decoration: none;
         small {
           font-size: .75em;
+          line-height: 0em;
           color: lighten($black, 10%);
         }
         small:before {
@@ -135,7 +136,6 @@ header#page_header {
     font-size: $baseFontSize * 1.5;
     font-family: $sansFont;
     font-weight: normal;
-    color: green;
     margin: 0 0 $baseLineHeight/2 0;
     color: lighten($black, 25%);
   }
@@ -152,6 +152,30 @@ header#page_header {
   h4 {
     font-size: $baseFontSize * 1.1;
     text-transform: uppercase;
+  }
+  header {
+    h1 {
+      color: $black;
+      margin: 0 0 $baseLineHeight * .25 0;
+    }
+    h2 {
+      font-size: $baseFontSize;
+      color: lighten($black, 25%);
+      margin-bottom: $baseLineHeight / 2;
+    }
+  }
+  footer {
+    background: lighten($secondaryAccent, 35%);
+    font-family: $sansFont;
+    margin-top: $baseLineHeight * 2;
+    padding: $baseLineHeight / 2;
+    h1 {
+      margin: 0;
+      margin-bottom: $baseLineHeight * .25;
+      color: $black;
+      font-size: $baseFontSize * 1.1;
+      text-transform: uppercase;
+    }
   }
   ul,ol,p {
     margin-bottom: $baseLineHeight / 2;

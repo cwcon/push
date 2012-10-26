@@ -178,6 +178,7 @@ header#page_header {
       font-size: $baseFontSize;
       color: lighten($black, 25%);
       margin-bottom: $baseLineHeight / 2;
+      border-bottom: 0px;
     }
   }
   footer {

@@ -1,8 +1,7 @@
 ---
 title: Contribute
 layout: page
-category: contribute
-identifier: contribute
+id: contribute
 ---
 
 If your writing or your students’ writing happens in plain text and there’s some computer language

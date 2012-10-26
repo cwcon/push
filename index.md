@@ -1,8 +1,7 @@
 ---
 title: Home
 layout: page
-category: home
-identifier: home
+id: home
 ---
 
 

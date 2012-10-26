@@ -4,25 +4,48 @@ layout: page
 id: contribute
 ---
 
-If your writing or your students’ writing happens in plain text and there’s some computer language
-involved, whether its for markup, design, or full-on scripting and programming, *Push* wants to help
-you develop and publish an openly reviewed article about it. Whether you’ve gained some insights
-from your very first time teaching HTML, or you have a radically new perspective for approaching a
-writing task with the assistance of an entire language or framework, submit your article on the
-matter to *Push*.
+# Contributing to Push
 
-Here are some questions to ask yourself before you submit (and even before you start to draft):
+There are numerous ways you can contribute to Push.
 
-1. **How deeply does this matter to you?** Be passionate about your argument. *Push* isn’t for
-publishing comfortable, arm-chair critical perspectives. Believe in what you’re writing. Be willing
-to fight to defend your perspective. Compell your audience to act on what you say.
+* **Spread the word**: Share the [push.cwcon.org](http://push.cwcon.org/) URL with friends and
+  colleagues on email lists & social networks.
+  Follow and mention the [*Push* Twitter account, @p117sh](http://twitter.com/p117sh).
 
-2. **How will this make the world better?** *Push* is a venue for applied research into source-level
-digital writing, research that’s meant to do more than show everyone how smart you are. Your
-submission can be as theoretically rich as you’d like, but it must do something to make the world
-better for writers and the teaching of writing.
+* **Sign up for GitHub account, and watch the Push repository**: Everything
+  about *Push*, from submission to open review, happens through [GitHub](http://github.com). [Sign
+  up for a GitHub account](https://github.com/signup/free), and consider using your name as your
+  username. Be sure, too, to fill out your GitHub profile information.
 
-3. **Does this reflect best practices?** It’s one thing to write with source code in a slipshod way
-that gets the job done. It’s another to highlight the intensive research component of writing source
-code that reflects best practices. “Best practices” are always moving targets, but strive to include
-the best known practices, especially practices you’ve discovered, in your submission.
+  Once you have an account, be sure to [watch the *Push* repository](https://github.com/cwcon/push)
+  by pushing the Watch button on the repository page.
+
+* **Submit a blog post**: *Push* has a [blog](/blog/). Submissions will be quickly reviewed.
+  Initially, the blog will focus on the development of the journal itself.
+
+  Once you’re ready to write a post, [fork the Push repo](https://github.com/cwcon/push/fork),
+  [set up Git and GitHub](https://help.github.com/articles/set-up-git) on your computer, clone your
+  fork of the repo, and create a branch called `post` where you’ll write and commit.
+  [See the full submission instructions.](/blog/instructions.html).
+
+* **Submit an article**: Read the [call for papers](/cfp.html). It’s the shortest CFP in the world.
+  Have an idea that you’d like before you write?
+  [Open a new issue](https://github.com/cwcon/push/issues/new) on GitHub and write `QUERY:`
+  at the beginning of the title.
+
+  If you’ve not already done so, [fork the Push repo](https://github.com/cwcon/push/fork),
+  set up Git and GitHub on your computer, clone your fork of the repo, and create a branch called
+  `submission` where you’ll write and commit.
+  [See the full submission instructions.](instructions.html).
+
+* **Submit a fix or new feature for the journal itself**: All of *Push* is open-source. Fork and
+  clone the repository, create a feature branch with your fix, and then submit a pull request. Read
+  the [setup guide](/setup.md) and the [README.md file](https://github.com/cwcon/push#readme).
+
+* **Review draft blog posts, article submissions, and journal fixes/features**: Every contribution
+  will be handled as a Pull Request or Issue in GitHub; if you
+  [sign up for a GitHub account](https://github.com/signup/free) and
+  [watch the *Push* repository](https://github.com/cwcon/push)
+  by pushing the Watch button on the repository page, you will receive email notifications of
+  the journal’s activity (pro tip: use an email client like GMail that enables filtering, so
+  that your inbox doesn’t get cluttered up with GitHub notifications).

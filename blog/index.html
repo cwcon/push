@@ -1,0 +1,30 @@
+---
+title: Blog
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Push: {{ page.title}}</title>
+  {% include head.html %}
+</head>
+<body id="{{page.id}}_page">
+<div id="page">
+  {% include header_blog.html %}
+  <div id="content">
+  {% for post in paginator.posts %}
+    <article class="post">
+      <header>
+        <h1><a href="{{post.url}}">{{ post.title }}</a></h1>
+        <h2>Posted by {{ post.author }} on {{ post.date | date_to_long_string }}</h2>
+      </header>
+      <section>
+      {{ post.content }}
+      <section>
+    </article>
+  {% endfor %}
+  </div>
+  {% include footer.html %}
+</div>
+</body>
+</html>

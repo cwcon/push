@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Push Blog: {{ page.title}}</title>
+  {% include head.html %}
+</head>
+<body id="{{page.id}}_page">
+<div id="page">
+  {% include header.html %}
+  <article id="content" class="instapaper_body">
+    <header>
+      <h1 class="instapaper_title">{{ page.title }}</h1>
+      <h2>Posted by {{ page.author }} on {{ page.date }}</h2>
+    </header>
+    <section>
+    {{ content }}
+    <section>
+    <footer>
+      <p><b>About {{ page.author }}</b>: {{ page.author_bio }}</p>
+    </footer>
+  </article>
+  {% include footer.html %}
+</div>
+</body>
+</html>

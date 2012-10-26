@@ -1,3 +1,4 @@
 exclude: README.md, _site/, _tmp/, Gemfile, Gemfile.lock, serve.sh
 destination: _tmp/
 pygments: true
+permalink: /blog/:title/

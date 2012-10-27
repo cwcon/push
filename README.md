@@ -1,31 +1,13 @@
+# Push
+
 This is the home for a new, radically open-access & open-reviewed journal.
 
-## Planning
+## To-Do List
+* Improved instructions for cloning, branching, pushing, and submitting pull requests (esp. for blog
+  and article submissions)
+* Add `description:` metadata to all core page YAML frontmatter & load into the `<head>` on the page
+  template
 
-### Site areas
-
-* Home (announcement/invitation to start) -> `index.html`
-* Contribute -> `contribute/`
-  * World’s most direct CFP -> `contribute/index.html`
-  * Submission guidelines -> `contribute/guidelines.html`
-  * Submission instructions -> `contribute/instructions.html`
-  * Setup instrux -> `contribute/setup.html`
-* Issues (once there are some...) -> `issues/`
-* Blog -> `blog/`
-* About -> `about/`
-  * ? -> `about/index.html`
-  * People -> `about/people.html`
-  * Colophon -> `about/colophon.html
-
-## Layout templates
-
-* Core site pages -> `_layouts/page.html`
-* Articles -> `_layouts/article.html`
-* Blog posts -> `_layouts/post.html`
-
-## Includes
-
-* Footer -> `_includes/footer.html`
 
 ## Known issues
 

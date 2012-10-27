@@ -16,8 +16,8 @@ id: instructions
    Style.
 1. Submit by opening a pull request to
    [the upstream *Push* repository](https://github.com/cwcon/push).
-1. Make adjustments to your article as warranted by the open review (your pull request will
-   automatically update as you push your changes to GitHub).
+1. Make adjustments to your article as warranted by the open review, and push to GitHub (your pull
+   request will automatically update after you push your changes).
 
 See the [setup instructions](/setup.html) and [style guide](/style-guide.html) for additional
 information and guidance. And if you need a question answered, just

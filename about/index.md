@@ -6,14 +6,15 @@ id: about
 
 # About Push
 
-*Push* is an experiment on its way to being a journal.
+*Push* is an experiment on its way to becoming an academic journal on the research & applied theory
+of source-level digital writing.
 
 ## A Meritocracy
 
-*Push* has [a staff](/about/people.html) of exactly one person at this point. But nobody’s going to
-get appointed to any title or rank. Unlike other journals that go out and seek the endorsement of
+*Push* has [a staff](/about/people.html) of exactly one person at this point. But nobody gets
+appointed to any title or rank. Unlike the academic tradition of seeking endorsement from
 big-name scholars, *Push* is going to operate like any other open-source project. Want a spot on the
-board? An editorship? You have to earn it by [contributing](/contribute/) to the journal.
+board? An editorship? You can only earn it by [contributing](/contribute/) to the journal.
 
 ## Radical Openness
 
@@ -35,13 +36,13 @@ board? An editorship? You have to earn it by [contributing](/contribute/) to the
   gate-keeping function.
 
   *Push* is not just a gate-keeper; in addition to reviewing research, contributors to the journal
-  will should commit to helping develop the work of others prior to publication. *Push* needs
-  contributors [contribute](/contribute/) who should be invested in producing a quality publication
-  with quality articles as well as in helping develop researchers who submit their work.
+  should commit to helping develop the work of others prior to publication. *Push* needs
+  [contributors](/contribute/) who will invest equally in producing a quality publication
+  with quality articles as well as in helping develop researchers who submit their work for review.
 
-  Research into source code as part of the written rhetorical act represents a very new area of
+  Research into source code as part of the written rhetorical act represents a new area of
   inquiry, with few established experts. *Push* aims to identify and develop those experts through a
-  scholarly venue dedicated to writing & source.
+  scholarly venue dedicated to source-level writing.
 
 * **Open, Distributed Archiving**: To submit or otherwise contribute to *Push*, you have to
   [fork its repository](https://github.com/cwcon/push/fork), and then pull down your forked copy

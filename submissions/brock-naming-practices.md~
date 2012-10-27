@@ -153,8 +153,8 @@ protected:
 {% endhighlight %}
 
 These functions, authored by Dan McKinley[^mckinley], who revealed his own 
-identity after the code quoted in part above was posted to [_Stack Overflow_]
-(http://www.stackoverflow.com), a popular website for code help, were part of 
+identity after the code quoted in part above was posted to (_Stack Overflow_)
+[http://www.stackoverflow.com], a popular website for code help, were part of 
 a larger class declaration named <code>RichardIsAFuckingIdiotControl</code>. 
 This class worked specifically to route data around what McKinley felt was 
 inefficient and resource-intensive code&mdash;a sentiment expressed most 
@@ -237,10 +237,10 @@ Christiane Floyd, and Ralf Klischewski (Cambridge, MA: MIT Press, 2002), 69-90.
 [^nissen2]: Ibid,  86.
 
 [^matthews]: matthews, "Exception up = new Exception("Something is really 
-wrong.");," _Stack Overflow_ (2009), [http://stackoverflow.com/a/549611](http://stackoverflow.com/a/549611).
+wrong.");," _Stack Overflow_ (2009), (http://stackoverflow.com/a/549611)[http://stackoverflow.com/a/549611].
 
 [^ritter]: Tom Ritter, "//Code Sanitized to Protect the Foolish," _Stack 
-Overflow_ (2010), [http://stackoverflow.com/a/184673](http://stackoverflow.com/a/184673).
+Overflow_ (2010), (http://stackoverflow.com/a/184673)[http://stackoverflow.com/a/184673].
 
 [^mckinley]: Dan McKinley, "From the Annals of Dubious Achievement," _Dan 
-McKinley_ (2009), [http://mcfunley.com/438/from-the-annals-of-dubious-achievement](http://mcfunley.com/438/from-the-annals-of-dubious-achievement).
+McKinley_ (2009), (http://mcfunley.com/438/from-the-annals-of-dubious-achievement)[http://mcfunley.com/438/from-the-annals-of-dubious-achievement]

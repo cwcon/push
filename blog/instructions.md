@@ -18,7 +18,8 @@ scripts.)
 1. Track your progress with frequent Git commits.
 1. Push your work to your fork at GitHub.
 1. Submit by opening a pull request to
-   [the upstream *Push* repository](https://github.com/cwcon/push).
+   [the upstream *Push* repository](https://github.com/cwcon/push) by hitting the Pull Request
+   button on GitHub on your fork of the *Push* repository.
 1. Make adjustments to your post, if necessary, and push to GitHub (your pull request will
    automatically update after you push your changes).
 

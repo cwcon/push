@@ -15,7 +15,8 @@ id: instructions
 1. Keep your article under 2500 words or so, cite in footnotes according to the Chicago Manual of
    Style.
 1. Submit by opening a pull request to
-   [the upstream *Push* repository](https://github.com/cwcon/push).
+   [the upstream *Push* repository](https://github.com/cwcon/push) by hitting the Pull Request
+   button on GitHub on your fork of the *Push* repository.
 1. Make adjustments to your article as warranted by the open review, and push to GitHub (your pull
    request will automatically update after you push your changes).
 

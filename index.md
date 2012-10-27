@@ -23,9 +23,9 @@ code.
 
 ## A Different Technological Approach
 
-And because of its mission and focus, the journal itself and the means by which people
+To live by its own mission and focus, the journal itself and the means by which people
 [contribute](/contribute/) to it are based in technologies of source-level writing, in a
-radically open way. The entirety of *Push*, including its core scripts and templates as well as
+radically open way. The entirety of *Push*, from its core scripts and templates to
 (eventually) its submissions and published issues, is openly available as a
 [GitHub repository](https://github.com/cwcon/push). There are no secrets here, and everything is
 open for review and improvement.
@@ -33,6 +33,7 @@ open for review and improvement.
 And in radical contrast to the heavy, database-driven systems behind so many websites, including
 digital journals, *Push* is just a humble collection of HTML pages compiled from source before being
 pushed out to GitHub as the pages you’re looking at here.
+[Lo-Fi](http://kairos.technorhetoric.net/12.3/topoi/stolley/) all the way.
 
 ## Help Wanted: Yours
 

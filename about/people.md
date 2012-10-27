@@ -12,7 +12,7 @@ add your name to the contributors list below.
 
 #### No gods, no mastheads
 
-To start things off, everyone’s a contributor. No editors, no advisory-board members, and no
+For the time being, everyone’s a contributor. No editors, no advisory-board members, and no
 granting of titles based on a reputation built elsewhere. Titles will be earned, not granted, as
 decided by other *Push* contributors.
 

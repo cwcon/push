@@ -5,8 +5,8 @@
 
 html {
   background-color:  lighten($black,8%);
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
+  #-webkit-font-smoothing: antialiased;
+  #-moz-font-smoothing: antialiased;
 }
 body {
   color: $black;
@@ -292,7 +292,7 @@ footer#page_footer {
     padding-top: .5em;
     padding-bottom: 2em;
     margin-left: 3em;
-    font-weight: 400;
+    font-weight: 300;
   }
   a {
     color: lighten($primaryAccent, 10%);

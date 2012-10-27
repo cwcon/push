@@ -1,21 +1,27 @@
 ---
 title:
 summary: >
-         Summary starts here. This will appear on the issue page.
+           Summary starts here. This will appear on the issue page.
 authors:
   -name:
    affiliation:
+   github_username:
    bio: >
-        Bio starts here...
+          Bio starts here...
 
 #Repeat fragment above for multi-author articles
 # -name:
 # affiliation:
+# github_username:
 # bio: >
 #      Bio starts here...
 
+# Status: draft, submission, revision, copyedit, published
+status: draft
+
 # For publication-stage use:
 issue: 00
+layout: article
 ---
 
 Article text starts here.

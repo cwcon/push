@@ -24,4 +24,5 @@ issue: 00
 layout: article
 ---
 
-Article text starts here.
+And start writing your article here, in Markdown. See the style guide at
+http://push.cwcon.org/style-guide.html

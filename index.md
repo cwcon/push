@@ -4,42 +4,40 @@ layout: page
 id: home
 ---
 
+# Introducing Push
 
-## Radically Open
+*Push* is a new journal whose sole focus is on publishing original research on writing with source
+code.
 
-*Push* aims to set a new standard for openness.
+## Mission
 
-* **Open Access**: *Push*’s content is freely available and liberally licensed. That’s nothing new
-  in the world of open access publishing.
+*Push*’s mission is:
 
-  But by hosting [all of *Push*’s source code](https://github.com/cwcon/push/) on GitHub, there are
-  no secrets, nothing that isn’t subject to public scrutiny and review–and improvement. Comment on
-  [commits](https://github.com/cwcon/push/commits/master/).
-  [Open a new issue](https://github.com/cwcon/push/issues) to spark discussion.
-  [Fork the codebase](https://github.com/cwcon/push/fork), and then
-  [submit a pull request](https://github.com/cwcon/push/pulls) with your contribution for
-  discussion, refinement, and ultimately inclusion in the journal’s codebase.
+* **to help develop writers and researchers working with source code**, both through the published
+  [issues](/issues/) of the journal and the active, open process by which submissions are reviewed
+  and improved on the road to publication;
+* **to advocate for individuals working to incorporate source-level writing** into their research,
+  classrooms, and professional development;
+* and most of all, **to improve the sophistication of digital writers** writing in a
+  software-neutral, source-level way.
 
-* **Open Review**: Publications in established areas of inquiry can rely on double-blind peer review
-  (usually by only a couple of people, at the discretion of an editor) to accomplish their
-  gate-keeping function.
+## A Different Technological Approach
 
-  *Push* is not just a gate-keeper; in addition to reviewing research, contributors to the journal
-  will to explicitly and directly help develop the work of others prior to publication. Anyone who
-  wishes to [contribute](/contribute/) to *Push* should be as invested in producing a quality
-  publication with quality articles as much as they are invested in helping develop researchers who
-  submit their work.
+And because of its mission and focus, the journal itself and the means by which people
+[contribute](/contribute/) to it are based in technologies of source-level writing, in a
+radically open way. The entirety of *Push*, including its core scripts and templates as well as
+(eventually) its submissions and published issues, is openly available as a
+[GitHub repository](https://github.com/cwcon/push). There are no secrets here, and everything is
+open for review and improvement.
 
-  Research into source code as part of the written rhetorical act represents a very new area of
-  inquiry, with few established experts. *Push* aims to identify and develop those experts through a
-  scholarly venue dedicated to writing & source.
+And in radical contrast to the heavy, database-driven systems behind so many websites, including
+digital journals, *Push* is just a humble collection of HTML pages compiled from source before being
+pushed out to GitHub as the pages you’re looking at here.
 
-* **Open, Distributed Archiving**: To submit or otherwise contribute to *Push*, you have to
-  [fork its repository](https://github.com/cwcon/push/fork), and then pull down your forked copy
-  to your own computer. Each time you do that, you make a complete copy of the journal. You
-  particpate in its archiving as well as its improvement.
+## Help Wanted: Yours
 
-* **Open Communication**: *Push* will not use any communication channels that are not publically
-  available and open. No secret communiques. No backchannel. All communication regarding the
-  journal’s development, the review of blog posts and articles, and changes to the fundamental
-  structure of the journal itself will take place on GitHub.
+So, let’s get started. Learn a bit more [about](/about/) the journal. Check out the initial
+[blog posts](/blog/) on the genesis and development of *Push*. And then read about how you can
+[contribute](/contribute/) to *Push*, and help build a journal that will push the practice of
+digital writing more radically forward.
+

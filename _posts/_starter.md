@@ -7,4 +7,4 @@ layout: post
 ---
 
 And start writing your post here, in Markdown. See the style guide at
-http://push.cwcon.org/style-guide.html.
+http://push.cwcon.org/style-guide.html

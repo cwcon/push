@@ -207,6 +207,8 @@ header#page_header {
   li {
     margin-left: 12.5%;
     padding-bottom: $baseLineHeight / 2;
+    p { margin-bottom: 0; }
+    p + p { margin-top: $baseLineHeight / 2; }
     b,strong {
       font-family: $sansFont;
       font-weight: 600; /*Adelle Sans semi-bold*/

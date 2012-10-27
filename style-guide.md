@@ -74,15 +74,15 @@ not for asides or other ancillary material.
 
 #### Articles
 
-Citation in *Push* articles will be handled as footnotes, according to the Chicago Manual of
-Style.[^cms] In the running text, you’ll put a unique marker for each source, following terminal
+Citation in *Push* articles will be handled as footnotes, according to the *Chicago Manual of
+Style*.[^cms] In the running text, you’ll write a unique marker for each source, following terminal
 punctuation, e.g.,
 
-    According to the Chicago Manual of Style,[^cms]
+    According to the *Chicago Manual of Style*,[^cms]
 
 Then, at the very bottom of your article, build a list of your footnotes:
 
-    [^cms]: Chicago Manual of Style
+    [^cms]: *Chicago Manual of Style*, 16th ed. (Chicago: University of Chicago Press, 2010), 14.19-14.23.
 
 When it makes sense to hyperlink to Web-available materials (for example, to documentation,
 language references, or live versions of a project you’re writing about), use hyperlinks.

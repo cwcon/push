@@ -28,7 +28,8 @@ All article submissions to *Push* should be:
 
 * 1500-2500 words + references and source examples
 * Written in [Markdown](http://daringfireball.net/projects/markdown/syntax)
-* Cited according to the Chicago Manual of Style, 16th ed., as Markdown/[Maruku footnotes](http://www.whatwherewhy.me/blog/2012/01/16/markdown-extensions-in-maruku/#footnotes)
+* Compliant with the *Chicago Manual of Style*, 16th ed., including for
+  [footnote citations](http://localhost:4000/style-guide.html#footnotes_and_citation)
 * Tracked in Git on a dedicated `submission` branch in your copy of the repository
 * Submitted as a pull request on GitHub
 

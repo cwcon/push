@@ -6,13 +6,13 @@ id: contribute
 
 # Contributing to Push
 
-There are numerous ways you can contribute to Push.
+There are many different ways you can contribute to *Push*.
 
 * **Spread the word**: Share the [push.cwcon.org](http://push.cwcon.org/) URL with friends and
   colleagues on email lists & social networks.
   Follow and mention the [*Push* Twitter account, @p117sh](http://twitter.com/p117sh).
 
-* **Sign up for GitHub account, and watch the Push repository**: Everything
+* **Sign up for a GitHub account, and watch the Push repository**: Everything
   about *Push*, from submission to open review, happens through [GitHub](http://github.com). [Sign
   up for a GitHub account](https://github.com/signup/free), and consider using your name as your
   username. Be sure, too, to fill out your GitHub profile information.
@@ -40,7 +40,8 @@ There are numerous ways you can contribute to Push.
 
 * **Submit a fix or new feature for the journal itself**: All of *Push* is open-source. Fork and
   clone the repository, create a feature branch with your fix, and then submit a pull request. Read
-  the [setup guide](/setup.md) and the [README.md file](https://github.com/cwcon/push#readme).
+  the [setup guide](/setup.md) and the [README.md file](https://github.com/cwcon/push#readme),
+  which has a To-Do section with a list of things that need doing.
 
 * **Review draft blog posts, article submissions, and journal fixes/features**: Every contribution
   will be handled as a Pull Request or Issue in GitHub; if you

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Push: Setup</title>
+  <meta name="description" content="Push: Research &amp; Applied Theory in Writing with Source">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/push.css">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/assets/img/apple-touch-icon-precomposed.png">
+  <script type="text/javascript" src="//use.typekit.net/gnd2jel.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35853537-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</head>
+<body id="setup_page">
+<div id="page">
+    <header id="page_header">
+    <div id="logo">
+      <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo.png" alt="Push logo" /></a>
+    </div>
+    <hgroup>
+      <h1><a href="http://push.cwcon.org/" rel="home">Push</a></h1>
+      <h2>Research <i>&amp;</i> Applied Theory in Writing with Source</h2>
+    </hgroup>
+    <nav id="site_nav">
+      <ul>
+        <li><a href="/issues/">Issues</a></li>
+        <li><a href="/contribute/">Contribute</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="content">
+    <h1 id='setup'>Setup</h1>
+
+<p><em>Push</em> is based on a whole stack of technologies that, while powerful, are not all that common on most digital writers’ computers. <em>Push</em> is meant to be a learning experience for all who work on it, and the learning starts here.</p>
+
+<h2 id='github'>GitHub</h2>
+
+<p>This is the easiest part. Head over to GitHub and <a href='https://github.com/signup/free'>sign up</a> for a free account.</p>
+
+<h2 id='operatingsystem_specific_instructions'>Operating-System Specific Instructions</h2>
+
+<p>Find your operating system below, and follow the instructions.</p>
+
+<h3 id='windows'>Windows</h3>
+
+<p>Don’t use Windows. Get a free Linux, like <a href='http://www.ubuntu.com/'>Ubuntu</a>. Windows is a lot of things to a lot of people, but it’s not suitable for development.</p>
+
+<p>&#8230;OK. So you won’t listen. Fine. Pick up a copy of <a href='http://railsinstaller.org/'>Rails Installer</a>. That will give you the things you need: Git, a Linux-like command line in the form of GitBash, a decent Ruby and Rubygems. Make sure you also get a decent editor, like <a href='http://notepad-plus-plus.org/'>Notepad++</a>.</p>
+
+<p>To set up Pygments, you’ll need to install <a href='http://www.python.org/getit/windows/'>Python for Windows</a>. Then, on the command line, you’ll run</p>
+
+<pre><code>$ easy_install Pygments</code></pre>
+
+<p>Finally, follow the <a href='https://help.github.com/articles/set-up-git'>GitHub instructions</a> for setting up Git and your <a href='https://help.github.com/articles/generating-ssh-keys'>SSH keys</a>. And no matter what GitHub advertises, don’t be tempted by a Git GUI client. Learn the command line, <em>Push</em>-style.</p>
+
+<h3 id='mac'>Mac</h3>
+
+<p>First, you’ll need to install XCode from the Mac App Store. Once it’s installed (it takes awhile), open XCode and install the Command Line Tools under XCode &gt; Preferences &gt; Downloads.</p>
+
+<p>Then install <a href='http://mxcl.github.com/homebrew/'>Homebrew</a> and <a href='https://rvm.io/rvm/install/'>RVM</a>.</p>
+
+<p>You’ll also need to set up Pygments, to handle syntax highlighting. Fortunately, OS X comes with Python installed, so just run</p>
+
+<pre><code>$ sudo easy_install Pygments</code></pre>
+
+<p>Finally, follow the <a href='https://help.github.com/articles/set-up-git'>GitHub instructions</a> for setting up Git and your <a href='https://help.github.com/articles/generating-ssh-keys'>SSH keys</a>. And no matter what GitHub advertises, don’t be tempted by a Git GUI client. Learn the command line, <em>Push</em>-style.</p>
+
+<h3 id='linux'>Linux</h3>
+
+<p>If you’re on Linux, you probably know what you’re doing. Be sure to use your package manager to install Git, and it’s a good idea to install <a href='https://rvm.io/rvm/install/'>RVM</a> to manage your Ruby environment.</p>
+
+<p>Install Python, too, if it’s not already on your system, and use <code>easy_install</code> to install Pygments.</p>
+
+<p>Then, follow the <a href='https://help.github.com/articles/set-up-git'>GitHub instructions</a> for setting up Git and your <a href='https://help.github.com/articles/generating-ssh-keys'>SSH keys</a>. And no matter what GitHub advertises, don’t be tempted by a Git GUI client. Learn the command line, <em>Push</em>-style.</p>
+
+<h2 id='getting_your_copy_of_push'>Getting Your Copy of Push</h2>
+
+<p>The last step is to get your own copy of Push, and put it in a place you’ll be able to find.</p>
+
+<ol>
+<li>
+<p>Fire up your command line (called Terminal in Mac and some Linuxes), and make sure that you’re in your home directory by running</p>
+
+<pre><code> $ cd</code></pre>
+
+<p>(note that <code>$</code> is just a convention for the command-line prompt; you don’t actually type it).</p>
+</li>
+
+<li>
+<p>Create a directory, called <code>Projects</code>, where you’ll keep all of your Git repositories, including the one for <em>Push</em>:</p>
+
+<pre><code> $ mkdir Projects</code></pre>
+
+<p>then change into that directory:</p>
+
+<pre><code> $ cd Projects</code></pre>
+</li>
+
+<li>
+<p>Log in to GitHub, and <a href='https://github.com/cwcon/push/fork'>fork a copy of the <em>Push</em> repository</a>. When the forking process is complete, you’ll see at the top of your page an SSH URL, something that looks like <code>git@github.com:USERNAME/push.git</code>, with your username instead of <code>USERNAME</code>.</p>
+</li>
+
+<li>
+<p>Back at the command line, you’ll clone a copy of the <em>Push</em> repository:</p>
+
+<pre><code> $ git clone git@github.com:USERNAME/push.git</code></pre>
+
+<p>but using, of course, your username intead of the <code>USERNAME</code> example above.</p>
+</li>
+
+<li>
+<p>Change into the <em>Push</em> directory where your copy is:</p>
+
+<pre><code> $ cd push</code></pre>
+</li>
+
+<li>
+<p>If you run <code>$ git branch</code>, you’ll see you’re on the <code>master</code> branch. Never do any work on <code>master</code>; instead, keep it in sync with the upstream <code>push</code> repository. To do that, run</p>
+
+<pre><code> $ git remote add upstream git://github.com/cwcon/push.git</code></pre>
+
+<p>Periodically, you can checkout the <code>master</code> branch and keep it up-to-date by running</p>
+
+<pre><code> $ git checkout master
+ $ git pull upstream master</code></pre>
+</li>
+
+<li>
+<p>Finally, run <code>$ bundle install</code> to install the required Gems for running Push locally.</p>
+</li>
+</ol>
+
+<h2 id='previewing_push_on_your_computer'>Previewing Push on Your Computer</h2>
+
+<p><em>Push</em>’s reliance on Jekyll makes it ready-made to preview on a real, live web server running right on your computer. All you have to do is run</p>
+
+<pre><code>$ ./serve.sh</code></pre>
+
+<p>on your command line from within the <code>/push</code> directory.</p>
+
+<p>Open your web browser of choice, and point it to <code>http://localhost:4000/</code> You should see <em>Push</em> in your browser, just like the one at <code>http://push.cwcon.org/</code>.</p>
+
+<p>As you make changes, the HTML will be automatically regenerated, so you can preview your work right in the browser. Nifty.</p>
+
+<h2 id='doing_actual_work'>Doing Actual Work</h2>
+
+<p>The sections below detail the basic ideas behind branching off to create article submissions, blog posts, and features/fixes for <em>Push</em> itself.</p>
+
+<p>If you’re a Git newbie, you might want to have a read through the <a href='http://git-scm.com/book'>Git Community Book</a>. For an excellent and thorough treatment of Git, purchase Travis Swicegood’s <a href='http://pragprog.com/book/tsgit/pragmatic-version-control-using-git'>Pragmatic Version Control Using Git</a></p>
+
+<h3 id='article_submission'>Article Submission</h3>
+
+<ol>
+<li>
+<p>To prepare a submission for <em>Push</em>, run</p>
+
+<pre><code> $ git checkout -b submission</code></pre>
+
+<p>which creates and checks out a branch called <code>submission</code>. (Note: you can use other branch names, but make sure that whatever you choose would make sense to yourself, and others.)</p>
+</li>
+
+<li>
+<p>Then, change directories into <code>submissions</code> and make a copy of the <code>_starter.md</code> file, using the pattern <code>lastname-submission-title.md</code>. We’ll pretend for this example that Lesley Smith is preparing a submission called “HTML is the Best”:</p>
+
+<pre><code> $ cd submissions
+ $ cp _starter.md smith-html-is-the-best.md</code></pre>
+</li>
+
+<li>
+<p>Now’s a good time to add that file and commit it to Git:</p>
+
+<pre><code> $ git add smith-html-is-the-best.md
+ $ git commit -m &quot;Starting my submission, HTML is the Best&quot;</code></pre>
+</li>
+
+<li>
+<p>Open your file in your editor of choice, and start writing. As you reach what seem to be significant milestones in your writing, be sure to add and commit the file to Git as above.</p>
+</li>
+
+<li>
+<p>To make sure that your work is backed up off of your computer and available for you to clone onto other computers, be sure to periodically run:</p>
+
+<pre><code> $ git push origin submission</code></pre>
+
+<p>which will push your <code>submission</code> branch to a <code>submission</code> branch on your fork of <em>Push</em>.</p>
+</li>
+
+<li>
+<p>Once your submission is ready for review, submit a pull request by hitting the Pull Request button on GitHub on your fork of the <em>Push</em> repository. Make sure you choose the correct branch with your submission work from your repository when submitting your request.</p>
+</li>
+</ol>
+
+<h3 id='blog_submission'>Blog Submission</h3>
+
+<ol>
+<li>
+<p>To prepare a blog submission for <em>Push</em>, run</p>
+
+<pre><code> $ git checkout -b blogpost</code></pre>
+
+<p>which creates and checks out a branch called <code>blogpost</code>. (Note: you can use other branch names, but make sure that whatever you choose would make sense to yourself, and others.)</p>
+</li>
+
+<li>
+<p>Then, change directories into <code>_posts</code> and make a copy of the <code>_starter.md</code> file, using the pattern <code>YYYY-MM-DD-post-title.md</code>. We’ll pretend for this example that Lesley Smith is preparing a blog post called “New CSS3 Styles” on November 1, 2012:</p>
+
+<pre><code> $ cd _posts
+ $ cp _starter.md 2012-11-01-new-css3-styles.md</code></pre>
+</li>
+
+<li>
+<p>Now’s a good time to add that file and commit it to Git:</p>
+
+<pre><code> $ git add 2012-11-01-new-css3-styles.md
+ $ git commit -m &quot;Starting my blog post, New CSS3 Styles&quot;</code></pre>
+</li>
+
+<li>
+<p>Open your file in your editor of choice, and start writing. As you reach what seem to be significant milestones in your writing, be sure to add and commit the file to Git as above. For example, filling out the YAML front matter at the top of the file is a milestone worth commiting.</p>
+</li>
+
+<li>
+<p>To make sure that your work is backed up off of your computer and available for you to clone onto other computers, be sure to periodically run:</p>
+
+<pre><code> $ git push origin blogpost</code></pre>
+
+<p>which will push your <code>blogpost</code> branch to a <code>blogpost</code> branch on your fork of <em>Push</em>.</p>
+</li>
+
+<li>
+<p>Once your submission is ready for review, submit a pull request by hitting the Pull Request button on GitHub on your fork of the <em>Push</em> repository. Make sure you choose the correct branch with your submission work from your repository when submitting your request.</p>
+</li>
+</ol>
+
+<h3 id='features_and_fixes'>Features and Fixes</h3>
+
+<p>Features and fixes for <em>Push</em> should be kept on separate, topical branches. In this case, we’ll pretend someone is on a typo-fixing rampage. All of the fixes, in other words, are catching typos. No major content rewrites, or CSS style fixes, or anything like that (each of those would get there own feature branch).</p>
+
+<ol>
+<li>
+<p>To prepare a topical branch for typos, run:</p>
+
+<pre><code> $ git checkout -b typos</code></pre>
+
+<p>which creates and checks out a branch called <code>typos</code>.</p>
+</li>
+
+<li>
+<p>Open the problem file or files in your editor of choice, and start fixing. As you reach what seem to be significant milestones in your work, be sure to add and commit the files to Git.</p>
+</li>
+
+<li>
+<p>To make sure that your work is backed up off of your computer and available for you to clone onto other computers, be sure to periodically run:</p>
+
+<pre><code> $ git push origin typos</code></pre>
+
+<p>which will push your <code>typos</code> branch to a <code>typos</code> branch on your fork of <em>Push</em>.</p>
+</li>
+
+<li>
+<p>Once your feature/fix is ready for review, submit a pull request by hitting the Pull Request button on GitHub on your fork of the <em>Push</em> repository. Make sure you choose the correct branch with your submission work from your repository when submitting your request.</p>
+</li>
+</ol>
+  </div>
+  <footer id="page_footer">
+    <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo-mono-orange.png" alt="Push logo monochrome"></a>
+    <p>
+    Design &amp; content &copy; Push.
+    Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative
+    Commons</a>. Hosted on <a href="http://pages.github.com/">GitHub Pages</a>. Complete source
+    and all content <a href="https://github.com/cwcon/push">available on GitHub</a>. Powered by
+    <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+    <a href="http://sass-lang.com/">SASS</a>,
+    <a href="https://github.com/hendricius/jekyll-sass">Jekyll-Sass</a>,
+    <a href="https://github.com/necolas/normalize.css">normalize.css</a>,
+    <a href="http://daringfireball.net/projects/markdown/">Markdown</a>,
+    <a href="https://typekit.com/">TypeKit</a>,
+    and <a href="http://github.com/">GitHub</a>.
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

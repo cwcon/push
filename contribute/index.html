@@ -3,20 +3,34 @@
 <head>
   <meta charset="utf-8">
   <title>Push: Contribute</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Push: Research &amp; Applied Theory in Writing with Source">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/push.css">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/assets/img/apple-touch-icon-precomposed.png">
   <script type="text/javascript" src="//use.typekit.net/gnd2jel.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35853537-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 </head>
-<body id="contribute_page" class="contribute">
+<body id="contribute_page">
 <div id="page">
-  <header id="page_header">
+    <header id="page_header">
     <div id="logo">
-      <img src="/assets/img/push-circle-offset.png" alt="Push logo" />
+      <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo.png" alt="Push logo" /></a>
     </div>
     <hgroup>
       <h1><a href="http://push.cwcon.org/" rel="home">Push</a></h1>
-      <h2>Theory <i>&</i> Applied Research in Writing with Source</h2>
+      <h2>Research <i>&amp;</i> Applied Theory in Writing with Source</h2>
     </hgroup>
     <nav id="site_nav">
       <ul>
@@ -27,29 +41,61 @@
       </ul>
     </nav>
   </header>
+
   <div id="content">
-    <h1>Contribute</h1>
-    <p>If your writing or your students’ writing happens in plain text and there’s some computer language involved, whether its for markup, design, or full-on scripting and programming, <em>Push</em> wants to help you develop and publish an openly reviewed article about it. Whether you’ve gained some insights from your very first time teaching HTML, or you have a radically new perspective for approaching a writing task with the assistance of an entire language or framework, submit your article on the matter to <em>Push</em>.</p>
+    <h1 id='contributing_to_push'>Contributing to Push</h1>
 
-<p>Here are some questions to ask yourself before you submit (and even before you start to draft):</p>
+<p>There are many different ways you can contribute to <em>Push</em>.</p>
 
-<ol>
+<ul>
 <li>
-<p><strong>How deeply does this matter to you?</strong> Be passionate about your argument. <em>Push</em> isn’t for publishing comfortable, arm-chair critical perspectives. Believe in what you’re writing. Be willing to fight to defend your perspective. Compell your audience to act on what you say.</p>
+<p><strong>Spread the word</strong>: Share the <a href='http://push.cwcon.org/'>push.cwcon.org</a> URL with friends and colleagues on email lists &amp; social networks. Follow and mention the <a href='http://twitter.com/p117sh'><em>Push</em> Twitter account, @p117sh</a>.</p>
 </li>
 
 <li>
-<p><strong>How will this make the world better?</strong> <em>Push</em> is a venue for applied research into source-level digital writing, research that’s meant to do more than show everyone how smart you are. Your submission can be as theoretically rich as you’d like, but it must do something to make the world better for writers and the teaching of writing.</p>
+<p><strong>Sign up for a GitHub account, and watch the Push repository</strong>: Everything about <em>Push</em>, from submission to open review, happens through <a href='http://github.com'>GitHub</a>. <a href='https://github.com/signup/free'>Sign up for a GitHub account</a>, and consider using your name as your username. Be sure, too, to fill out your GitHub profile information.</p>
+
+<p>Once you have an account, be sure to <a href='https://github.com/cwcon/push'>watch the <em>Push</em> repository</a> by pushing the Watch button on the repository page.</p>
 </li>
 
 <li>
-<p><strong>Does this reflect best practices?</strong> It’s one thing to write with source code in a slipshod way that gets the job done. It’s another to highlight the intensive research component of writing source code that reflects best practices. “Best practices” are always moving targets, but strive to include the best known practices, especially practices you’ve discovered, in your submission.</p>
+<p><strong>Submit a blog post</strong>: <em>Push</em> has a <a href='/blog/'>blog</a>. Submissions will be quickly reviewed. Initially, the blog will focus on the development of the journal itself.</p>
+
+<p>Once you’re ready to write a post, <a href='https://github.com/cwcon/push/fork'>fork the Push repo</a>, <a href='https://help.github.com/articles/set-up-git'>set up Git and GitHub</a> on your computer, clone your fork of the repo, and create a branch called <code>post</code> where you’ll write and commit. <a href='/blog/instructions.html'>See the full submission instructions.</a>.</p>
 </li>
-</ol>
+
+<li>
+<p><strong>Submit an article</strong>: Read the <a href='/cfp.html'>call for papers</a>. It’s the shortest CFP in the world. Have an idea that you’d like before you write? <a href='https://github.com/cwcon/push/issues/new'>Open a new issue</a> on GitHub and write <code>QUERY:</code> at the beginning of the title.</p>
+
+<p>If you’ve not already done so, <a href='https://github.com/cwcon/push/fork'>fork the Push repo</a>, set up Git and GitHub on your computer, clone your fork of the repo, and create a branch called <code>submission</code> where you’ll write and commit. <a href='instructions.html'>See the full submission instructions.</a>.</p>
+</li>
+
+<li>
+<p><strong>Submit a fix or new feature for the journal itself</strong>: All of <em>Push</em> is open-source. Fork and clone the repository, create a feature branch with your fix, and then submit a pull request. Read the <a href='/setup.html'>setup guide</a> and the <a href='https://github.com/cwcon/push#readme'>README.md file</a>, which has a To-Do section with a list of things that need doing.</p>
+</li>
+
+<li>
+<p><strong>Review draft blog posts, article submissions, and journal fixes/features</strong>: Every contribution will be handled as a Pull Request or Issue in GitHub; if you <a href='https://github.com/signup/free'>sign up for a GitHub account</a> and <a href='https://github.com/cwcon/push'>watch the <em>Push</em> repository</a> by pushing the Watch button on the repository page, you will receive email notifications of the journal’s activity (pro tip: use an email client like GMail that enables filtering, so that your inbox doesn’t get cluttered up with GitHub notifications).</p>
+</li>
+</ul>
   </div>
   <footer id="page_footer">
-    <p>Who needs a footer?</p>
+    <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo-mono-orange.png" alt="Push logo monochrome"></a>
+    <p>
+    Design &amp; content &copy; Push.
+    Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative
+    Commons</a>. Hosted on <a href="http://pages.github.com/">GitHub Pages</a>. Complete source
+    and all content <a href="https://github.com/cwcon/push">available on GitHub</a>. Powered by
+    <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+    <a href="http://sass-lang.com/">SASS</a>,
+    <a href="https://github.com/hendricius/jekyll-sass">Jekyll-Sass</a>,
+    <a href="https://github.com/necolas/normalize.css">normalize.css</a>,
+    <a href="http://daringfireball.net/projects/markdown/">Markdown</a>,
+    <a href="https://typekit.com/">TypeKit</a>,
+    and <a href="http://github.com/">GitHub</a>.
+    </p>
   </footer>
+
 </div>
 </body>
 </html>

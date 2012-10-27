@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Push: Style Guide</title>
+  <meta name="description" content="Push: Research &amp; Applied Theory in Writing with Source">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/push.css">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/assets/img/apple-touch-icon-precomposed.png">
+  <script type="text/javascript" src="//use.typekit.net/gnd2jel.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35853537-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</head>
+<body id="style_guide_page">
+<div id="page">
+    <header id="page_header">
+    <div id="logo">
+      <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo.png" alt="Push logo" /></a>
+    </div>
+    <hgroup>
+      <h1><a href="http://push.cwcon.org/" rel="home">Push</a></h1>
+      <h2>Research <i>&amp;</i> Applied Theory in Writing with Source</h2>
+    </hgroup>
+    <nav id="site_nav">
+      <ul>
+        <li><a href="/issues/">Issues</a></li>
+        <li><a href="/contribute/">Contribute</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="content">
+    <h1 id='the_push_style_guide'>The Push style guide</h1>
+
+<p>This document needs a lot of help, and will emerge in a fuller form over time.</p>
+
+<h2 id='source_formatting'>Source Formatting</h2>
+
+<p><em>Push</em> is nothing but a collection of plain-text files. To keep everything uniform and readable, set up your editor to the following conventions (Google around for help with your specific editor):</p>
+
+<ol>
+<li>Use UTF-8 (Unicode) encoding without the byte-order mark (BOM)</li>
+
+<li>Use Unix-style line endings (LF), not Windows-style (CR)</li>
+
+<li>Indent using two spaces, not tab characters (many editors can be configured to insert two spaces automatically when you press the Tab key)</li>
+
+<li>Hard-wrap long lines of text to under 100 characters</li>
+</ol>
+
+<h2 id='markdown_styles'>Markdown Styles</h2>
+
+<p>All of <em>Push</em>’s content pages, as well as its blog posts and article submissions, are written in <a href='http://daringfireball.net/projects/markdown/syntax'>Markdown</a>. Cross-reference the <a href=''>source of this page</a> to see how the Markdown styles are achieved.</p>
+
+<h3 id='headings'>Headings</h3>
+
+<p>There are four levels of headings available on <em>Push</em>:</p>
+
+<h1 id='heading_one_is_in_sentence_case_and_used_for_the_title_of_a_pagepostarticle'>Heading one is in sentence case, and used for the title of a page/post/article</h1>
+
+<h2 id='heading_two_is_in_title_case_used_for_major_headings'>Heading Two is in Title Case, Used for Major Headings</h2>
+
+<h3 id='heading_three_is_title_case_used_to_subdivide_content_under_major_headings'>Heading Three is Title Case, Used to Subdivide Content under Major Headings</h3>
+
+<h4 id='heading_four_is_sentence_case_used_to_subdivide_headingthree_content'>Heading four is sentence case, used to subdivide heading-three content</h4>
+
+<h3 id='paragraphs'>Paragraphs</h3>
+
+<p>Paragraphs are just blocks of text with a line of white space above and below.</p>
+
+<h3 id='lists'>Lists</h3>
+
+<p>Use lists with abandon. There are two kinds availble to use, unordered (bulleted) and ordered (numbered).</p>
+
+<h4 id='unordered_lists'>Unordered Lists</h4>
+
+<ul>
+<li>
+<p><strong>Start each item with an asterisk</strong>, <code>*</code>, just like you would in plain-text email.</p>
+</li>
+
+<li>
+<p><strong>You can bold the opening phrase</strong> for emphasis.</p>
+</li>
+
+<li>
+<p><strong>List items can contain multiple paragraphs</strong>; just separate each item with a line of white space.</p>
+
+<p>And then the paragraph stays with the list item.</p>
+</li>
+</ul>
+
+<h4 id='ordered_lists'>Ordered Lists</h4>
+
+<ol>
+<li>
+<p><strong>Ordered lists are useful for steps/enumeration</strong>. Use them when you have a set of things you want to refer to by number elsewhere in your text.</p>
+</li>
+
+<li>
+<p><strong>Ordered lists begin with a number and period</strong>. You can write out the actual numbers, or just keep using <code>1.</code> over and over, which keeps things simple if you need to add an item in the middle of a list.</p>
+</li>
+</ol>
+
+<h3 id='footnotes_and_citation'>Footnotes and Citation</h3>
+
+<p>Citation will be handled through hyperlinks and footnotes. However, footnotes are only for citation, not for asides or other ancillary material.</p>
+
+<h4 id='articles'>Articles</h4>
+
+<p>Citation in <em>Push</em> articles will be handled as footnotes, according to the Chicago Manual of Style.<sup id='fnref:1'><a href='#fn:1' rel='footnote'>1</a></sup> In the running text, you’ll put a unique marker for each source, following terminal punctuation, e.g.,</p>
+
+<pre><code>According to the Chicago Manual of Style,[^cms]</code></pre>
+
+<p>Then, at the very bottom of your article, build a list of your footnotes:</p>
+
+<pre><code>[^cms]: Chicago Manual of Style</code></pre>
+
+<p>When it makes sense to hyperlink to Web-available materials (for example, to documentation, language references, or live versions of a project you’re writing about), use hyperlinks.</p>
+
+<h4 id='blog_posts'>Blog posts</h4>
+
+<p>Citation on the <em>Push</em> blog will be to use hyperlinks as the primary means of citation, and footnotes for only for non-web-available materials. To avoid conflicts between blog posts on the same page, prefix each footnote marker with your initials, e.g., <code>[^kas_cms]</code>.</p>
+
+<h3 id='block_quotes'>Block Quotes</h3>
+
+<blockquote>
+<p>Block quotes begin with <code>&gt;</code>; indent two spaces and mark each new line of the block quote with a new <code>&gt;</code>, for easy source reading. Then, on an empty new line, List the source if the block quote is an epigraph.</p>
+
+<p>Karl Stolley, <em>Push Style Guide</em></p>
+</blockquote>
+
+<p>For block quotes with cited material, you’ll use the same formatting as above, but rather than a source, you’ll use the Markdown/Maruku footnote syntax, as with inline citation.</p>
+
+<h3 id='syntax_highlighting'>Syntax Highlighting</h3>
+
+<p><em>Push</em> will be publishing articles and blog posts containing lots of source code.</p>
+
+<p>You’ll open, as in the examples below, with a <code>{% highlight %}</code> statement that contains the name of the language your sources is in. <em>Push</em>/Jekyll uses <a href='http://pygments.org/'>Pygments</a> to handle syntax highlighting, and there are <a href='http://pygments.org/languages/'>quite a few</a> languages supported.</p>
+
+<p>Always put in your example the name of the language first, as a comment in the style of the language. Optionally, use a hyphen separated by spaces to add the specific file name you’re referring to.</p>
+
+<p>E.g., to render HTML, one would write this in the Markdown (note that you do <em>not</em> need to escape HTML into enities, which makes copying and pasting a breeze):</p>
+
+<pre><code>{% highlight html %}
+&lt;!-- HTML --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+{% endhighlight %}</code></pre>
+
+<p>And see this output:</p>
+<div class='highlight'><pre><code class='html'><span class='c'>&lt;!-- HTML --&gt;</span>
+<span class='cp'>&lt;!DOCTYPE html&gt;</span>
+<span class='nt'>&lt;html</span> <span class='na'>lang=</span><span class='s'>&quot;en&quot;</span><span class='nt'>&gt;</span>
+</code></pre>
+</div>
+<p>Here’s a CSS example, and its output; note the <code>linenos</code> argument to output line numbers:</p>
+
+<pre><code>{% highlight css linenos %}
+/* CSS - screen.css */
+footer {
+  font-family: Times;
+  border-top: 1px solid #fff;
+}
+{% endhighlight %}</code></pre>
+<div class='highlight'><pre><code class='css'><span class='lineno'>1</span> <span class='c'>/* CSS - screen.css */</span>
+<span class='lineno'>2</span> <span class='nt'>footer</span> <span class='p'>{</span>
+<span class='lineno'>3</span>   <span class='k'>font-family</span><span class='o'>:</span> <span class='n'>Times</span><span class='p'>;</span>
+<span class='lineno'>4</span>   <span class='k'>border-top</span><span class='o'>:</span> <span class='m'>1px</span> <span class='k'>solid</span> <span class='m'>#fff</span><span class='p'>;</span>
+<span class='lineno'>5</span> <span class='p'>}</span>
+</code></pre>
+</div>
+<p>And finally, one for Ruby:</p>
+
+<pre><code>{% highlight ruby %}
+# Ruby - journals_controller.rb
+@journal = Journal.new
+{% endhighlight %}</code></pre>
+<div class='highlight'><pre><code class='ruby'><span class='c1'># Ruby - journals_controller.rb</span>
+<span class='vi'>@journal</span> <span class='o'>=</span> <span class='no'>Journal</span><span class='o'>.</span><span class='n'>new</span>
+</code></pre>
+</div><div class='footnotes'><hr /><ol><li id='fn:1'>
+<p><em>Chicago Manual of Style</em>, 16th ed. (Chicago: University of Chicago Press, 2010), 14.19-14.23.</p>
+<a href='#fnref:1' rev='footnote'>&#8617;</a></li></ol></div>
+  </div>
+  <footer id="page_footer">
+    <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo-mono-orange.png" alt="Push logo monochrome"></a>
+    <p>
+    Design &amp; content &copy; Push.
+    Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative
+    Commons</a>. Hosted on <a href="http://pages.github.com/">GitHub Pages</a>. Complete source
+    and all content <a href="https://github.com/cwcon/push">available on GitHub</a>. Powered by
+    <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+    <a href="http://sass-lang.com/">SASS</a>,
+    <a href="https://github.com/hendricius/jekyll-sass">Jekyll-Sass</a>,
+    <a href="https://github.com/necolas/normalize.css">normalize.css</a>,
+    <a href="http://daringfireball.net/projects/markdown/">Markdown</a>,
+    <a href="https://typekit.com/">TypeKit</a>,
+    and <a href="http://github.com/">GitHub</a>.
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

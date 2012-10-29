@@ -29,7 +29,7 @@ There are many different ways you can contribute to *Push*.
   [See the full submission instructions.](/blog/instructions.html).
 
 * **Submit an article**: Read the [call for papers](/cfp.html). It’s the shortest CFP in the world.
-  Have an idea that you’d like before you write?
+  Have an idea that you’d like feedback on before you write?
   [Open a new issue](https://github.com/cwcon/push/issues/new) on GitHub and write `QUERY:`
   at the beginning of the title.
 

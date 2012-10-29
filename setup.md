@@ -209,7 +209,7 @@ purchase Travis Swicegood’s [Pragmatic Version Control Using Git](http://pragp
 
 Features and fixes for *Push* should be kept on separate, topical branches. In this case, we’ll
 pretend someone is on a typo-fixing rampage. All of the fixes, in other words, are catching typos.
-No major content rewrites, or CSS style fixes, or anything like that (each of those would get there
+No major content rewrites, or CSS style fixes, or anything like that (each of those would get their
 own feature branch).
 
 1. To prepare a topical branch for typos, run:

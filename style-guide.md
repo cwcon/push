@@ -24,7 +24,7 @@ set up your editor to the following conventions (Google around for help with you
 
 All of *Push*’s content pages, as well as its blog posts and article submissions, are written in
 [Markdown](http://daringfireball.net/projects/markdown/syntax). Cross-reference the
-[source of this page]() to see how the Markdown styles are achieved.
+[source of this page](https://raw.github.com/cwcon/push/master/style-guide.md) to see how the Markdown styles are achieved.
 
 ### Headings
 
@@ -89,9 +89,9 @@ language references, or live versions of a project you’re writing about), use 
 
 #### Blog posts
 
-Citation on the *Push* blog will be to use hyperlinks as the primary means of citation, and
-footnotes for only for non-web-available materials. To avoid conflicts between blog posts on the
-same page, prefix each footnote marker with your initials, e.g., `[^kas_cms]`.
+Hyperlinks will be the primary means of citation on the *Push* blog. Use footnotes only for
+non-web-available materials. To avoid conflicts between blog posts on the same page, prefix each
+footnote marker with your initials, e.g., `[^kas_cms]`.
 
 ### Block Quotes
 
@@ -109,16 +109,16 @@ source, you’ll use the Markdown/Maruku footnote syntax, as with inline citatio
 *Push* will be publishing articles and blog posts containing lots of source code.
 
 You’ll open, as in the examples below, with a {% raw %}`{% highlight %}`{% endraw %} statement that
-contains the name of the language your sources is in. *Push*/Jekyll uses
+contains the name of the language in your source example. *Push*/Jekyll uses
 [Pygments](http://pygments.org/) to handle syntax highlighting, and there are
 [quite a few](http://pygments.org/languages/) languages supported.
 
-Always put in your example the name of the language first, as a comment in the style of the
-language. Optionally, use a hyphen separated by spaces to add the specific file name you’re
-referring to.
+The first line of each example should also contain the name of the language in a comment in the
+language’s comment syntax. Optionally, use a hyphen separated by spaces to add the specific file
+name you’re referring to.
 
-E.g., to render HTML, one would write this in the Markdown (note that you do *not* need to escape
-HTML into enities, which makes copying and pasting a breeze):
+For example, to render HTML, one would write this in the Markdown (note that you do *not* need to
+escape HTML into entities, which makes copying and pasting a breeze):
 
 {% raw %}
     {% highlight html %}

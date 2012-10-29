@@ -181,6 +181,18 @@ header#page_header {
       border-bottom: 0px;
     }
   }
+  section {
+    h1:first-child,
+    h2:first-child,
+    h3:first-child,
+    h4:first-child,
+    h5:first-child,
+    h6:first-child {
+        font-size: $baseFontSize;
+        border-bottom: 0px;
+        margin-bottom: $baseLineHeight / 2;
+    }
+  }
   footer {
     background: lighten($secondaryAccent, 35%);
     font-family: $sansFont;

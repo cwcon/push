@@ -173,6 +173,7 @@ header#page_header {
     h1 {
       color: $black;
       margin: 0 0 $baseLineHeight * .25 0;
+      line-height: $baseLineHeight * .85;
     }
     h2 {
       font-size: $baseFontSize;

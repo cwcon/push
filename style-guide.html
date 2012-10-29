@@ -63,7 +63,7 @@
 
 <h2 id='markdown_styles'>Markdown Styles</h2>
 
-<p>All of <em>Push</em>’s content pages, as well as its blog posts and article submissions, are written in <a href='http://daringfireball.net/projects/markdown/syntax'>Markdown</a>. Cross-reference the <a href=''>source of this page</a> to see how the Markdown styles are achieved.</p>
+<p>All of <em>Push</em>’s content pages, as well as its blog posts and article submissions, are written in <a href='http://daringfireball.net/projects/markdown/syntax'>Markdown</a>. Cross-reference the <a href='https://raw.github.com/cwcon/push/master/style-guide.md'>source of this page</a> to see how the Markdown styles are achieved.</p>
 
 <h3 id='headings'>Headings</h3>
 
@@ -133,7 +133,7 @@
 
 <h4 id='blog_posts'>Blog posts</h4>
 
-<p>Citation on the <em>Push</em> blog will be to use hyperlinks as the primary means of citation, and footnotes for only for non-web-available materials. To avoid conflicts between blog posts on the same page, prefix each footnote marker with your initials, e.g., <code>[^kas_cms]</code>.</p>
+<p>Hyperlinks will be the primary means of citation on the <em>Push</em> blog. Use footnotes only for non-web-available materials. To avoid conflicts between blog posts on the same page, prefix each footnote marker with your initials, e.g., <code>[^kas_cms]</code>.</p>
 
 <h3 id='block_quotes'>Block Quotes</h3>
 
@@ -149,11 +149,11 @@
 
 <p><em>Push</em> will be publishing articles and blog posts containing lots of source code.</p>
 
-<p>You’ll open, as in the examples below, with a <code>{% highlight %}</code> statement that contains the name of the language your sources is in. <em>Push</em>/Jekyll uses <a href='http://pygments.org/'>Pygments</a> to handle syntax highlighting, and there are <a href='http://pygments.org/languages/'>quite a few</a> languages supported.</p>
+<p>You’ll open, as in the examples below, with a <code>{% highlight %}</code> statement that contains the name of the language in your source example. <em>Push</em>/Jekyll uses <a href='http://pygments.org/'>Pygments</a> to handle syntax highlighting, and there are <a href='http://pygments.org/languages/'>quite a few</a> languages supported.</p>
 
-<p>Always put in your example the name of the language first, as a comment in the style of the language. Optionally, use a hyphen separated by spaces to add the specific file name you’re referring to.</p>
+<p>The first line of each example should also contain the name of the language in a comment in the language’s comment syntax. Optionally, use a hyphen separated by spaces to add the specific file name you’re referring to.</p>
 
-<p>E.g., to render HTML, one would write this in the Markdown (note that you do <em>not</em> need to escape HTML into enities, which makes copying and pasting a breeze):</p>
+<p>For example, to render HTML, one would write this in the Markdown (note that you do <em>not</em> need to escape HTML into entities, which makes copying and pasting a breeze):</p>
 
 <pre><code>{% highlight html %}
 &lt;!-- HTML --&gt;

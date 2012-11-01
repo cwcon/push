@@ -33,7 +33,7 @@ All article submissions to *Push* should be:
 * Tracked in Git on a dedicated `submission` branch in your copy of the repository
 * Submitted as a pull request on GitHub
 
-See the [setup guide](/setup.html) and the [style guide](/style-guide.html) for more information.
+See the [setup guide](/setup/) and the [style guide](/style-guide.html) for more information.
 
 ## Queries Prior to Writing & Submitting
 

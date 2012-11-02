@@ -4,19 +4,47 @@ layout: page
 id: setup_fork_and_clone
 ---
 
-## Getting Your Copy of Push
+# Get a Copy of Push
 
-The last step is to get your own copy of Push, and put it in a place you’ll be able to find.
+To submit or contribute to *Push*, you need to get a copy of it. There’s two steps to this: the
+first takes place on GitHub, and the second on your computer.
+
+## Screencast
+
+//Embed code goes here.//
+
+[View HD video at Youtube.com](#video).
+
+## Step-by-Step Instructions
+
+### On GitHub
+*You only need to do this once.*
+
+1. Log into your GitHub account, and then [go to the *Push* repository page](https://github.com/cwcon/push/).
+
+1. Locate the Fork button in the upper right-hand part of your screen, and click it.
+
+1. You’ll see a cute little animation from GitHub, reinforcing the idea that “forking” is really
+   just another word for copying.
+
+1. When the forking process is complete, you’ll see at the top of your page an SSH URL, something
+   that looks like `git@github.com:USERNAME/push.git`, with your username instead of `USERNAME`.
+   Copy that URL to your operating system’s clipboard.
+
+### On Your Computer
+*You only need to do this once.*
 
 1. Fire up your command line (called Terminal in Mac and some Linuxes), and make sure that you’re
    in your home directory by running
 
         $ cd
 
-   (note that `$` is just a convention for the command-line prompt; you don’t actually type it).
+   Note that `$` is just a convention for indicating the command-line prompt; you don’t actually
+   type it. Also, it is also convention to hit the <kbd>Return</kbd> or <kbd>Enter</kbd> key at the
+   end of each line of command-line input.
 
-1. Create a directory, called `Projects`, where you’ll keep all of your Git repositories, including
-   the one for *Push*:
+1. Create a directory, called `Projects`. It’s something of a convention to keep all Git
+   repositories in a directory of that name.
 
         $ mkdir Projects
 
@@ -24,28 +52,72 @@ The last step is to get your own copy of Push, and put it in a place you’ll be
 
         $ cd Projects
 
-1. Log in to GitHub, and [fork a copy of the *Push* repository](https://github.com/cwcon/push/fork).
-   When the forking process is complete, you’ll see at the top of your page an SSH URL, something
-   that looks like `git@github.com:USERNAME/push.git`, with your username instead of `USERNAME`.
-
-1. Back at the command line, you’ll clone a copy of the *Push* repository:
+1. Now you’ll get a copy of the *Push* repository that you can work on. Just as “forking” was the
+  word for making a copy of *Push* on GitHub, “cloning” pulls down a copy of *Push* to your
+  computer. Type `git clone` at the command line, and type or paste in the URL you copied in the
+  last step in the GitHub instructions above. It’ll look something like:
 
         $ git clone git@github.com:USERNAME/push.git
 
-   but using, of course, your username intead of the `USERNAME` example above.
+   but you’ll see your username instead of the `USERNAME` in the example above.
 
-1. Change into the *Push* directory where your copy is:
+   When you hit <kbd>return</kbd> on that command, you’ll see some output not unlike:
+
+        Cloning into 'push'...
+        remote: Counting objects: 657, done.
+        remote: Compressing objects: 100% (338/338), done.
+        remote: Total 657 (delta 312), reused 606 (delta 261)
+        Receiving objects: 100% (657/657), 329.38 KiB, done.
+        Resolving deltas: 100% (312/312), done.
+
+   If you get a message like “Permission denied (public key),” be sure that you have followed
+   [GitHub’s instructions]() for setting up SSH keys on your computer, and try the `git clone`
+   command above again.
+
+1. To double-check that you have your copy, change into the *Push* directory where your copy is:
 
         $ cd push
 
-1. If you run `$ git branch`, you’ll see you’re on the `master` branch. Never do any work on
-   `master`; instead, keep it in sync with the upstream `push` repository. To do that, run
+   and then run the directory-listing command `ls -goF`, which will show you output similar to that
+   below:
 
-        $ git remote add upstream git://github.com/cwcon/push.git
+        $ ls -goF
+        total 104
+        -rw-r--r--  1     15 Nov  2 12:02 CNAME
+        -rw-r--r--  1     61 Nov  2 12:02 Gemfile
+        -rw-r--r--  1    745 Nov  2 12:02 README.md
+        -rw-r--r--  1    139 Nov  2 12:02 _config.yml
+        drwxr-xr-x  6    204 Nov  2 12:02 _includes/
+        drwxr-xr-x  5    170 Nov  2 12:02 _layouts/
+        drwxr-xr-x  3    102 Nov  2 12:02 _plugins/
+        drwxr-xr-x  5    170 Nov  2 12:02 _posts/
+        drwxr-xr-x  2     68 Nov  2 12:02 _site/
+        drwxr-xr-x  4    136 Nov  2 12:02 about/
+        drwxr-xr-x  4    136 Nov  2 12:02 assets/
+        drwxr-xr-x  4    136 Nov  2 12:02 blog/
+        -rw-r--r--  1   1677 Nov  2 12:02 cfp.md
+        drwxr-xr-x  4    136 Nov  2 12:02 contribute/
+        -rw-r--r--  1   1907 Nov  2 12:02 index.md
+        drwxr-xr-x  3    102 Nov  2 12:02 issues/
+        -rwxr-xr-x  1     40 Nov  2 12:02 serve.sh*
+        -rw-r--r--  1   9978 Nov  2 12:02 setup.md
+        -rw-r--r--  1   5735 Nov  2 12:02 style-guide.md
+        drwxr-xr-x  3    102 Nov  2 12:02 submissions/
 
-   Periodically, you can checkout the `master` branch and keep it up-to-date by running
+   That’s just a listing of all the files and directories (those entries ending with a slash, `/`)
+  that make up *Push*’s source files.
 
-        $ git checkout master
-        $ git pull upstream master
+1. One last check: if you run `$ git status`, you’ll see a notice that you are on the `master`
+   branch, and a message stating that there is nothing to commit:
 
-1. Finally, run `$ bundle install` to install the required Gems for running Push locally.
+        $ git status
+        # On branch master
+        nothing to commit, working directory clean
+
+   That message is enough to indicate that, in addition to receiving all of the files for *Push*,
+   you also have a functioning Git repository to work within.
+
+## Next Steps
+
+Now that you have your copy,
+[it’s time to set up your workspace for your submission/contribution](/setup/branching.md).

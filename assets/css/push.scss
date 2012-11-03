@@ -246,6 +246,22 @@ header#page_header {
 	  word-wrap: break-word;                 /* IE 5.5+ and up */
   }
 
+/* Responsive/elastic videos*/
+/* Taken from http://avexdesigns.com/responsive-youtube-embed/ */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    margin-bottom: $baseLineHeight /2;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
 /* Footnotes */
 div.footnotes {
   margin-top: $baseLineHeight;

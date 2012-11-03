@@ -6,14 +6,16 @@ id: setup_fork_and_clone
 
 # Get a Copy of Push
 
-To submit or contribute to *Push*, you need to get a copy of it. There’s two steps to this: the
+To submit or contribute to *Push*, you need to get a copy of it. There are two parts to that: the
 first takes place on GitHub, and the second on your computer.
 
 ## Screencast
 
-//Embed code goes here.//
+<div class="video-container">
+  <iframe width="1280" height="720" src="http://www.youtube.com/embed/OXJAfq3xPVI?rel=0" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
+</div>
 
-[View HD video at Youtube.com](#video).
+[View HD video at YouTube.com](http://www.youtube.com/watch_popup?v=OXJAfq3xPVI&hd=1).
 
 ## Step-by-Step Instructions
 
@@ -24,7 +26,7 @@ first takes place on GitHub, and the second on your computer.
 
 1. Locate the Fork button in the upper right-hand part of your screen, and click it.
 
-1. You’ll see a cute little animation from GitHub, reinforcing the idea that “forking” is really
+1. You’ll see a cute little animation from GitHub, reinforcing the idea that “forking” is basically
    just another word for copying.
 
 1. When the forking process is complete, you’ll see at the top of your page an SSH URL, something
@@ -40,11 +42,11 @@ first takes place on GitHub, and the second on your computer.
         $ cd
 
    Note that `$` is just a convention for indicating the command-line prompt; you don’t actually
-   type it. Also, it is also convention to hit the <kbd>Return</kbd> or <kbd>Enter</kbd> key at the
+   type it. Also, be sure to always hit the <kbd>Return</kbd> or <kbd>Enter</kbd> key at the
    end of each line of command-line input.
 
 1. Create a directory, called `Projects`. It’s something of a convention to keep all Git
-   repositories in a directory of that name.
+   repositories in a directory of that name, but you can choose another if you’d like.
 
         $ mkdir Projects
 
@@ -53,9 +55,9 @@ first takes place on GitHub, and the second on your computer.
         $ cd Projects
 
 1. Now you’ll get a copy of the *Push* repository that you can work on. Just as “forking” was the
-  word for making a copy of *Push* on GitHub, “cloning” pulls down a copy of *Push* to your
-  computer. Type `git clone` at the command line, and type or paste in the URL you copied in the
-  last step in the GitHub instructions above. It’ll look something like:
+   word for making a copy of *Push* on GitHub, “cloning” pulls down a copy of *Push* to your
+   computer. Type `git clone` at the command line, and type or paste in the URL you copied in the
+   last step in the GitHub instructions above. It’ll look something like:
 
         $ git clone git@github.com:USERNAME/push.git
 
@@ -71,14 +73,14 @@ first takes place on GitHub, and the second on your computer.
         Resolving deltas: 100% (312/312), done.
 
    If you get a message like “Permission denied (public key),” be sure that you have followed
-   [GitHub’s instructions]() for setting up SSH keys on your computer, and try the `git clone`
-   command above again.
+   [GitHub’s instructions](https://help.github.com/articles/generating-ssh-keys) for setting up SSH
+   keys on your computer, and try the `git clone` command above again.
 
 1. To double-check that you have your copy, change into the *Push* directory where your copy is:
 
         $ cd push
 
-   and then run the directory-listing command `ls -goF`, which will show you output similar to that
+   and then run the directory-listing command `ls -Fog`, which will show you output similar to that
    below:
 
         $ ls -goF
@@ -105,7 +107,7 @@ first takes place on GitHub, and the second on your computer.
         drwxr-xr-x  3    102 Nov  2 12:02 submissions/
 
    That’s just a listing of all the files and directories (those entries ending with a slash, `/`)
-  that make up *Push*’s source files.
+   that make up *Push*’s source files.
 
 1. One last check: if you run `$ git status`, you’ll see a notice that you are on the `master`
    branch, and a message stating that there is nothing to commit:
@@ -120,4 +122,4 @@ first takes place on GitHub, and the second on your computer.
 ## Next Steps
 
 Now that you have your copy,
-[it’s time to set up your workspace for your submission/contribution](/setup/branching.md).
+[it’s time to set up your workspace for your submission/contribution](/setup/branching.html).

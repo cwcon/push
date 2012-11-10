@@ -168,6 +168,10 @@ header#page_header {
     font-size: $baseFontSize;
     text-transform: uppercase;
     letter-spacing: .05em;
+    code {
+      text-transform: none;
+      font-weight: normal;
+    }
   }
   header {
     h1 {

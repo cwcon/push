@@ -4,7 +4,7 @@ layout: page
 id: setup_fork_and_clone
 ---
 
-# Get a Copy of Push
+# Get a copy of Push
 
 To submit or contribute to *Push*, you need to get a copy of it. There are two parts to that: the
 first takes place on GitHub, and the second on your computer.

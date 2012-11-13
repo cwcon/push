@@ -66,6 +66,11 @@ the written instructions suggest.
 The basics above are all you need to successfully contribute to *Push*. But if you want to dig
 deeper and impress your friends, dive into some of these advanced topics.
 
+* ### [Change File Names in Git](/setup/change-file-names.html)
+
+  Did you change your article or blog post title after you started writing? Do you want to
+  update the date on your blog post files? There’s a special way to do that in Git.
+
 * ### [Keep Your Copy of *Push* Updated](/setup/stay-updated.html)
 
   Once you make a copy of *Push*, you have to keep it up to date. And you’ll want to start

@@ -5,6 +5,7 @@ This is the home for a new, radically open-access & open-reviewed journal.
 ## To-Do List
 * Improved instructions for cloning, branching, pushing, and submitting pull requests (esp. for blog
   and article submissions)
+* Create a setup.html layout with links to opening an issue and in the head, `<small>Setup</small>`
 * Add `description:` metadata to all core page YAML frontmatter & load into the `<head>` on the page
   template
 

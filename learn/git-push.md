@@ -25,4 +25,4 @@ id: setup_git_push
 ## Next Steps
 
 Once you’ve pushed your blog post or submission branch, you can officially submit to *Push*.
-[Just open a pull request](/setup/pull-requests.html).
+[Just open a pull request](/learn/pull-requests.html).

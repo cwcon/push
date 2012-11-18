@@ -122,4 +122,4 @@ first takes place on GitHub, and the second on your computer.
 ## Next Steps
 
 Now that you have your copy,
-[it’s time to set up your workspace for your submission/contribution](/setup/branching.html).
+[it’s time to set up your workspace for your submission/contribution](/learn/branching.html).

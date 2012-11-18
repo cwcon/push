@@ -20,6 +20,6 @@ id: instructions
 1. Make adjustments to your article as warranted by the open review, and push to GitHub (your pull
    request will automatically update after you push your changes).
 
-See the [setup instructions](/setup/) and [style guide](/style-guide.html) for additional
+See the [setup instructions](/learn/) and [style guide](/style-guide.html) for additional
 information and guidance. And if you need a question answered, just
 [open an Issue on the *Push* repository](https://github.com/cwcon/push/issues/new).

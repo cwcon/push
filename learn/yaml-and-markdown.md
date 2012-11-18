@@ -94,7 +94,7 @@ text following a `>` on an indented new line of text, and to keep the lines inde
    biography are indented uniformly.
 
 4. At this point, you would probably want to make a commit to your Git repository, but
-   [that’s covered in another section](/setup/add-and-commit.html).
+   [that’s covered in another section](/learn/add-and-commit.html).
 
 #### Writing Content in Markdown
 
@@ -112,4 +112,4 @@ cross reference with
 
 Once you begin writing your article submission or blog post for *Push*, you’ll probably want to
 see how it will appear, so it’s time to learn
-[how to preview your work in your Web browser](/setup/previewing-work.html).
+[how to preview your work in your Web browser](/learn/previewing-work.html).

@@ -39,4 +39,4 @@ better control of what changes will be tracked, and when.
 
 As you work and build your history of commits, it’s important to share your work on GitHub--not just
 for eventual submission to *Push*, but to also back up your work to your account on GitHub’s
-servers. [It’s time to push *Push*](/setup/git-push.html).
+servers. [It’s time to push *Push*](/learn/git-push.html).

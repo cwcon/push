@@ -40,7 +40,7 @@ There are many different ways you can contribute to *Push*.
 
 * **Submit a fix or new feature for the journal itself**: All of *Push* is open-source. Fork and
   clone the repository, create a feature branch with your fix, and then submit a pull request. Read
-  the [setup guide](/setup/) and the [README.md file](https://github.com/cwcon/push#readme),
+  the [setup guide](/learn/) and the [README.md file](https://github.com/cwcon/push#readme),
   which has a To-Do section with a list of things that need doing.
 
 * **Review draft blog posts, article submissions, and journal fixes/features**: Every contribution

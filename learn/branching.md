@@ -23,7 +23,7 @@ think too much about branches (except when it’s time to create your next submi
 ### On Your Computer
 *You’ll do this each time you want to start work on a new submission/contribution.*
 
-1. Once you have [your copy of *Push*](/setup/fork-and-clone.html), change into the directory
+1. Once you have [your copy of *Push*](/learn/fork-and-clone.html), change into the directory
    where it’s stored on your computer (`~/Projects/push/`, if you’re following the instructions
    here:
 
@@ -95,11 +95,11 @@ think too much about branches (except when it’s time to create your next submi
         Switched to a new branch 'blogpost'
 
    Be sure to keep each feature fix in its own branch, and always create any new branch off of
-   `master`. [read how to keep `master` up to date](/setup/stay-updated.html) with the main *Push*
+   `master`. [read how to keep `master` up to date](/learn/stay-updated.html) with the main *Push*
    repository.
 
 ## Next Steps
 
 With a branch created and checked out for you to work,
-[you can begin writing in YAML and Markdown](/setup/yaml-and-markdown.html) for your blog post or
+[you can begin writing in YAML and Markdown](/learn/yaml-and-markdown.html) for your blog post or
 article submissions.

@@ -24,4 +24,4 @@ id: setup_pull_requests
 
 Now comes the waiting part, while other *Push* contributors review your work and offer you comments.
 Eventually, you almost certainly have to make revisions.
-[Fortunately, Git is made for revision](/setup/revise-and-push.html).
+[Fortunately, Git is made for revision](/learn/revise-and-push.html).

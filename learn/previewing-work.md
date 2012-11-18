@@ -6,7 +6,7 @@ id: setup_previewing_work
 
 # Previewing Push on Your Computer
 
-When you [clone your copy of *Push*](/setup/fork-and-clone.html), you pull down everything you need
+When you [clone your copy of *Push*](/learn/fork-and-clone.html), you pull down everything you need
 to preview the journal on your computer *exactly* as it will appear on the Web at
 [http://push.cwcon.org/](http://push.cwcon.org/)
 
@@ -78,4 +78,4 @@ restart the local Web server that runs on your computer.*
 ## Next Steps
 
 As you write and preview your work, you’ll want to [commit your changes to Git to preserve your best
-work](/setup/add-and-commit.html).
+work](/learn/add-and-commit.html).

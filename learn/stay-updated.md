@@ -34,7 +34,7 @@ that make staying in sync an easy proposition.
 
 1. You should reserve the `master` branch purely for staying in sync with the upstream Push
    repository. Don’t commit to master, or merge your commits into it. Instead,
-   [set up your own branches](/setup/branching.html) to work on submissions or fixes.
+   [set up your own branches](/learn/branching.html) to work on submissions or fixes.
 
 2. Change into the directory where you keep your copy of *Push*, and checkout the `master` branch:
 
@@ -93,7 +93,7 @@ that make staying in sync an easy proposition.
 
    If any new commits had been pulled down, you’d see them.
 
-With your up-to-date copy ready to go, [you can set up new branches](/setup/branching.html) to
+With your up-to-date copy ready to go, [you can set up new branches](/learn/branching.html) to
 work on your own *Push* submissions or fixes.
 
 #### Oops, I was messing around on `master`
@@ -117,6 +117,6 @@ Grabbed your copy of *Push* and started messing around on `master`? Not to worry
         Branch master set up to track remote branch master from upstream.
         Switched to a new branch 'master'
 
-   Now you are [free to create new branches](/setup/branching.html) to prepare your work for *Push*.
+   Now you are [free to create new branches](/learn/branching.html) to prepare your work for *Push*.
    And remember: never do anything on `master` except to run `git pull upstream master` and
    `git branch some-branch-name`.

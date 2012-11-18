@@ -47,18 +47,20 @@ text following a `>` on an indented new line of text, and to keep the lines inde
 ### On Your Computer
 *You’ll do this each time you start a new article for submission or blog post.*
 
-1. Rather than editing the `_starter.md` files directly, make a copy of them for your submission or
-   blog post. Blog post files should start with the date in `YYYY-MM-DD` format (use the current
-   date when you begin your post; the file name will be changed to the current date upon posting),
-   followed by the post’s title separated by hyphens. Here’s the procedure for a post called “My
-   Test Post” created on December 3, 2012:
+#### Writing the YAML Frontmatter
+
+1. **Blog Posts**: Rather than editing the `_starter.md` files directly, make a copy of them for
+   your submission or blog post. Blog post files should start with the date in `YYYY-MM-DD` format
+   (use the current date when you begin your post; the file name will be changed to the current date
+   upon posting), followed by the post’s title separated by hyphens. Here’s the procedure for a post
+   called “My Test Post” created on December 3, 2012:
 
         $ cd ~/Projects/push
         $ cp _posts/_starter.md _posts/2012-12-03-my-test-post.md
 
-   For article submissions, create a file with your last name (and the last names of your
-   co-authors, if you’re co-authoring) and the article title. Here is how Jim Jenkins would prepare
-   his file for an article titled “This Article Changes Everything”:
+   **Article Submissions** :For article submissions, create a file with your last name (and the last
+   names of your co-authors, if you’re co-authoring) and the article title. Here is how Jim Jenkins
+   would prepare his file for an article titled “This Article Changes Everything”:
 
         $ cp _submissions/_starter.md _posts/jenkins-this-article-changes-everything.md
 
@@ -71,4 +73,43 @@ text following a `>` on an indented new line of text, and to keep the lines inde
    Otherwise, use your text editor to find and open the file in your `push` folder inside of
    `Projects`.
 
-3.
+3. There’s no magic to writing YAML. The only catch is to make sure that you always leave a space
+   after the colon for every value. The YAML for Johnny Q. Blogger’s “My Test Post” file might look
+   like something like this:
+
+        ---
+        title: My Test Post
+        author: Johnny Q. Blogger
+        author_bio: >
+                    I blog about things, and my middle
+                    inital is Q. You’ll never guess
+                    what the ‘Q’ stands for. Trust me.
+        layout: post
+        ---
+
+        And start writing your post here, in Markdown. See the style guide at
+        http://push.cwcon.org/style-guide.html
+
+   Pretty basic; leave the `layout: ` value set to `post`. And be sure that the lines of your
+   biography are indented uniformly.
+
+4. At this point, you would probably want to make a commit to your Git repository, but
+   [that’s covered in another section](/setup/add-and-commit.html).
+
+#### Writing Content in Markdown
+
+The remainder of the file, following the second set of three hyphens, is all
+[Markdown](http://daringfireball.net/projects/markdown/syntax). If you’ve ever used a wiki,
+Markdown is somewhat like a wiki’s formatting syntax.
+
+Paragraphs are just created by two empty lines of white space (not unlike how you do a paragraph
+in an email). Headings, lists, and other features have their own syntax. You can read all about
+the preferred styles for *Push* in the [style guide](/style-guide.html)--which you may want to
+cross reference with
+[its raw Markdown source](https://raw.github.com/cwcon/push/master/style-guide.md).
+
+## Next Steps
+
+Once you begin writing your article submission or blog post for *Push*, you’ll probably want to
+see how it will appear, so it’s time to learn
+[how to preview your work in your Web browser](/setup/previewing-work.html).

@@ -88,7 +88,7 @@ deeper and impress your friends, dive into some of these advanced topics.
 
 * ### [Submit as One Commit](/setup/squashing-commits.html)
 
-  Keep reviewer’s lives easier. Let Git help you submit a single, seamless commit containing your
+  Keep reviewers’ lives easier. Let Git help you submit a single, seamless commit containing your
   changes.
 
 * ### [Collaborate with Others](/setup/multiple-remotes.html)

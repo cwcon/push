@@ -1,6 +1,6 @@
 ---
 title: Backup and Share
-layout: page
+layout: learn
 id: setup_git_push
 ---
 

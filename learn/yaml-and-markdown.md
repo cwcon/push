@@ -1,6 +1,6 @@
 ---
 title: Write in YAML and Markdown
-layout: page
+layout: learn
 id: setup_yaml_and_markdown
 ---
 

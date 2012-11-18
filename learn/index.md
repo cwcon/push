@@ -1,6 +1,6 @@
 ---
 title: Setup
-layout: page
+layout: learn
 id: setup
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Keep Your Copy of *Push* Updated
-layout: page
+layout: learn
 id: setup_stay_updated
 ---
 

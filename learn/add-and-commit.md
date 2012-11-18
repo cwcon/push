@@ -1,6 +1,6 @@
 ---
 title: Mark Major Milestones
-layout: page
+layout: learn
 id: setup_add_and_commit
 ---
 

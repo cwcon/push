@@ -1,5 +1,5 @@
 ---
 title: Pretend You Kept Your Copy of *Push* Updated
-layout: page
+layout: learn
 id: setup_git_rebase
 ---

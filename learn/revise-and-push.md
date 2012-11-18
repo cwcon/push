@@ -1,6 +1,6 @@
 ---
 title: Revise Your Contribution
-layout: page
+layout: learn
 id: setup_revise_and_push
 ---
 

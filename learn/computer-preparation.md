@@ -1,6 +1,6 @@
 ---
 title: Computer Preparation
-layout: page
+layout: learn
 id: setup_computer_preparation
 ---
 

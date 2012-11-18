@@ -1,5 +1,5 @@
 ---
 title: Change File Names in Git
-layout: page
+layout: learn
 id: setup_branching
 ---

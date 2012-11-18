@@ -1,6 +1,6 @@
 ---
 title: Submit Your Work
-layout: page
+layout: learn
 id: setup_pull_requests
 ---
 

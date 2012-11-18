@@ -1,5 +1,5 @@
 ---
 title: Submit as One Commit
-layout: page
+layout: learn
 id: setup_squashing_commits
 ---

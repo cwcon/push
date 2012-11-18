@@ -1,5 +1,5 @@
 ---
 title: Fixing Common Git Goofs
-layout: page
+layout: learn
 id: setup_fixing_git_goofs
 ---

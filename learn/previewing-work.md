@@ -1,6 +1,6 @@
 ---
 title: Preview Changes as You Work
-layout: page
+layout: learn
 id: setup_previewing_work
 ---
 

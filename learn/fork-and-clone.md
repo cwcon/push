@@ -1,6 +1,6 @@
 ---
 title: Get a Copy of Push
-layout: page
+layout: learn
 id: setup_fork_and_clone
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Set Up Your Workspace
-layout: page
+layout: learn
 id: setup_branching
 ---
 

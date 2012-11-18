@@ -1,5 +1,5 @@
 ---
 title: Collaborate with Others
-layout: page
+layout: learn
 id: setup_multiple_remotes
 ---

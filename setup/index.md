@@ -45,7 +45,7 @@ the written instructions suggest.
 
 * ### [Step 6: Mark Major Milestones](/setup/add-and-commit.html)
 
-  Git’s not a technology for around passing files & changes. It’s a revision-oriented writer’s
+  Git’s not just a technology for around passing files & changes. It’s a revision-oriented writer’s
   dream.
 
 * ### [Step 7: Backup and Share](/setup/git-push.html)

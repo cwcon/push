@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Learn: {{ page.title}}</title>
+  <meta name="description" content="Push: Research &amp; Applied Theory in Writing with Source">
+  {% include head.html %}
+</head>
+<body id="{{page.id}}_page">
+<div id="page">
+  {% include header.html %}
+  <div id="content">
+    {{ content }}
+  </div>
+  {% include footer.html %}
+</div>
+</body>
+</html>

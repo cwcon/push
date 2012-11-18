@@ -11,6 +11,14 @@
   {% include header_learn.html %}
   <div id="content">
     {{ content }}
+
+    <div class="issue">
+      <p>
+        Spot something wrong with this documentation? Please
+        <a href="https://github.com/cwcon/push/issues/new?title=Documentation+Issue:+{{ page.title | cgi_escape}}">open an Issue</a>
+        on GitHub and tell us about it, or if you can, fork, clone, fix, and open a pull request.
+      </p>
+    </div>
   </div>
   {% include footer.html %}
 </div>

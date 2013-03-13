@@ -95,7 +95,7 @@ think too much about branches (except when it’s time to create your next submi
         Switched to a new branch 'blogpost'
 
    Be sure to keep each feature fix in its own branch, and always create any new branch off of
-   `master`. [read how to keep `master` up to date](/learn/stay-updated.html) with the main *Push*
+   `master`. [Read how to keep `master` up to date](/learn/stay-updated.html) with the main *Push*
    repository.
 
 ## Next Steps

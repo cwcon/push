@@ -36,7 +36,7 @@ way.
 ## Help Wanted: Yours
 
 So, let’s get started. Read a bit more [about](/about/) the journal. Check out the initial [blog
-posts](/blog/) on the genesis and development of *Push*. Glance at the [CFP](cfp.html), which is
+posts](/blog/) on the genesis and development of *Push*. Glance at the [CFP](cfp.md), which is
 quite possibly the world’s shortest. And then learn how you can [contribute](/contribute/) to *Push*
 and help build a journal that will push the applied theory & practice of digital writing radically
 forward.

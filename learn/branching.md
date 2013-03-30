@@ -25,7 +25,7 @@ think too much about branches (except when it’s time to create your next submi
 
 1. Once you have [your copy of *Push*](/learn/fork-and-clone.html), change into the directory
    where it’s stored on your computer (`~/Projects/push/`, if you’re following the instructions
-   here:
+   here):
 
         $ cd ~/Projects/push
 
@@ -40,13 +40,14 @@ think too much about branches (except when it’s time to create your next submi
    *Push*, you’ll have access to its `master` branch. Think of the `master` branch as the official,
    approved version of *Push*.
 
-3. To prepare a submission, you’ll create your own branch to work on (and leave `master` to only
-   contain the official version of *Push*. For example, to set up your workspace for an article
-   submission to *Push*, you’ll set up a `submission` branch for yourself to work on:
+3. To prepare a submission, you’ll create your own branch to work on. Don’t do any work on the
+   `master` branch itself; it’ll simplify your life if you leave it to only contain the official
+   version of *Push*. For example, to set up your workspace to begin writing an article submission
+   to *Push*, you’ll set up a `submission` branch for yourself to work on:
 
         $ git branch submission
 
-   Run `git branch` again, and you’ll see that you now have a `submission` branch:
+   Run `git branch` again, and you’ll see that Git now lists a `submission` branch:
 
        $ git branch
        * master
@@ -64,12 +65,12 @@ think too much about branches (except when it’s time to create your next submi
         master
         * submission
 
-   Just look for the branch with an asterisk next to it.
+   Just look for the branch with an asterisk (`*`) next to its name.
 
 ### Branches for Blog Posts or Features/Fixes to *Push*
 
 1. If you’re working on a blog post for *Push*, you would want to create a branch just for that
-   purpose. However, always create your branches off of the `master` branch, so that you’re working
+   purpose. Always create your branches off of the `master` branch, so that you’re working
    with only the official copy of *Push*. First, checkout the `master` branch:
 
         $ git checkout master
@@ -81,18 +82,19 @@ think too much about branches (except when it’s time to create your next submi
         $ git checkout blogpost
         Switched to branch 'blogpost'
 
-   Or, to create a checkout a branch at the same time, just run `git checkout -b blogpost`:
+   Or, to create and checkout a branch at the same time, just run `git checkout -b blogpost`:
 
         $ git checkout -b blogpost
         Switched to a new branch 'blogpost'
 
 2. If you’re planning to submit a fix or new feature to the core files of the journal (layouts,
    stylesheets, etc.), use the same procedures described above, but keep the name of your branch
-   descriptive of the change you’re making, e.g.,
+   descriptive of the change you’re making. For example, if you’re making some fixes to the
+   typographic styles of *Push*’s pages, you might do something like this:
 
         $ git checkout master
         $ git checkout -b typography
-        Switched to a new branch 'blogpost'
+        Switched to a new branch 'typography'
 
    Be sure to keep each feature fix in its own branch, and always create any new branch off of
    `master`. [Read how to keep `master` up to date](/learn/stay-updated.html) with the main *Push*

@@ -60,6 +60,10 @@ with the rest of the world.
    Head back over to the file in your editor, make more changes, commit them, and repeat until
    your submission is complete enough for review.
 
+6. If you run `git log` followed by the hyphen and a number (e.g., `git log -5`) you’ll see the
+   history of your commits (and others that were made to *Push* up until the moment you cloned or
+   last pulled from the main upstream repository). `-5` will show the five most recent commits.
+
 ## Next Steps
 
 As you work and build your history of commits, it’s important to share your work on GitHub--not just

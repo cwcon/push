@@ -85,26 +85,27 @@ first takes place on GitHub, and the second on your computer.
 
         $ ls -goF
         total 104
-        -rw-r--r--  1     15 Nov  2 12:02 CNAME
-        -rw-r--r--  1     61 Nov  2 12:02 Gemfile
-        -rw-r--r--  1    745 Nov  2 12:02 README.md
-        -rw-r--r--  1    139 Nov  2 12:02 _config.yml
-        drwxr-xr-x  6    204 Nov  2 12:02 _includes/
-        drwxr-xr-x  5    170 Nov  2 12:02 _layouts/
-        drwxr-xr-x  3    102 Nov  2 12:02 _plugins/
-        drwxr-xr-x  5    170 Nov  2 12:02 _posts/
-        drwxr-xr-x  2     68 Nov  2 12:02 _site/
-        drwxr-xr-x  4    136 Nov  2 12:02 about/
-        drwxr-xr-x  4    136 Nov  2 12:02 assets/
-        drwxr-xr-x  4    136 Nov  2 12:02 blog/
-        -rw-r--r--  1   1677 Nov  2 12:02 cfp.md
-        drwxr-xr-x  4    136 Nov  2 12:02 contribute/
-        -rw-r--r--  1   1907 Nov  2 12:02 index.md
-        drwxr-xr-x  3    102 Nov  2 12:02 issues/
-        -rwxr-xr-x  1     40 Nov  2 12:02 serve.sh*
-        -rw-r--r--  1   9978 Nov  2 12:02 setup.md
-        -rw-r--r--  1   5735 Nov  2 12:02 style-guide.md
-        drwxr-xr-x  3    102 Nov  2 12:02 submissions/
+        -rw-r--r--   1     15 Oct 14 14:53 CNAME
+        -rw-r--r--   1     61 Oct 14 14:53 Gemfile
+        -rw-r--r--   1   1105 Nov 18 14:00 README.md
+        -rw-r--r--   1    139 Oct 29 18:15 _config.yml
+        drwxr-xr-x   8    272 Nov 18 15:36 _includes/
+        drwxr-xr-x   6    204 Nov 18 15:29 _layouts/
+        drwxr-xr-x   3    102 Oct 14 14:53 _plugins/
+        drwxr-xr-x   5    170 Oct 29 18:15 _posts/
+        drwxr-xr-x  14    476 Nov  2 10:49 _site/
+        drwxr-xr-x   4    136 Oct 29 18:15 about/
+        drwxr-xr-x   5    170 Oct 25 13:14 assets/
+        drwxr-xr-x   4    136 Nov 13 13:40 blog/
+        -rw-r--r--   1   1673 Nov 18 15:27 cfp.md
+        drwxr-xr-x   4    136 Nov 13 13:40 contribute/
+        -rw-r--r--   1   1907 Oct 29 18:15 index.md
+        drwxr-xr-x   3    102 Oct 29 18:15 issues/
+        drwxr-xr-x  19    646 Nov 13 13:40 learn/
+        -rwxr-xr-x   1     40 Oct 14 14:53 serve.sh
+        -rw-r--r--   1   5735 Oct 29 18:15 style-guide.md
+        drwxr-xr-x   3    102 Oct 29 18:15 submissions/
+
 
    That’s just a listing of all the files and directories (those entries ending with a slash, `/`)
    that make up *Push*’s source files.

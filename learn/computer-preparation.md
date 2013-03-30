@@ -6,9 +6,7 @@ id: setup_computer_preparation
 
 # Step 0: Computer Preparation
 
-*Push* is based on a whole stack of technologies that, while powerful, are not all that common on
-most digital writers’ computers. *Push* is meant to be a learning experience for all who work on it,
-and the learning starts here.
+To contribute to *Push* (and open yourself up to other kinds of development), you’ll probably need to set up your computer with a few technologies that are described below.
 
 ## GitHub
 
@@ -22,7 +20,7 @@ Find your operating system below, and follow the instructions.
 ### Windows
 
 Don’t use Windows. Get a free Linux, like [Ubuntu](http://www.ubuntu.com/). Windows is a lot of
-things to a lot of people, but it’s not suitable for development.
+things to a lot of people, but it’s not a great choice for development.
 
 ...OK. So you won’t listen. Fine. Pick up a copy of [Rails Installer](http://railsinstaller.org/).
 That will give you the things you need: Git, a Linux-like command line in the form of GitBash,

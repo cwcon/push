@@ -36,6 +36,8 @@ To set up Pygments, you’ll need to install [Python for Windows](http://www.pyt
 Finally, follow the [GitHub instructions](https://help.github.com/articles/set-up-git) for setting up Git and your [SSH keys](https://help.github.com/articles/generating-ssh-keys). And no matter what
 GitHub advertises, don’t be tempted by a Git GUI client. Learn the command line, *Push*-style.
 
+**Next Steps**: With your computer prepared and Git aware of your email address and name, you can now [get your own copy of the *Push* repository](/learn/fork-and-clone.html).
+
 ### Mac
 
 First, you’ll need to install XCode. Lion and Mountain Lion users can grab a copy from the Mac App
@@ -67,6 +69,8 @@ Finally, follow the [GitHub instructions](https://help.github.com/articles/set-u
 up Git and your [SSH keys](https://help.github.com/articles/generating-ssh-keys). And no matter what
 GitHub advertises, don’t be tempted by a Git GUI client. Learn the command line, *Push*-style.
 
+**Next Steps**: With your computer prepared and Git aware of your email address and name, you can now [get your own copy of the *Push* repository](/learn/fork-and-clone.html).
+
 ### Linux
 
 If you’re on Linux, you probably know what you’re doing. Be sure to use your package manager to
@@ -77,3 +81,5 @@ Install Python, too, if it’s not already on your system, and use `easy_install
 Then, follow the [GitHub instructions](https://help.github.com/articles/set-up-git) for setting up
 Git and your [SSH keys](https://help.github.com/articles/generating-ssh-keys). And no matter what
 GitHub advertises, don’t be tempted by a Git GUI client. Learn the command line, *Push*-style.
+
+**Next Steps**: With your computer prepared and Git aware of your email address and name, you can now [get your own copy of the *Push* repository](/learn/fork-and-clone.html).

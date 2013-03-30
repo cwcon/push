@@ -6,9 +6,10 @@ id: setup_previewing_work
 
 # Previewing Push on Your Computer
 
-When you [clone your copy of *Push*](/learn/fork-and-clone.html), you pull down everything you need
-to preview the journal on your computer *exactly* as it will appear on the Web at
-[http://push.cwcon.org/](http://push.cwcon.org/)
+When you [clone your copy of *Push*](/learn/fork-and-clone.html), you pull down almost everything
+you need to preview the journal on your computer *exactly* as it will appear on the Web at
+[http://push.cwcon.org/](http://push.cwcon.org/). This section will cover installing and using the
+remaining pieces of technology that will run *Push* on your computer.
 
 ## Screencast
 
@@ -60,7 +61,7 @@ restart the local Web server that runs on your computer.*
      `http://localhost:4000/submissions/` and typing in the name of your article file with the
      `.html` extension (**not** `.md`). For example,
      `http://localhost:4000/submissions/jenkins-this-article-changes-everything.html` would be the
-     URL for a source filie named `submissions/jenkins-this-article-changes-everything.md`.
+     URL for a source file named `submissions/jenkins-this-article-changes-everything.md`.
 
 
    As you make changes, the HTML will be automatically regenerated, so you can preview your work
@@ -68,7 +69,7 @@ restart the local Web server that runs on your computer.*
    in your browser.
 
 3. When you are done working on *Push*, you can return to your command line terminal and stop the
-   web server. Just holding down the `Control` button and hitting the `C` key on your keyboard.
+   web server. Just hold down the `Control` key and hit the `C` key on your keyboard.
    You’ll see that your command line returns something similar to:
 
         ^C[2012-11-18 13:47:08] INFO  going to shutdown ...

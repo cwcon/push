@@ -83,7 +83,7 @@ first takes place on GitHub, and the second on your computer.
    and then run the directory-listing command `ls -Fog`, which will show you output similar to that
    below:
 
-        $ ls -goF
+        $ ls -Fog
         total 104
         -rw-r--r--   1     15 Oct 14 14:53 CNAME
         -rw-r--r--   1     61 Oct 14 14:53 Gemfile

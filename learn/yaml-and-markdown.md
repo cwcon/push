@@ -6,7 +6,11 @@ id: setup_yaml_and_markdown
 
 # Write in YAML and Markdown
 
-YAML and Markdown...
+Rather than writing directly in HTML, you can write article and blog submissions in two arguably
+simpler languages: [YAML](http://www.yaml.org/), which stands for “YAML Ain’t Markup Language” and
+is used for metadata at the top of a file that is otherwise written in
+[Markdown](http://daringfireball.net/projects/markdown/syntax#overview), a basic set of plain-text
+formatting conventions that are converted to the HTML see on the *Push* site.
 
 ## Screencast
 
@@ -20,9 +24,10 @@ YAML and Markdown...
 
 Both *Push* submissions and *Push* blog posts are begun from starter files called `_starter.md`,
 found in either `submissions/` or `_posts/`. Because the starter file for blog posts is simpler, it
-will be the example considered here. But know that the submission starter file works the same way.
+will be the example considered here. But know that the submission starter file works the same way;
+it just asks for additional information.
 
-So, let’s look at the contents of the `_posts/_starter.md` file:
+So, have a look at the contents of the `_posts/_starter.md` file:
 
     ---
     title: Post Title Here
@@ -37,12 +42,13 @@ So, let’s look at the contents of the `_posts/_starter.md` file:
 
 The top portion of the file, between the two sets of three hyphens (`---`), is known as YAML, which
 stands for [YAML Ain’t Markup Language](http://www.yaml.org/). It probably doesn’t even look like
-computer language, really. All YAML consists of is some name for a piece of data (`title`,
-`author`), followed by a colon, and then the data itself.
+computer language, really. All YAML consists of is some name for a piece of information (`title`,
+`author`), followed by a colon, and then the information itself.
 
 The only piece that looks unusual is the `author_bio: >` line; the angle bracket (`>`) just allows
-for longer, multi-line pieces of text, such as an author’s bio. The important thing is to begin the
-text following a `>` on an indented new line of text, and to keep the lines indented.
+for longer, multi-line pieces of text, such as an author’s biography. The important thing is to
+begin the text following a `>` on an indented new line of text, and to keep the lines indented
+uniformly.
 
 ### On Your Computer
 *You’ll do this each time you start a new article for submission or blog post.*
@@ -62,7 +68,7 @@ text following a `>` on an indented new line of text, and to keep the lines inde
    names of your co-authors, if you’re co-authoring) and the article title. Here is how Jim Jenkins
    would prepare his file for an article titled “This Article Changes Everything”:
 
-        $ cp _submissions/_starter.md _posts/jenkins-this-article-changes-everything.md
+        $ cp submissions/_starter.md submissions/jenkins-this-article-changes-everything.md
 
 2. You can now open the file for editing in your text editor. If you have command-line tools
    installed for opening files in your editor (like the `edit` command for TextWrangler), you
@@ -91,7 +97,7 @@ text following a `>` on an indented new line of text, and to keep the lines inde
         http://push.cwcon.org/style-guide.html
 
    Pretty basic; leave the `layout: ` value set to `post`. And be sure that the lines of your
-   biography are indented uniformly.
+   biography are indented uniformly, as Johnny Q. Blogger has done.
 
 4. At this point, you would probably want to make a commit to your Git repository, but
    [that’s covered in another section](/learn/add-and-commit.html).

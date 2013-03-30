@@ -6,6 +6,10 @@ id: setup_revise_and_push
 
 # Revise your contribution
 
+To revise your fix or submission to *Push*, you basically do what you’ve been doing: make changes,
+add and commit, and push to your copy of *Push*. Your pull request to the main *Push* repository
+will update accordingly; but below are ways to address a specific reviewer’s comments.
+
 ## Screencast
 
 <div class="video-container">
@@ -16,8 +20,20 @@ id: setup_revise_and_push
 
 ## Step-by-Step Instructions
 
+### On GitHub
+
+Watch the comments that will appear under your pull request. As you receive suggestions, you can
+discuss them further with the reviewers on GitHub.
+
 ### On Your Computer
 *You’ll do this each time you make revisions to your work.*
+
+Keep things easy for reviewers, and work on one reviewer’s feedback at a time--or if multiple
+reviewers have feedback on a similar issue, work on the issue. If you can, keep your work to address
+that issue as a single commit (or squash them into one); and when you commit, be sure to mention the
+GitHub usernames of reviewers whose feedback the commit addresses.
+
+Note that commits will show up as part of the discussion on your pull request.
 
 ## Next Steps
 

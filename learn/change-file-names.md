@@ -30,3 +30,27 @@ All that’s required now is to commit the change:
 Note that this will keep things simpler; if you use your operating system to rename a file, Git
 will think that the old file was deleted, and a new, untracked file was added. That makes for a
 messier, harder-to-follow commit history.
+
+## Need to delete a file?
+
+To delete a file that’s been committed previously, use `git rm` followed by the file name:
+
+    $ git rm 2012-12-03-my-test-post.md
+    rm '2012-12-03-my-test-post.md'
+    $ git status
+    # On branch submission
+    # Changes to be committed:
+    #   (use "git reset HEAD <file>..." to unstage)
+    #
+    #	deleted:    2012-12-03-my-test-post.md
+    #
+    $ git commit -m "Removed test post file"
+
+However, rather than deleting a file that was used for testing purposes, consider instead deleting
+the whole branch--so you keep your submissions clean:
+
+    $ git checkout master
+    $ git branch -D submission
+    Deleted branch submission (was 98d3c7d).
+
+Then [create a new branch](/learn/branching.md) to start with a clean history.

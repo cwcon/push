@@ -81,7 +81,7 @@ that make staying in sync an easy proposition.
 ### On Your Computer: Routine Tasks
 *You’ll do this each time you want to update your copy of* Push *with the upstream copy.*
 
-1. Checking again that you’re on the `master branch` first, you can then pull the latest changes
+1. Checking again that you’re on the `master branch`, you can then pull the latest changes
    from the upstream *Push* repository into your copy of `master`. In this example, your copy
    is already up to date:
 
@@ -91,16 +91,17 @@ that make staying in sync an easy proposition.
         * branch    master    -> FETCH_HEAD
         Already up-to-date.
 
-   If any new commits had been pulled down, you’d see them.
+   If any new commits had been pulled down, you’d see them listed.
 
 With your up-to-date copy ready to go, [you can set up new branches](/learn/branching.html) to
 work on your own *Push* submissions or fixes.
 
 #### Oops, I was messing around on `master`
 
-Grabbed your copy of *Push* and started messing around on `master`? Not to worry.
+Grabbed your copy of *Push* and started messing around on `master`? Not to worry. It’s easy to
+isolate your work, and restore `master` to be the same as the upstream repository.
 
-1. First, if there’s anything you’d like to save, just create a branch where you can find your work:
+1. First, if there’s anything you’d like to save, [commit it](/learn/add-and-commit.html) and then create a branch where you can find your work:
 
         $ git checkout `master`
         $ git checkout -b `messy-master`

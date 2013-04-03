@@ -53,4 +53,4 @@ the whole branch--so you keep your submissions clean:
     $ git branch -D submission
     Deleted branch submission (was 98d3c7d).
 
-Then [create a new branch](/learn/branching.md) to start with a clean history.
+Then [create a new branch](/learn/branching.html) to start with a clean history.

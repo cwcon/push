@@ -20,3 +20,4 @@ But that stuff doesn’t matter. We need to [build this thing](/contribute/) fir
 
 ## Contributors
 * [Karl Stolley](http://karlstolley.com/)
+* [Kevin Brock](http://www.brockoleur.com/)

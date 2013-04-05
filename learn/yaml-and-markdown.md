@@ -12,14 +12,6 @@ is used for metadata at the top of a file that is otherwise written in
 [Markdown](http://daringfireball.net/projects/markdown/syntax#overview), a basic set of plain-text
 formatting conventions that are converted to the HTML see on the *Push* site.
 
-## Screencast
-
-<div class="video-container">
-  <iframe width="1280" height="720" src="?rel=0" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
-</div>
-
-[View HD video at YouTube.com](http://www.youtube.com/watch_popup?v=AAAAAAAAAAAAA&hd=1).
-
 ## Step-by-Step Instructions
 
 Both *Push* submissions and *Push* blog posts are begun from starter files called `_starter.md`,

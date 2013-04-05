@@ -11,14 +11,6 @@ you need to preview the journal on your computer *exactly* as it will appear on 
 [http://push.cwcon.org/](http://push.cwcon.org/). This section will cover installing and using the
 remaining pieces of technology that will run *Push* on your computer.
 
-## Screencast
-
-<div class="video-container">
-  <iframe width="1280" height="720" src="?rel=0" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
-</div>
-
-[View HD video at YouTube.com](http://www.youtube.com/watch_popup?v=AAAAAAAAAAAAA&hd=1).
-
 ## Step-by-Step Instructions
 
 ### On Your Computer

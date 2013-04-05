@@ -10,13 +10,13 @@ id: learn
 most digital writers’ computers. *Push* is meant to be a learning experience for all who work on it,
 and the learning starts here.
 
-Each step (minus Step 0) includes a captioned screencast as well as step-by-step instructions.
-You might want to watch the screencast first; most tasks are a lot less complex and cumbersome than
-the written instructions suggest.
+Each step (minus Step 0) will eventually include a captioned screencast as well as step-by-step
+instructions; [Step 1](/learn/fork-and-clone.html) is the only step that currently has a
+screencast.[^prepnote]
 
 ## The Basics
 
-  Contribute to *Push* in nine steps (not including computer prep[^prepnote]):
+  Contribute to *Push* in nine steps (not including computer prep):
 
 * ### [Step 0: Computer Preparation](/learn/computer-preparation.html)
 

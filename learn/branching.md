@@ -10,14 +10,6 @@ Git keeps workspaces organized by branches, and that organization will help simp
 submitting to *Push*. Fortunately, once you’ve created and checked out a branch, you don’t have to
 think too much about branches (except when it’s time to create your next submission or fix).
 
-## Screencast
-
-<div class="video-container">
-  <iframe width="1280" height="720" src="?rel=0" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
-</div>
-
-[View HD video at YouTube.com](http://www.youtube.com/watch_popup?v=AAAAAAAAAAAAA&hd=1).
-
 ## Step-by-Step Instructions
 
 ### On Your Computer

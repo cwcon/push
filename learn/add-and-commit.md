@@ -11,14 +11,6 @@ think of it as something like the track-changes feature in word processors. But 
 better control of what changes will be tracked, and when. It also makes individual changes shareable
 with the rest of the world.
 
-## Screencast
-
-<div class="video-container">
-  <iframe width="1280" height="720" src="?rel=0" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
-</div>
-
-[View HD video at YouTube.com](http://www.youtube.com/watch_popup?v=AAAAAAAAAAAAA&hd=1).
-
 ## Step-by-Step Instructions
 
 ### On Your Computer

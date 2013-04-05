@@ -10,14 +10,6 @@ To revise your fix or submission to *Push*, you basically do what you’ve been 
 add and commit, and push to your copy of *Push*. Your pull request to the main *Push* repository
 will update accordingly; but below are ways to address a specific reviewer’s comments.
 
-## Screencast
-
-<div class="video-container">
-  <iframe width="1280" height="720" src="?rel=0" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
-</div>
-
-[View HD video at YouTube.com](http://www.youtube.com/watch_popup?v=AAAAAAAAAAAAA&hd=1).
-
 ## Step-by-Step Instructions
 
 ### On GitHub

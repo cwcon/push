@@ -11,14 +11,6 @@ you disconnect from the history of the repository at `cwcon/push`. Keeping in sy
 made by other contributors has to be handled manually. Fortunately, Git has methods built right in
 that make staying in sync an easy proposition.
 
-## Screencast
-
-<div class="video-container">
-  <iframe width="1280" height="720" src="?rel=0" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
-</div>
-
-[View HD video at YouTube.com](http://www.youtube.com/watch_popup?v=AAAAAAAAAAAAA&hd=1).
-
 ## Step-by-Step Instructions
 
 ### On GitHub

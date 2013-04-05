@@ -11,14 +11,6 @@ Git enabled you to transfer *Push* from GitHub down to your computer (either thr
 pull), it also allows you to transfer changes from your computer to elsewhere in the world, a
 procedure known as pushing.
 
-## Screencast
-
-<div class="video-container">
-  <iframe width="1280" height="720" src="?rel=0" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
-</div>
-
-[View HD video at YouTube.com](http://www.youtube.com/watch_popup?v=AAAAAAAAAAAAA&hd=1).
-
 ## Step-by-Step Instructions
 
 ### On Your Computer

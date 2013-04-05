@@ -9,14 +9,6 @@ id: learn_pull_requests
 You can push to your own copy of *Push* as often as you need to; once you’re ready to have your
 submission or fix reviewed, you’ll need to open a pull request on GitHub.
 
-## Screencast
-
-<div class="video-container">
-  <iframe width="1280" height="720" src="?rel=0" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
-</div>
-
-[View HD video at YouTube.com](http://www.youtube.com/watch_popup?v=AAAAAAAAAAAAA&hd=1).
-
 ## Step-by-Step Instructions
 
 ### On GitHub

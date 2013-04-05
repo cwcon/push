@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Learn: {{ page.title}}</title>
+  <meta name="description" content="Push: Research &amp; Applied Theory in Writing with Source">
+  {% include head.html %}
+</head>
+<body id="{{page.id}}_page">
+<div id="page">
+  {% include header_learn.html %}
+  <div id="content">
+    {{ content }}
+
+    <footer class="issue">
+      <h1>Documentation Is Rarely Perfect</h1>
+      <p>
+        Spot something wrong with this documentation? Please
+        <a href="https://github.com/cwcon/push/issues/new?title=Documentation+Issue:+{{ page.title | cgi_escape}}">open an Issue</a>
+        on GitHub and tell us about it, or if you can, fork, clone, fix, and open a pull request.
+      </p>
+    </footer>
+  </div>
+  {% include footer.html %}
+</div>
+</body>
+</html>

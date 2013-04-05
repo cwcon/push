@@ -26,7 +26,7 @@ There are many different ways you can contribute to *Push*.
   Once you’re ready to write a post, [fork the Push repo](https://github.com/cwcon/push/fork),
   [set up Git and GitHub](https://help.github.com/articles/set-up-git) on your computer, clone your
   fork of the repo, and create a branch called `post` where you’ll write and commit.
-  [See the full submission instructions.](/blog/instructions.html).
+  [See the brief submission instructions.](/learn/quick-instructions.html#blog_submission).
 
 * **Submit an article**: Read the [call for papers](/cfp.html). It’s the shortest CFP in the world.
   Have an idea that you’d like feedback on before you write?
@@ -36,11 +36,11 @@ There are many different ways you can contribute to *Push*.
   If you’ve not already done so, [fork the Push repo](https://github.com/cwcon/push/fork),
   set up Git and GitHub on your computer, clone your fork of the repo, and create a branch called
   `submission` where you’ll write and commit.
-  [See the full submission instructions.](instructions.html).
+  [See the brief submission instructions.](/learn/quick-instructions.html#article_submission).
 
 * **Submit a fix or new feature for the journal itself**: All of *Push* is open-source. Fork and
   clone the repository, create a feature branch with your fix, and then submit a pull request. Read
-  the [setup guide](/setup.html) and the [README.md file](https://github.com/cwcon/push#readme),
+  the [brief features and fixes submission instructions](/learn/quick-instructions.html#features_and_fixes) [setup guide](/learn/) and the [README.md file](https://github.com/cwcon/push#readme),
   which has a To-Do section with a list of things that need doing.
 
 * **Review draft blog posts, article submissions, and journal fixes/features**: Every contribution

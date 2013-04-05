@@ -9,7 +9,7 @@ id: setup_quick_instructions
 The sections below review the basic steps for creating article submissions,
 blog posts, and features/fixes for *Push* itself.
 
-If you’re a Git newbie, you might want to have a read through the full [Learn](/learn/) area on
+If you’re new to Git, you might want to have a read through the full [Learn](/learn/) area on
 the *Push* site. Additionally, there is more help to be found in the [Git Community
 Book](http://git-scm.com/book). For an excellent and thorough treatment of Git, purchase Travis
 Swicegood’s [Pragmatic Version Control Using
@@ -50,6 +50,11 @@ Git](http://pragprog.com/book/tsgit/pragmatic-version-control-using-git)
    button on GitHub on your fork of the *Push* repository. Make sure you choose the correct
    branch with your submission work from your repository when submitting your request.
 
+Need more help? [read through the *Push* Learn area](/learn/) and [style guide](/style-guide.html)
+for additional information and guidance. And if you need a question answered, just [open an Issue on
+the *Push* repository](https://github.com/cwcon/push/issues/new).
+
+
 ## Blog Submission
 
 1. To prepare a blog submission for *Push*, run
@@ -87,6 +92,10 @@ Git](http://pragprog.com/book/tsgit/pragmatic-version-control-using-git)
    button on GitHub on your fork of the *Push* repository. Make sure you choose the correct
    branch with your submission work from your repository when submitting your request.
 
+Need more help? [read through the *Push* Learn area](/learn/) and [style guide](/style-guide.html)
+for additional information and guidance. And if you need a question answered, just [open an Issue on
+the *Push* repository](https://github.com/cwcon/push/issues/new).
+
 ## Features and Fixes
 
 Features and fixes for *Push* should be kept on separate, topical branches. In this case, we’ll
@@ -113,3 +122,8 @@ own feature branch).
 1. Once your feature/fix is ready for review, submit a pull request by hitting the Pull Request
    button on GitHub on your fork of the *Push* repository. Make sure you choose the correct
    branch with your submission work from your repository when submitting your request.
+
+
+Need more help? [read through the *Push* Learn area](/learn/) for additional information and
+guidance. And if you need a question answered, just [open an Issue on the *Push*
+repository](https://github.com/cwcon/push/issues/new).

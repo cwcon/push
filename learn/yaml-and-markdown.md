@@ -1,7 +1,7 @@
 ---
 title: Write in YAML and Markdown
 layout: learn
-id: setup_yaml_and_markdown
+id: learn_yaml_and_markdown
 ---
 
 # Write in YAML and Markdown

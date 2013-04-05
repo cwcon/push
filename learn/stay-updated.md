@@ -1,7 +1,7 @@
 ---
 title: Keep Your Copy of *Push* Updated
 layout: learn
-id: setup_stay_updated
+id: learn_stay_updated
 ---
 
 # Keep your copy of Push updated

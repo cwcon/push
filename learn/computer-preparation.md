@@ -1,10 +1,10 @@
 ---
 title: Computer Preparation
 layout: learn
-id: setup_computer_preparation
+id: learn_computer_preparation
 ---
 
-# Step 0: Computer Preparation
+# Step 0: Computer preparation
 
 To contribute to *Push* (and open yourself up to other kinds of development), you’ll probably need to set up your computer with a few technologies that are described below.
 

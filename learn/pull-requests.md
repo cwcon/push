@@ -1,7 +1,7 @@
 ---
 title: Submit Your Work
 layout: learn
-id: setup_pull_requests
+id: learn_pull_requests
 ---
 
 # Submit your work

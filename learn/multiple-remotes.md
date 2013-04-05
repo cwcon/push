@@ -1,5 +1,7 @@
 ---
 title: Collaborate with Others
 layout: learn
-id: setup_multiple_remotes
+id: learn_multiple_remotes
 ---
+
+# Working with multiple remotes

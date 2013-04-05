@@ -1,7 +1,7 @@
 ---
 title: Get a Copy of Push
 layout: learn
-id: setup_fork_and_clone
+id: learn_fork_and_clone
 ---
 
 # Get a copy of Push

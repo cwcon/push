@@ -1,10 +1,10 @@
 ---
 title: Preview Changes as You Work
 layout: learn
-id: setup_previewing_work
+id: learn_previewing_work
 ---
 
-# Previewing Push on Your Computer
+# Previewing Push on your computer
 
 When you [clone your copy of *Push*](/learn/fork-and-clone.html), you pull down almost everything
 you need to preview the journal on your computer *exactly* as it will appear on the Web at

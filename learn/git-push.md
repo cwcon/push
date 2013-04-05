@@ -1,7 +1,7 @@
 ---
 title: Backup and Share
 layout: learn
-id: setup_git_push
+id: learn_git_push
 ---
 
 # Backup and share

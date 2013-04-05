@@ -1,7 +1,7 @@
 ---
 title: Pretend You Kept Your Copy of Push Updated
 layout: learn
-id: setup_git_rebase
+id: learn_git_rebase
 ---
 
 # Pretend you kept your copy of Push updated

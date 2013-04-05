@@ -1,10 +1,10 @@
 ---
-title: Setup
+title: Learn
 layout: learn
-id: setup
+id: learn
 ---
 
-# Setup
+# Learn how to contribute to Push
 
 *Push* is based on a whole stack of technologies that, while powerful, are not all that common on
 most digital writers’ computers. *Push* is meant to be a learning experience for all who work on it,

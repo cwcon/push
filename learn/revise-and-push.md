@@ -1,7 +1,7 @@
 ---
 title: Revise Your Contribution
 layout: learn
-id: setup_revise_and_push
+id: learn_revise_and_push
 ---
 
 # Revise your contribution

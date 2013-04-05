@@ -1,7 +1,7 @@
 ---
 title: Set Up Your Workspace
 layout: learn
-id: setup_branching
+id: learn_branching
 ---
 
 # Set up your workspace

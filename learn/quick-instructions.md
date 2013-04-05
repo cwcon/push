@@ -1,7 +1,7 @@
 ---
 title: Quick Instructions
 layout: learn
-id: setup_quick_instructions
+id: learn_quick_instructions
 ---
 
 # Quick instructions

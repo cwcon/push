@@ -64,7 +64,7 @@ uniformly.
         $ cd ~/Projects/push
         $ cp _posts/_starter.md _posts/2012-12-03-my-test-post.md
 
-   **Article Submissions** :For article submissions, create a file with your last name (and the last
+   **Article Submissions**: For article submissions, create a file with your last name (and the last
    names of your co-authors, if you’re co-authoring) and the article title. Here is how Jim Jenkins
    would prepare his file for an article titled “This Article Changes Everything”:
 

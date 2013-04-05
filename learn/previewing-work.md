@@ -26,7 +26,7 @@ remaining pieces of technology that will run *Push* on your computer.
 restart the local Web server that runs on your computer.*
 
 1. **Installing the required Gems**: *Push* comes with a `Gemfile`, which tells your copy of Ruby
-   what needs to be installed in order for *Push* to run properly. Simple run:
+   what needs to be installed in order for *Push* to run properly. Simply run:
 
         $ cd ~/Projects/push
         $ bundle install

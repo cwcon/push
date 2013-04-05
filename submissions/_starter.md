@@ -25,4 +25,4 @@ layout: article
 ---
 
 And start writing your article here, in Markdown. See the style guide at
-http://push.cwcon.org/style-guide.html
+http://push.cwcon.org//learn/style-guide.html

@@ -50,7 +50,7 @@ Git](http://pragprog.com/book/tsgit/pragmatic-version-control-using-git)
    button on GitHub on your fork of the *Push* repository. Make sure you choose the correct
    branch with your submission work from your repository when submitting your request.
 
-Need more help? [read through the *Push* Learn area](/learn/) and [style guide](/style-guide.html)
+Need more help? [read through the *Push* Learn area](/learn/) and [style guide](//learn/style-guide.html)
 for additional information and guidance. And if you need a question answered, just [open an Issue on
 the *Push* repository](https://github.com/cwcon/push/issues/new).
 
@@ -92,7 +92,7 @@ the *Push* repository](https://github.com/cwcon/push/issues/new).
    button on GitHub on your fork of the *Push* repository. Make sure you choose the correct
    branch with your submission work from your repository when submitting your request.
 
-Need more help? [read through the *Push* Learn area](/learn/) and [style guide](/style-guide.html)
+Need more help? [read through the *Push* Learn area](/learn/) and [style guide](//learn/style-guide.html)
 for additional information and guidance. And if you need a question answered, just [open an Issue on
 the *Push* repository](https://github.com/cwcon/push/issues/new).
 

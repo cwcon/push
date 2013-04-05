@@ -38,7 +38,7 @@ So, have a look at the contents of the `_posts/_starter.md` file:
     ---
 
     And start writing your post here, in Markdown. See the style guide at
-    http://push.cwcon.org/style-guide.html
+    http://push.cwcon.org//learn/style-guide.html
 
 The top portion of the file, between the two sets of three hyphens (`---`), is known as YAML, which
 stands for [YAML Ain’t Markup Language](http://www.yaml.org/). It probably doesn’t even look like
@@ -94,7 +94,7 @@ uniformly.
         ---
 
         And start writing your post here, in Markdown. See the style guide at
-        http://push.cwcon.org/style-guide.html
+        http://push.cwcon.org//learn/style-guide.html
 
    Pretty basic; leave the `layout: ` value set to `post`. And be sure that the lines of your
    biography are indented uniformly, as Johnny Q. Blogger has done.
@@ -110,7 +110,7 @@ Markdown is somewhat like a wiki’s formatting syntax.
 
 Paragraphs are just created by two empty lines of white space (not unlike how you do a paragraph
 in an email). Headings, lists, and other features have their own syntax. You can read all about
-the preferred styles for *Push* in the [style guide](/style-guide.html)--which you may want to
+the preferred styles for *Push* in the [style guide](//learn/style-guide.html)--which you may want to
 cross reference with
 [its raw Markdown source](https://raw.github.com/cwcon/push/master/style-guide.md).
 

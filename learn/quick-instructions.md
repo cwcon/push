@@ -1,13 +1,21 @@
-## Doing Actual Work
+---
+title: Quick Instructions
+layout: learn
+id: setup_quick_instructions
+---
 
-The sections below detail the basic ideas behind branching off to create article submissions,
+# Quick instructions
+
+The sections below review the basic steps for creating article submissions,
 blog posts, and features/fixes for *Push* itself.
 
-If you’re a Git newbie, you might want to have a read through the
-[Git Community Book](http://git-scm.com/book). For an excellent and thorough treatment of Git,
-purchase Travis Swicegood’s [Pragmatic Version Control Using Git](http://pragprog.com/book/tsgit/pragmatic-version-control-using-git)
+If you’re a Git newbie, you might want to have a read through the full [Learn](/learn/) area on
+the *Push* site. Additionally, there is more help to be found in the [Git Community
+Book](http://git-scm.com/book). For an excellent and thorough treatment of Git, purchase Travis
+Swicegood’s [Pragmatic Version Control Using
+Git](http://pragprog.com/book/tsgit/pragmatic-version-control-using-git)
 
-### Article Submission
+## Article Submission
 
 1. To prepare a submission for *Push*, run
 
@@ -42,7 +50,7 @@ purchase Travis Swicegood’s [Pragmatic Version Control Using Git](http://pragp
    button on GitHub on your fork of the *Push* repository. Make sure you choose the correct
    branch with your submission work from your repository when submitting your request.
 
-### Blog Submission
+## Blog Submission
 
 1. To prepare a blog submission for *Push*, run
 
@@ -79,7 +87,7 @@ purchase Travis Swicegood’s [Pragmatic Version Control Using Git](http://pragp
    button on GitHub on your fork of the *Push* repository. Make sure you choose the correct
    branch with your submission work from your repository when submitting your request.
 
-### Features and Fixes
+## Features and Fixes
 
 Features and fixes for *Push* should be kept on separate, topical branches. In this case, we’ll
 pretend someone is on a typo-fixing rampage. All of the fixes, in other words, are catching typos.

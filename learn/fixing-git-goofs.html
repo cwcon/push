@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Push: CFP</title>
+  <title>Learn: Fixing Common Git Goofs</title>
   <meta name="description" content="Push: Research &amp; Applied Theory in Writing with Source">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/push.css">
@@ -22,14 +22,14 @@
   </script>
 
 </head>
-<body id="cfp_page">
+<body id="learn_fixing_git_goofs_page">
 <div id="page">
     <header id="page_header">
     <div id="logo">
       <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo.png" alt="Push logo" /></a>
     </div>
     <hgroup>
-      <h1><a href="http://push.cwcon.org/" rel="home">Push</a></h1>
+      <h1><a href="http://push.cwcon.org/learn/" rel="home">Push <small>Learn</small></a></h1>
       <h2>Research <i>&amp;</i> Applied Theory in Writing with Source</h2>
     </hgroup>
     <nav id="site_nav">
@@ -43,45 +43,44 @@
   </header>
 
   <div id="content">
-    <h1 id='the_worlds_shortest_cfp'>The world’s shortest CFP</h1>
+    <h1 id='fixing_common_git_goofs'>Fixing common Git goofs</h1>
 
-<p>If you or your students write in plain text and there’s some computer language and rhetorical theory or princples involved, <em>Push</em> wants to help you develop and publish an openly reviewed article about it.</p>
+<p>It happens to everyone: You add a file that’s not ready to be committed. Or you commit a set of changes that shouldn’t have been committed. You make a stupid spelling mistake in a commit message. Not to panic. It’s easy to correct most mistakes you make in Git.</p>
 
-<p><em>And that’s the Push CFP. Below are a few more details.</em></p>
+<h2 id='restoring_a_changed_file_to_its_last_committed_state'>Restoring a changed file to its last committed state</h2>
 
-<h2 id='two_guiding_principles'>Two Guiding Principles</h2>
+<p>Did you start messing around in a file, only to realize you want to restore it to how it was at its last commit point? Just run <code>git checkout</code> followed by the file name; you’ll lose any changes you made, but you’ll gain a clean copy of the file as of its last commit in Git.</p>
+
+<h2 id='unstaging_a_file'>Unstaging a file</h2>
+
+<p>Did you run <code>git add</code> too soon? No problem. Run <code>git reset HEAD</code> followed by the file name to unstage it.</p>
+
+<h2 id='fixing_the_most_recent_commit_message'>Fixing the most recent commit message</h2>
+
+<p>Need to fix your most recent commit message? Simply run <code>git commit --amend</code> and the editor you’ve configured Git to use will open, and you can edit the message as needed.</p>
+
+<h2 id='resetting_the_most_recent_commit'>Resetting the most recent commit</h2>
+
+<p>Did you discover that the contents of a commit weren’t as perfect as they could have been? You have two options:</p>
 
 <ol>
 <li>
-<p><strong>Source is source.</strong> Whether you’re writing with source for markup, design, or full-on scripting and programming, write up your work and submit it to <em>Push</em>.</p>
+<p>Reset the commit history, but save the changes in your working directory. This allows you to fix the file without losing your changes: <code>git reset HEAD~1</code>. Edit your files as needed, then add and commit as usual.</p>
 </li>
 
 <li>
-<p><strong>Don’t let your experience level get in the way.</strong> Maybe you’ve gained insights from your very first time teaching HTML. Or maybe you have a radically new perspective for approaching a writing task with the assistance of an entire language or framework. <em>Push</em> seeks submissions by writers with all levels of experience working with source code.</p>
+<p>Reset the commit history and lose the changes to the problem file(s) in the commit. Use with caution: <code>git reset --hard HEAD~1</code>.</p>
 </li>
 </ol>
 
-<h2 id='basic_article_guidelines'>Basic Article Guidelines</h2>
-
-<p>All article submissions to <em>Push</em> should be:</p>
-
-<ul>
-<li>1500-2500 words + references and source examples</li>
-
-<li>Written in <a href='http://daringfireball.net/projects/markdown/syntax'>Markdown</a></li>
-
-<li>Compliant with the <em>Chicago Manual of Style</em>, 16th ed., including for <a href='//learn/style-guide.html#footnotes_and_citation'>footnote citations</a></li>
-
-<li>Tracked in Git on a dedicated <code>submission</code> branch in your copy of the repository</li>
-
-<li>Submitted as a pull request on GitHub</li>
-</ul>
-
-<p>See the <a href='/learn/'>setup guide</a> and the <a href='//learn/style-guide.html'>style guide</a> for more information.</p>
-
-<h2 id='queries_prior_to_writing__submitting'>Queries Prior to Writing &amp; Submitting</h2>
-
-<p>If you want feedback on an idea before you write, <a href='https://github.com/cwcon/push/issues/new'>open a new issue</a> on GitHub and write <code>QUERY:</code> at the beginning of the title for your query.</p>
+    <footer class="issue">
+      <h1>Documentation Is Rarely Perfect</h1>
+      <p>
+        Spot something wrong with this documentation? Please
+        <a href="https://github.com/cwcon/push/issues/new?title=Documentation+Issue:+Fixing+Common+Git+Goofs">open an Issue</a>
+        on GitHub and tell us about it, or if you can, fork, clone, fix, and open a pull request.
+      </p>
+    </footer>
   </div>
   <footer id="page_footer">
     <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo-mono-orange.png" alt="Push logo monochrome"></a>

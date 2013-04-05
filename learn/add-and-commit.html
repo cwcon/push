@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Learn: Mark Major Milestones</title>
+  <meta name="description" content="Push: Research &amp; Applied Theory in Writing with Source">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/push.css">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/assets/img/apple-touch-icon-precomposed.png">
+  <script type="text/javascript" src="//use.typekit.net/gnd2jel.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35853537-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</head>
+<body id="learn_add_and_commit_page">
+<div id="page">
+    <header id="page_header">
+    <div id="logo">
+      <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo.png" alt="Push logo" /></a>
+    </div>
+    <hgroup>
+      <h1><a href="http://push.cwcon.org/learn/" rel="home">Push <small>Learn</small></a></h1>
+      <h2>Research <i>&amp;</i> Applied Theory in Writing with Source</h2>
+    </hgroup>
+    <nav id="site_nav">
+      <ul>
+        <li><a href="/issues/">Issues</a></li>
+        <li><a href="/contribute/">Contribute</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="content">
+    <h1 id='mark_major_milestones'>Mark major milestones</h1>
+
+<p><em>Push</em> is run through Git and GitHub. Git is a version control system; you can think of it as something like the track-changes feature in word processors. But Git provides better control of what changes will be tracked, and when. It also makes individual changes shareable with the rest of the world.</p>
+
+<h2 id='stepbystep_instructions'>Step-by-Step Instructions</h2>
+
+<h3 id='on_your_computer'>On Your Computer</h3>
+
+<p><em>You’ll do this each time you want to mark your changes in Git.</em></p>
+
+<ol>
+<li>
+<p>Run <code>git status</code> on the command line from within the <code>push</code> directory, and you’ll see a list of files that you’ve been working on that have changed. In the case of a new file, you’ll see a notice about <code>Untracked files:</code></p>
+
+<pre><code> $ git status
+ # On branch submission
+ # Untracked files:
+ #   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+ #
+ #	_posts/2012-12-03-my-test-post.md
+ nothing added to commit but untracked files present (use &quot;git add&quot; to track)</code></pre>
+</li>
+
+<li>
+<p>The first step towards building a commit is to add the file to Git’s index. You can think of the index as a staging area for the commit. Add the file that has changes you want to commit by running <code>git add</code> followed by the name of the file, something like:</p>
+
+<pre><code> $ git add _posts/2012-12-03-my-test-post.md</code></pre>
+</li>
+
+<li>
+<p>Running <code>git status</code> after <code>git add</code> shows a message similar to this:</p>
+
+<pre><code> # On branch submission
+ # Changes to be committed:
+ #   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+ #
+ #	new file:   _posts/2012-12-03-my-test-post.md
+ #</code></pre>
+</li>
+
+<li>
+<p>Finally, you commit the file to Git’s history. The quickest way to do this is with <code>git commit</code> and the <code>-m</code> flag, followed by a message describing your changes:</p>
+
+<pre><code> $ git commit -m &quot;Added the YAML frontmatter to my blog submission&quot;</code></pre>
+</li>
+
+<li>
+<p>If you run <code>git status</code> after the commit, you’ll see a message that there is nothing to commit. Head back over to the file in your editor, make more changes, commit them, and repeat until your submission is complete enough for review.</p>
+</li>
+
+<li>
+<p>If you run <code>git log</code> followed by the hyphen and a number (e.g., <code>git log -5</code>) you’ll see the history of your commits (and others that were made to <em>Push</em> up until the moment you cloned or last pulled from the main upstream repository). <code>-5</code> will show the five most recent commits.</p>
+</li>
+</ol>
+
+<h2 id='next_steps'>Next Steps</h2>
+
+<p>As you work and build your history of commits, it’s important to share your work on GitHub&#8211;not just for eventual submission to <em>Push</em>, but to also back up your work to your account on GitHub’s servers. <a href='/learn/git-push.html'>It’s time to push <em>Push</em></a>.</p>
+
+    <footer class="issue">
+      <h1>Documentation Is Rarely Perfect</h1>
+      <p>
+        Spot something wrong with this documentation? Please
+        <a href="https://github.com/cwcon/push/issues/new?title=Documentation+Issue:+Mark+Major+Milestones">open an Issue</a>
+        on GitHub and tell us about it, or if you can, fork, clone, fix, and open a pull request.
+      </p>
+    </footer>
+  </div>
+  <footer id="page_footer">
+    <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo-mono-orange.png" alt="Push logo monochrome"></a>
+    <p>
+    Design &amp; content &copy; Push.
+    Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative
+    Commons</a>. Hosted on <a href="http://pages.github.com/">GitHub Pages</a>. Complete source
+    and all content <a href="https://github.com/cwcon/push">available on GitHub</a>. Powered by
+    <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+    <a href="http://sass-lang.com/">SASS</a>,
+    <a href="https://github.com/hendricius/jekyll-sass">Jekyll-Sass</a>,
+    <a href="https://github.com/necolas/normalize.css">normalize.css</a>,
+    <a href="http://daringfireball.net/projects/markdown/">Markdown</a>,
+    <a href="https://typekit.com/">TypeKit</a>,
+    and <a href="http://github.com/">GitHub</a>.
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

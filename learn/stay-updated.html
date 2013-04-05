@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Learn: Keep Your Copy of *Push* Updated</title>
+  <meta name="description" content="Push: Research &amp; Applied Theory in Writing with Source">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/push.css">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/assets/img/apple-touch-icon-precomposed.png">
+  <script type="text/javascript" src="//use.typekit.net/gnd2jel.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35853537-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</head>
+<body id="learn_stay_updated_page">
+<div id="page">
+    <header id="page_header">
+    <div id="logo">
+      <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo.png" alt="Push logo" /></a>
+    </div>
+    <hgroup>
+      <h1><a href="http://push.cwcon.org/learn/" rel="home">Push <small>Learn</small></a></h1>
+      <h2>Research <i>&amp;</i> Applied Theory in Writing with Source</h2>
+    </hgroup>
+    <nav id="site_nav">
+      <ul>
+        <li><a href="/issues/">Issues</a></li>
+        <li><a href="/contribute/">Contribute</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="content">
+    <h1 id='keep_your_copy_of_push_updated'>Keep your copy of Push updated</h1>
+
+<p>Forking on GitHub couldn’t be easier&#8211;but the problem with forking is that the instant you fork, you disconnect from the history of the repository at <code>cwcon/push</code>. Keeping in sync with the changes made by other contributors has to be handled manually. Fortunately, Git has methods built right in that make staying in sync an easy proposition.</p>
+
+<h2 id='stepbystep_instructions'>Step-by-Step Instructions</h2>
+
+<h3 id='on_github'>On GitHub</h3>
+
+<p><em>You only need to do this once.</em></p>
+
+<ol>
+<li>
+<p>Go to the <em>Push</em> repository page on GitHub at https://github.com/cwcon/push/ and copy its Git Read-Only URL to your operating system’s clipboard, or just copy this one here:</p>
+
+<pre><code> git://github.com/cwcon/push.git</code></pre>
+</li>
+</ol>
+
+<h3 id='on_your_computer_setup'>On Your Computer: Setup</h3>
+
+<p><em>You only need to do this once.</em></p>
+
+<ol>
+<li>
+<p>You should reserve the <code>master</code> branch purely for staying in sync with the upstream Push repository. Don’t commit to master, or merge your commits into it. Instead, <a href='/learn/branching.html'>set up your own branches</a> to work on submissions or fixes.</p>
+</li>
+
+<li>
+<p>Change into the directory where you keep your copy of <em>Push</em>, and checkout the <code>master</code> branch:</p>
+
+<pre><code> $ cd ~/Projects/push
+ $ git checkout master
+ Switched to branch &#39;master&#39;</code></pre>
+</li>
+
+<li>
+<p>If you run the <code>git remote</code> command, you’ll learn the names and locations of different remote repositories that your copy is aware of. Initially, you’ll see output like this below:</p>
+
+<pre><code> $ git remote -v
+ origin	git@github.com:USERNAME/push.git (fetch)
+ origin	git@github.com:USERNAME/push.git (push)</code></pre>
+
+<p>Of course, you’ll see your GitHub username, not <code>USERNAME</code>.</p>
+</li>
+
+<li>
+<p>To stay in sync with the main, or “upstream,” Push repository, you just need to add it as another remote to your repository. In this case, you’re naming the remote <code>upstream</code>:</p>
+
+<pre><code> $ git remote add upstream git://github.com/cwcon/push.git</code></pre>
+
+<p>Running <code>git remote -v</code> now shows that your repository is aware of the <code>upstream</code> remote, in addition to your own <code>origin</code> remote:</p>
+
+<pre><code> $ git remote -v
+ origin  git@github.com:USERNAME/push.git (fetch)
+ origin  git@github.com:USERNAME/push.git (push)
+ upstream  git://github.com/cwcon/push.git (fetch)
+ upstream  git://github.com/cwcon/push.git (push)</code></pre>
+</li>
+
+<li>
+<p>Next, you want your repository to learn about all of the branches available on <code>upstream</code>:</p>
+
+<pre><code> $ git fetch upstream
+ remote: Counting objects: 37, done.
+ remote: Compressing objects: 100% (12/12), done.
+ remote: Total 28 (delta 18), reused 26 (delta 16)
+ Unpacking objects: 100% (28/28), done.
+ From git://github.com/cwcon/push
+  * [new branch]      gh-pages   -&gt; upstream/gh-pages
+  * [new branch]      master     -&gt; upstream/master</code></pre>
+
+<p>The last <code>upstream/master</code> branch is the important one.</p>
+</li>
+</ol>
+
+<h3 id='on_your_computer_routine_tasks'>On Your Computer: Routine Tasks</h3>
+
+<p><em>You’ll do this each time you want to update your copy of</em> Push <em>with the upstream copy.</em></p>
+
+<ol>
+<li>
+<p>Checking again that you’re on the <code>master branch</code>, you can then pull the latest changes from the upstream <em>Push</em> repository into your copy of <code>master</code>. In this example, your copy is already up to date:</p>
+
+<pre><code> $ git checkout master
+ $ git pull upstream master
+ From git://github.com/cwcon/push
+ * branch    master    -&gt; FETCH_HEAD
+ Already up-to-date.</code></pre>
+
+<p>If any new commits had been pulled down, you’d see them listed.</p>
+</li>
+</ol>
+
+<p>With your up-to-date copy ready to go, <a href='/learn/branching.html'>you can set up new branches</a> to work on your own <em>Push</em> submissions or fixes.</p>
+
+<h4 id='oops_i_was_messing_around_on_'>Oops, I was messing around on <code>master</code></h4>
+
+<p>Grabbed your copy of <em>Push</em> and started messing around on <code>master</code>? Not to worry. It’s easy to isolate your work, and restore <code>master</code> to be the same as the upstream repository.</p>
+
+<ol>
+<li>
+<p>First, if there’s anything you’d like to save, <a href='/learn/add-and-commit.html'>commit it</a> and then create a branch where you can find your work:</p>
+
+<pre><code> $ git checkout `master`
+ $ git checkout -b `messy-master`
+ Switched to a new branch &#39;messy-master&#39;</code></pre>
+</li>
+
+<li>
+<p>Then, force Git to delete the old <code>master</code> branch:</p>
+
+<pre><code> $ git branch -D master
+ Deleted branch master (was 3298960).</code></pre>
+</li>
+
+<li>
+<p>Finally, create a new, pristine <code>master</code> branch based on the updated <code>upstream</code> remote:</p>
+
+<pre><code> $ git checkout -b master upstream/master
+ Branch master set up to track remote branch master from upstream.
+ Switched to a new branch &#39;master&#39;</code></pre>
+
+<p>Now you are <a href='/learn/branching.html'>free to create new branches</a> to prepare your work for <em>Push</em>. And remember: never do anything on <code>master</code> except to run <code>git pull upstream master</code> and <code>git branch some-branch-name</code>.</p>
+</li>
+</ol>
+
+    <footer class="issue">
+      <h1>Documentation Is Rarely Perfect</h1>
+      <p>
+        Spot something wrong with this documentation? Please
+        <a href="https://github.com/cwcon/push/issues/new?title=Documentation+Issue:+Keep+Your+Copy+of+%2APush%2A+Updated">open an Issue</a>
+        on GitHub and tell us about it, or if you can, fork, clone, fix, and open a pull request.
+      </p>
+    </footer>
+  </div>
+  <footer id="page_footer">
+    <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo-mono-orange.png" alt="Push logo monochrome"></a>
+    <p>
+    Design &amp; content &copy; Push.
+    Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative
+    Commons</a>. Hosted on <a href="http://pages.github.com/">GitHub Pages</a>. Complete source
+    and all content <a href="https://github.com/cwcon/push">available on GitHub</a>. Powered by
+    <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+    <a href="http://sass-lang.com/">SASS</a>,
+    <a href="https://github.com/hendricius/jekyll-sass">Jekyll-Sass</a>,
+    <a href="https://github.com/necolas/normalize.css">normalize.css</a>,
+    <a href="http://daringfireball.net/projects/markdown/">Markdown</a>,
+    <a href="https://typekit.com/">TypeKit</a>,
+    and <a href="http://github.com/">GitHub</a>.
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

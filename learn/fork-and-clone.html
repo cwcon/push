@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Learn: Get a Copy of Push</title>
+  <meta name="description" content="Push: Research &amp; Applied Theory in Writing with Source">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/push.css">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/assets/img/apple-touch-icon-precomposed.png">
+  <script type="text/javascript" src="//use.typekit.net/gnd2jel.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35853537-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</head>
+<body id="learn_fork_and_clone_page">
+<div id="page">
+    <header id="page_header">
+    <div id="logo">
+      <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo.png" alt="Push logo" /></a>
+    </div>
+    <hgroup>
+      <h1><a href="http://push.cwcon.org/learn/" rel="home">Push <small>Learn</small></a></h1>
+      <h2>Research <i>&amp;</i> Applied Theory in Writing with Source</h2>
+    </hgroup>
+    <nav id="site_nav">
+      <ul>
+        <li><a href="/issues/">Issues</a></li>
+        <li><a href="/contribute/">Contribute</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="content">
+    <h1 id='get_a_copy_of_push'>Get a copy of Push</h1>
+
+<p>To submit or contribute to <em>Push</em>, you need to get a copy of it. There are two parts to that: the first takes place on GitHub, and the second on your computer.</p>
+
+<h2 id='screencast'>Screencast</h2>
+<div class='video-container'>
+  <iframe allowfullscreen='allowfullscreen' frameborder='0' height='720' src='http://www.youtube.com/embed/OXJAfq3xPVI?rel=0' width='1280'> </iframe>
+</div>
+<p><a href='http://www.youtube.com/watch_popup?v=OXJAfq3xPVI&amp;hd=1'>View HD video at YouTube.com</a>.</p>
+
+<h2 id='stepbystep_instructions'>Step-by-Step Instructions</h2>
+
+<h3 id='on_github'>On GitHub</h3>
+
+<p><em>You only need to do this once.</em></p>
+
+<ol>
+<li>
+<p>Log into your GitHub account, and then <a href='https://github.com/cwcon/push/'>go to the <em>Push</em> repository page</a>.</p>
+</li>
+
+<li>
+<p>Locate the Fork button in the upper right-hand part of your screen, and click it.</p>
+</li>
+
+<li>
+<p>You’ll see a cute little animation from GitHub, reinforcing the idea that “forking” is basically just another word for copying.</p>
+</li>
+
+<li>
+<p>When the forking process is complete, you’ll see at the top of your page an SSH URL, something that looks like <code>git@github.com:USERNAME/push.git</code>, with your username instead of <code>USERNAME</code>. Copy that URL to your operating system’s clipboard.</p>
+</li>
+</ol>
+
+<h3 id='on_your_computer'>On Your Computer</h3>
+
+<p><em>You only need to do this once.</em></p>
+
+<ol>
+<li>
+<p>Fire up your command line (called Terminal in Mac and some Linuxes), and make sure that you’re in your home directory by running</p>
+
+<pre><code> $ cd</code></pre>
+
+<p>Note that <code>$</code> is just a convention for indicating the command-line prompt; you don’t actually type it. Also, be sure to always hit the <kbd>Return</kbd> or <kbd>Enter</kbd> key at the end of each line of command-line input.</p>
+</li>
+
+<li>
+<p>Create a directory, called <code>Projects</code>. It’s something of a convention to keep all Git repositories in a directory of that name, but you can choose another if you’d like.</p>
+
+<pre><code> $ mkdir Projects</code></pre>
+
+<p>then change into that directory:</p>
+
+<pre><code> $ cd Projects</code></pre>
+</li>
+
+<li>
+<p>Now you’ll get a copy of the <em>Push</em> repository that you can work on. Just as “forking” was the word for making a copy of <em>Push</em> on GitHub, “cloning” pulls down a copy of <em>Push</em> to your computer. Type <code>git clone</code> at the command line, and type or paste in the URL you copied in the last step in the GitHub instructions above. It’ll look something like:</p>
+
+<pre><code> $ git clone git@github.com:USERNAME/push.git</code></pre>
+
+<p>but you’ll see your username instead of the <code>USERNAME</code> in the example above.</p>
+
+<p>When you hit <kbd>return</kbd> on that command, you’ll see some output not unlike:</p>
+
+<pre><code> Cloning into &#39;push&#39;...
+ remote: Counting objects: 657, done.
+ remote: Compressing objects: 100% (338/338), done.
+ remote: Total 657 (delta 312), reused 606 (delta 261)
+ Receiving objects: 100% (657/657), 329.38 KiB, done.
+ Resolving deltas: 100% (312/312), done.</code></pre>
+
+<p>If you get a message like “Permission denied (public key),” be sure that you have followed <a href='https://help.github.com/articles/generating-ssh-keys'>GitHub’s instructions</a> for setting up SSH keys on your computer, and try the <code>git clone</code> command above again.</p>
+</li>
+
+<li>
+<p>To double-check that you have your copy, change into the <em>Push</em> directory where your copy is:</p>
+
+<pre><code> $ cd push</code></pre>
+
+<p>and then run the directory-listing command <code>ls -Fog</code>, which will show you output similar to that below:</p>
+
+<pre><code> $ ls -Fog
+ total 104
+ -rw-r--r--   1     15 Oct 14 14:53 CNAME
+ -rw-r--r--   1     61 Oct 14 14:53 Gemfile
+ -rw-r--r--   1   1105 Nov 18 14:00 README.md
+ -rw-r--r--   1    139 Oct 29 18:15 _config.yml
+ drwxr-xr-x   8    272 Nov 18 15:36 _includes/
+ drwxr-xr-x   6    204 Nov 18 15:29 _layouts/
+ drwxr-xr-x   3    102 Oct 14 14:53 _plugins/
+ drwxr-xr-x   5    170 Oct 29 18:15 _posts/
+ drwxr-xr-x  14    476 Nov  2 10:49 _site/
+ drwxr-xr-x   4    136 Oct 29 18:15 about/
+ drwxr-xr-x   5    170 Oct 25 13:14 assets/
+ drwxr-xr-x   4    136 Nov 13 13:40 blog/
+ -rw-r--r--   1   1673 Nov 18 15:27 cfp.md
+ drwxr-xr-x   4    136 Nov 13 13:40 contribute/
+ -rw-r--r--   1   1907 Oct 29 18:15 index.md
+ drwxr-xr-x   3    102 Oct 29 18:15 issues/
+ drwxr-xr-x  19    646 Nov 13 13:40 learn/
+ -rwxr-xr-x   1     40 Oct 14 14:53 serve.sh
+ -rw-r--r--   1   5735 Oct 29 18:15 style-guide.md
+ drwxr-xr-x   3    102 Oct 29 18:15 submissions/</code></pre>
+
+<p>That’s just a listing of all the files and directories (those entries ending with a slash, <code>/</code>) that make up <em>Push</em>’s source files.</p>
+</li>
+
+<li>
+<p>One last check: if you run <code>$ git status</code>, you’ll see a notice that you are on the <code>master</code> branch, and a message stating that there is nothing to commit:</p>
+
+<pre><code> $ git status
+ # On branch master
+ nothing to commit, working directory clean</code></pre>
+
+<p>That message is enough to indicate that, in addition to receiving all of the files for <em>Push</em>, you also have a functioning Git repository to work within.</p>
+</li>
+</ol>
+
+<h2 id='next_steps'>Next Steps</h2>
+
+<p>Now that you have your copy, <a href='/learn/branching.html'>it’s time to set up your workspace for your submission/contribution</a>.</p>
+
+    <footer class="issue">
+      <h1>Documentation Is Rarely Perfect</h1>
+      <p>
+        Spot something wrong with this documentation? Please
+        <a href="https://github.com/cwcon/push/issues/new?title=Documentation+Issue:+Get+a+Copy+of+Push">open an Issue</a>
+        on GitHub and tell us about it, or if you can, fork, clone, fix, and open a pull request.
+      </p>
+    </footer>
+  </div>
+  <footer id="page_footer">
+    <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo-mono-orange.png" alt="Push logo monochrome"></a>
+    <p>
+    Design &amp; content &copy; Push.
+    Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative
+    Commons</a>. Hosted on <a href="http://pages.github.com/">GitHub Pages</a>. Complete source
+    and all content <a href="https://github.com/cwcon/push">available on GitHub</a>. Powered by
+    <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+    <a href="http://sass-lang.com/">SASS</a>,
+    <a href="https://github.com/hendricius/jekyll-sass">Jekyll-Sass</a>,
+    <a href="https://github.com/necolas/normalize.css">normalize.css</a>,
+    <a href="http://daringfireball.net/projects/markdown/">Markdown</a>,
+    <a href="https://typekit.com/">TypeKit</a>,
+    and <a href="http://github.com/">GitHub</a>.
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

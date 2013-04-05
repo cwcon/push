@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Learn: Preview Changes as You Work</title>
+  <meta name="description" content="Push: Research &amp; Applied Theory in Writing with Source">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/push.css">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/assets/img/apple-touch-icon-precomposed.png">
+  <script type="text/javascript" src="//use.typekit.net/gnd2jel.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35853537-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</head>
+<body id="learn_previewing_work_page">
+<div id="page">
+    <header id="page_header">
+    <div id="logo">
+      <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo.png" alt="Push logo" /></a>
+    </div>
+    <hgroup>
+      <h1><a href="http://push.cwcon.org/learn/" rel="home">Push <small>Learn</small></a></h1>
+      <h2>Research <i>&amp;</i> Applied Theory in Writing with Source</h2>
+    </hgroup>
+    <nav id="site_nav">
+      <ul>
+        <li><a href="/issues/">Issues</a></li>
+        <li><a href="/contribute/">Contribute</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="content">
+    <h1 id='previewing_push_on_your_computer'>Previewing Push on your computer</h1>
+
+<p>When you <a href='/learn/fork-and-clone.html'>clone your copy of <em>Push</em></a>, you pull down almost everything you need to preview the journal on your computer <em>exactly</em> as it will appear on the Web at <a href='http://push.cwcon.org/'>http://push.cwcon.org/</a>. This section will cover installing and using the remaining pieces of technology that will run <em>Push</em> on your computer.</p>
+
+<h2 id='stepbystep_instructions'>Step-by-Step Instructions</h2>
+
+<h3 id='on_your_computer'>On Your Computer</h3>
+
+<p><em>You’ll only need to do the first step once; the second step is required every time you need to restart the local Web server that runs on your computer.</em></p>
+
+<ol>
+<li>
+<p><strong>Installing the required Gems</strong>: <em>Push</em> comes with a <code>Gemfile</code>, which tells your copy of Ruby what needs to be installed in order for <em>Push</em> to run properly. Simply run:</p>
+
+<pre><code> $ cd ~/Projects/push
+ $ bundle install</code></pre>
+
+<p>and all of the necessary Gems will be installed. If you’re using a system Ruby, you may have to run <code>$ sudo bundle install</code>.</p>
+</li>
+
+<li>
+<p><em>Push</em>’s reliance on Jekyll makes it ready-made to preview on a real, live web server running right on your computer. All you have to do is run</p>
+
+<pre><code> $ ./serve.sh</code></pre>
+
+<p>on your command line from within the <code>/push</code> directory. You will see some output on the command line that looks something like:</p>
+
+<pre><code> $ ./serve.sh
+ Configuration from /Users/USERNAME/Projects/push/_config.yml
+ Auto-regenerating enabled: /Users/USERNAME/Projects/push -&gt; _tmp/
+ [2012-11-18 13:45:05] regeneration: 55 files changed
+ [2012-11-18 13:45:06] INFO  WEBrick 1.3.1
+ [2012-11-18 13:45:06] INFO  ruby 1.9.3 (2012-04-20) [x86_64-darwin12.1.0]
+ [2012-11-18 13:45:06] INFO  WEBrick::HTTPServer#start: pid=8868 port=4000</code></pre>
+
+<p>Open your web browser of choice, and point it to <code>http://localhost:4000/</code> You should see <em>Push</em> in your browser, just as it appears at <code>http://push.cwcon.org/</code>.</p>
+
+<ul>
+<li>
+<p><strong>Blog Posts</strong> can be previewed by going to <code>http://localhost:4000/blog/</code>; find your post in the listing and click the heading to see the post on its own page.</p>
+</li>
+
+<li>
+<p><strong>Article Submissions</strong> can be previewed by opening the URL <code>http://localhost:4000/submissions/</code> and typing in the name of your article file with the <code>.html</code> extension (<strong>not</strong> <code>.md</code>). For example, <code>http://localhost:4000/submissions/jenkins-this-article-changes-everything.html</code> would be the URL for a source file named <code>submissions/jenkins-this-article-changes-everything.md</code>.</p>
+</li>
+</ul>
+
+<p>As you make changes, the HTML will be automatically regenerated, so you can preview your work right in the browser. Just reload the page you’re working on as you’d reload any other Web page in your browser.</p>
+</li>
+
+<li>
+<p>When you are done working on <em>Push</em>, you can return to your command line terminal and stop the web server. Just hold down the <code>Control</code> key and hit the <code>C</code> key on your keyboard. You’ll see that your command line returns something similar to:</p>
+
+<pre><code> ^C[2012-11-18 13:47:08] INFO  going to shutdown ...
+ [2012-11-18 13:47:08] INFO  WEBrick::HTTPServer#start done.
+ $</code></pre>
+</li>
+</ol>
+
+<h2 id='next_steps'>Next Steps</h2>
+
+<p>As you write and preview your work, you’ll want to <a href='/learn/add-and-commit.html'>commit your changes to Git to preserve your best work</a>.</p>
+
+    <footer class="issue">
+      <h1>Documentation Is Rarely Perfect</h1>
+      <p>
+        Spot something wrong with this documentation? Please
+        <a href="https://github.com/cwcon/push/issues/new?title=Documentation+Issue:+Preview+Changes+as+You+Work">open an Issue</a>
+        on GitHub and tell us about it, or if you can, fork, clone, fix, and open a pull request.
+      </p>
+    </footer>
+  </div>
+  <footer id="page_footer">
+    <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo-mono-orange.png" alt="Push logo monochrome"></a>
+    <p>
+    Design &amp; content &copy; Push.
+    Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative
+    Commons</a>. Hosted on <a href="http://pages.github.com/">GitHub Pages</a>. Complete source
+    and all content <a href="https://github.com/cwcon/push">available on GitHub</a>. Powered by
+    <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+    <a href="http://sass-lang.com/">SASS</a>,
+    <a href="https://github.com/hendricius/jekyll-sass">Jekyll-Sass</a>,
+    <a href="https://github.com/necolas/normalize.css">normalize.css</a>,
+    <a href="http://daringfireball.net/projects/markdown/">Markdown</a>,
+    <a href="https://typekit.com/">TypeKit</a>,
+    and <a href="http://github.com/">GitHub</a>.
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

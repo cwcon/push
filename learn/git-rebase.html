@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Push: CFP</title>
+  <title>Learn: Pretend You Kept Your Copy of Push Updated</title>
   <meta name="description" content="Push: Research &amp; Applied Theory in Writing with Source">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/push.css">
@@ -22,14 +22,14 @@
   </script>
 
 </head>
-<body id="cfp_page">
+<body id="learn_git_rebase_page">
 <div id="page">
     <header id="page_header">
     <div id="logo">
       <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo.png" alt="Push logo" /></a>
     </div>
     <hgroup>
-      <h1><a href="http://push.cwcon.org/" rel="home">Push</a></h1>
+      <h1><a href="http://push.cwcon.org/learn/" rel="home">Push <small>Learn</small></a></h1>
       <h2>Research <i>&amp;</i> Applied Theory in Writing with Source</h2>
     </hgroup>
     <nav id="site_nav">
@@ -43,45 +43,51 @@
   </header>
 
   <div id="content">
-    <h1 id='the_worlds_shortest_cfp'>The world’s shortest CFP</h1>
+    <h1 id='pretend_you_kept_your_copy_of_push_updated'>Pretend you kept your copy of Push updated</h1>
 
-<p>If you or your students write in plain text and there’s some computer language and rhetorical theory or princples involved, <em>Push</em> wants to help you develop and publish an openly reviewed article about it.</p>
+<p>Once you create a separate branch, such as <code>submission</code>, to work, it too will fall out of sync with the <code>master</code> branch off of the upstream <em>Push</em> repository at <code>cwcon/push</code>.</p>
 
-<p><em>And that’s the Push CFP. Below are a few more details.</em></p>
+<p>To make a cleaner <a href='/learn/pull-requests.html'>pull request</a>, it’s helpful if you rebase the branch you wish to submit to <em>Push</em>.</p>
 
-<h2 id='two_guiding_principles'>Two Guiding Principles</h2>
+<p>Rebasing essentially takes the commits from another branch (such as <code>master</code>), and puts your commits at the very end of that branch. On GitHub and elsewhere, it will appear as though you built your work on top of the very latest changes to <em>Push</em>.</p>
+
+<p><strong>Please do not rebase after you have submitted a pull request.</strong></p>
+
+<h2 id='on_your_computer'>On Your Computer</h2>
+
+<p><em>Do this each time you need to rebase</em></p>
 
 <ol>
 <li>
-<p><strong>Source is source.</strong> Whether you’re writing with source for markup, design, or full-on scripting and programming, write up your work and submit it to <em>Push</em>.</p>
+<p>Be sure that you have <a href='/learn/stay-updated.html'>updated your <code>master</code> branch</a> to match the latest <code>master</code> at the upstream <em>Push</em> repository.</p>
 </li>
 
 <li>
-<p><strong>Don’t let your experience level get in the way.</strong> Maybe you’ve gained insights from your very first time teaching HTML. Or maybe you have a radically new perspective for approaching a writing task with the assistance of an entire language or framework. <em>Push</em> seeks submissions by writers with all levels of experience working with source code.</p>
+<p>Once you’ve done that, check out your submission branch, and rebase it with the <code>master</code> branch:</p>
+
+<pre><code> $ git checkout submission
+ $ git rebase master
+ First, rewinding head to replay your work on top of it...
+ Applying: Starting a new submission</code></pre>
+
+<p>In that example, a commit called “Starting a new submission” was applied after the end of the rebase.</p>
+</li>
+
+<li>
+<p><strong>Important</strong>: Once you rebase, your commits receive new SHA-1 hashes. This can confuse GitHub, and when you go to push a rebased branch, GitHub will likely refuse to accept it. You need to force GitHub to accept your rebased branch, using the -f flag:</p>
+
+<pre><code> $ git push -f origin submission</code></pre>
 </li>
 </ol>
 
-<h2 id='basic_article_guidelines'>Basic Article Guidelines</h2>
-
-<p>All article submissions to <em>Push</em> should be:</p>
-
-<ul>
-<li>1500-2500 words + references and source examples</li>
-
-<li>Written in <a href='http://daringfireball.net/projects/markdown/syntax'>Markdown</a></li>
-
-<li>Compliant with the <em>Chicago Manual of Style</em>, 16th ed., including for <a href='//learn/style-guide.html#footnotes_and_citation'>footnote citations</a></li>
-
-<li>Tracked in Git on a dedicated <code>submission</code> branch in your copy of the repository</li>
-
-<li>Submitted as a pull request on GitHub</li>
-</ul>
-
-<p>See the <a href='/learn/'>setup guide</a> and the <a href='//learn/style-guide.html'>style guide</a> for more information.</p>
-
-<h2 id='queries_prior_to_writing__submitting'>Queries Prior to Writing &amp; Submitting</h2>
-
-<p>If you want feedback on an idea before you write, <a href='https://github.com/cwcon/push/issues/new'>open a new issue</a> on GitHub and write <code>QUERY:</code> at the beginning of the title for your query.</p>
+    <footer class="issue">
+      <h1>Documentation Is Rarely Perfect</h1>
+      <p>
+        Spot something wrong with this documentation? Please
+        <a href="https://github.com/cwcon/push/issues/new?title=Documentation+Issue:+Pretend+You+Kept+Your+Copy+of+Push+Updated">open an Issue</a>
+        on GitHub and tell us about it, or if you can, fork, clone, fix, and open a pull request.
+      </p>
+    </footer>
   </div>
   <footer id="page_footer">
     <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo-mono-orange.png" alt="Push logo monochrome"></a>

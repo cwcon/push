@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Learn: Write in YAML and Markdown</title>
+  <meta name="description" content="Push: Research &amp; Applied Theory in Writing with Source">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/push.css">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/assets/img/apple-touch-icon-precomposed.png">
+  <script type="text/javascript" src="//use.typekit.net/gnd2jel.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35853537-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</head>
+<body id="learn_yaml_and_markdown_page">
+<div id="page">
+    <header id="page_header">
+    <div id="logo">
+      <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo.png" alt="Push logo" /></a>
+    </div>
+    <hgroup>
+      <h1><a href="http://push.cwcon.org/learn/" rel="home">Push <small>Learn</small></a></h1>
+      <h2>Research <i>&amp;</i> Applied Theory in Writing with Source</h2>
+    </hgroup>
+    <nav id="site_nav">
+      <ul>
+        <li><a href="/issues/">Issues</a></li>
+        <li><a href="/contribute/">Contribute</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="content">
+    <h1 id='write_in_yaml_and_markdown'>Write in YAML and Markdown</h1>
+
+<p>Rather than writing directly in HTML, you can write article and blog submissions in two arguably simpler languages: <a href='http://www.yaml.org/'>YAML</a>, which stands for “YAML Ain’t Markup Language” and is used for metadata at the top of a file that is otherwise written in <a href='http://daringfireball.net/projects/markdown/syntax#overview'>Markdown</a>, a basic set of plain-text formatting conventions that are converted to the HTML see on the <em>Push</em> site.</p>
+
+<h2 id='stepbystep_instructions'>Step-by-Step Instructions</h2>
+
+<p>Both <em>Push</em> submissions and <em>Push</em> blog posts are begun from starter files called <code>_starter.md</code>, found in either <code>submissions/</code> or <code>_posts/</code>. Because the starter file for blog posts is simpler, it will be the example considered here. But know that the submission starter file works the same way; it just asks for additional information.</p>
+
+<p>So, have a look at the contents of the <code>_posts/_starter.md</code> file:</p>
+
+<pre><code>---
+title: Post Title Here
+author: Author Name Here
+author_bio: &gt;
+            Bio here. Markdown is allowed. Break onto new lines if necessary.
+layout: post
+---
+
+And start writing your post here, in Markdown. See the style guide at
+http://push.cwcon.org//learn/style-guide.html</code></pre>
+
+<p>The top portion of the file, between the two sets of three hyphens (<code>---</code>), is known as YAML, which stands for <a href='http://www.yaml.org/'>YAML Ain’t Markup Language</a>. It probably doesn’t even look like computer language, really. All YAML consists of is some name for a piece of information (<code>title</code>, <code>author</code>), followed by a colon, and then the information itself.</p>
+
+<p>The only piece that looks unusual is the <code>author_bio: &gt;</code> line; the angle bracket (<code>&gt;</code>) just allows for longer, multi-line pieces of text, such as an author’s biography. The important thing is to begin the text following a <code>&gt;</code> on an indented new line of text, and to keep the lines indented uniformly.</p>
+
+<h3 id='on_your_computer'>On Your Computer</h3>
+
+<p><em>You’ll do this each time you start a new article for submission or blog post.</em></p>
+
+<h4 id='writing_the_yaml_frontmatter'>Writing the YAML Frontmatter</h4>
+
+<ol>
+<li>
+<p><strong>Blog Posts</strong>: Rather than editing the <code>_starter.md</code> files directly, make a copy of them for your submission or blog post. Blog post files should start with the date in <code>YYYY-MM-DD</code> format (use the current date when you begin your post; the file name will be changed to the current date upon posting), followed by the post’s title separated by hyphens. Here’s the procedure for a post called “My Test Post” created on December 3, 2012:</p>
+
+<pre><code> $ cd ~/Projects/push
+ $ cp _posts/_starter.md _posts/2012-12-03-my-test-post.md</code></pre>
+
+<p><strong>Article Submissions</strong>: For article submissions, create a file with your last name (and the last names of your co-authors, if you’re co-authoring) and the article title. Here is how Jim Jenkins would prepare his file for an article titled “This Article Changes Everything”:</p>
+
+<pre><code> $ cp submissions/_starter.md submissions/jenkins-this-article-changes-everything.md</code></pre>
+</li>
+
+<li>
+<p>You can now open the file for editing in your text editor. If you have command-line tools installed for opening files in your editor (like the <code>edit</code> command for TextWrangler), you can use them here:</p>
+
+<pre><code> $ edit _posts/2012-12-13-my-test-post.md</code></pre>
+
+<p>Otherwise, use your text editor to find and open the file in your <code>push</code> folder inside of <code>Projects</code>.</p>
+</li>
+
+<li>
+<p>There’s no magic to writing YAML. The only catch is to make sure that you always leave a space after the colon for every value. The YAML for Johnny Q. Blogger’s “My Test Post” file might look like something like this:</p>
+
+<pre><code> ---
+ title: My Test Post
+ author: Johnny Q. Blogger
+ author_bio: &gt;
+             I blog about things, and my middle
+             inital is Q. You’ll never guess
+             what the ‘Q’ stands for. Trust me.
+ layout: post
+ ---
+
+ And start writing your post here, in Markdown. See the style guide at
+ http://push.cwcon.org//learn/style-guide.html</code></pre>
+
+<p>Pretty basic; leave the <code>layout: </code> value set to <code>post</code>. And be sure that the lines of your biography are indented uniformly, as Johnny Q. Blogger has done.</p>
+</li>
+
+<li>
+<p>At this point, you would probably want to make a commit to your Git repository, but <a href='/learn/add-and-commit.html'>that’s covered in another section</a>.</p>
+</li>
+</ol>
+
+<h4 id='writing_content_in_markdown'>Writing Content in Markdown</h4>
+
+<p>The remainder of the file, following the second set of three hyphens, is all <a href='http://daringfireball.net/projects/markdown/syntax'>Markdown</a>. If you’ve ever used a wiki, Markdown is somewhat like a wiki’s formatting syntax.</p>
+
+<p>Paragraphs are just created by two empty lines of white space (not unlike how you do a paragraph in an email). Headings, lists, and other features have their own syntax. You can read all about the preferred styles for <em>Push</em> in the <a href='//learn/style-guide.html'>style guide</a>&#8211;which you may want to cross reference with <a href='https://raw.github.com/cwcon/push/master/style-guide.md'>its raw Markdown source</a>.</p>
+
+<h2 id='next_steps'>Next Steps</h2>
+
+<p>Once you begin writing your article submission or blog post for <em>Push</em>, you’ll probably want to see how it will appear, so it’s time to learn <a href='/learn/previewing-work.html'>how to preview your work in your Web browser</a>.</p>
+
+    <footer class="issue">
+      <h1>Documentation Is Rarely Perfect</h1>
+      <p>
+        Spot something wrong with this documentation? Please
+        <a href="https://github.com/cwcon/push/issues/new?title=Documentation+Issue:+Write+in+YAML+and+Markdown">open an Issue</a>
+        on GitHub and tell us about it, or if you can, fork, clone, fix, and open a pull request.
+      </p>
+    </footer>
+  </div>
+  <footer id="page_footer">
+    <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo-mono-orange.png" alt="Push logo monochrome"></a>
+    <p>
+    Design &amp; content &copy; Push.
+    Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative
+    Commons</a>. Hosted on <a href="http://pages.github.com/">GitHub Pages</a>. Complete source
+    and all content <a href="https://github.com/cwcon/push">available on GitHub</a>. Powered by
+    <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+    <a href="http://sass-lang.com/">SASS</a>,
+    <a href="https://github.com/hendricius/jekyll-sass">Jekyll-Sass</a>,
+    <a href="https://github.com/necolas/normalize.css">normalize.css</a>,
+    <a href="http://daringfireball.net/projects/markdown/">Markdown</a>,
+    <a href="https://typekit.com/">TypeKit</a>,
+    and <a href="http://github.com/">GitHub</a>.
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

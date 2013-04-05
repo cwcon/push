@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Push: Submission Instructions</title>
+  <title>Learn: Backup and Share</title>
   <meta name="description" content="Push: Research &amp; Applied Theory in Writing with Source">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/push.css">
@@ -22,14 +22,14 @@
   </script>
 
 </head>
-<body id="instructions_page">
+<body id="learn_git_push_page">
 <div id="page">
     <header id="page_header">
     <div id="logo">
       <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo.png" alt="Push logo" /></a>
     </div>
     <hgroup>
-      <h1><a href="http://push.cwcon.org/" rel="home">Push</a></h1>
+      <h1><a href="http://push.cwcon.org/learn/" rel="home">Push <small>Learn</small></a></h1>
       <h2>Research <i>&amp;</i> Applied Theory in Writing with Source</h2>
     </hgroup>
     <nav id="site_nav">
@@ -43,25 +43,43 @@
   </header>
 
   <div id="content">
-    <h1 id='how_to_write_and_submit_an_article_for_push'>How to write and submit an article for <em>Push</em></h1>
+    <h1 id='backup_and_share'>Backup and share</h1>
 
-<ol>
-<li>Fork <a href='https://github.com/cwcon/push'>the <em>Push</em> repository</a> on GitHub and clone it to your computer.</li>
+<p>You may be used to sharing files by attaching them to emails, or using an FTP client. But just as Git enabled you to transfer <em>Push</em> from GitHub down to your computer (either through a clone or a pull), it also allows you to transfer changes from your computer to elsewhere in the world, a procedure known as pushing.</p>
 
-<li>Make a copy of the article starter file, <code>_starter.md</code>, and name it <code>yourname-submission-title.md</code> (with your name and actual submission title, of course).</li>
+<h2 id='stepbystep_instructions'>Step-by-Step Instructions</h2>
 
-<li>Fill in the information at the top of the file, and write up your work in Markdown.</li>
+<h3 id='on_your_computer'>On Your Computer</h3>
 
-<li>Track your progress with frequent Git commits.</li>
+<p><em>You’ll do this each time you want to backup and share your changes on GitHub.</em></p>
 
-<li>Keep your article under 2500 words or so, cite in footnotes according to the Chicago Manual of Style.</li>
+<p>When you clone a repository, like <em>Push</em>, Git refers by default to the remote repository as <code>origin</code>. Pushing back is as simple as telling Git to push a specific branch, like <code>submission</code>, to that original repository:</p>
 
-<li>Submit by opening a pull request to <a href='https://github.com/cwcon/push'>the upstream <em>Push</em> repository</a> by hitting the Pull Request button on GitHub on your fork of the <em>Push</em> repository.</li>
+<pre><code>    $ git push origin submission
+    Total 0 (delta 0), reused 0 (delta 0)
+    To git@github.com:USERNAME/push.git
+    * [new branch]      submission -&gt; submission</code></pre>
 
-<li>Make adjustments to your article as warranted by the open review, and push to GitHub (your pull request will automatically update after you push your changes).</li>
-</ol>
+<p>The first time you push to a new branch, you’ll see the <code>* [new branch]</code> message, as in the example above.</p>
 
-<p>See the <a href='/setup.html'>setup instructions</a> and <a href='/style-guide.html'>style guide</a> for additional information and guidance. And if you need a question answered, just <a href='https://github.com/cwcon/push/issues/new'>open an Issue on the <em>Push</em> repository</a>.</p>
+<h3 id='on_github'>On GitHub</h3>
+
+<p><em>You’ll do this whenever you want to verify that your repository has received your changes.</em></p>
+
+<p>If you want to verify that your push was successful, navigate to your copy of <em>Push</em> on GitHub, and choose the dropdown menu that’s labeled ‘branch: <strong>master</strong>’. You should see your working branch (e.g., ‘submission’) listed; select that branch, and then follow the history link to see GitHub’s representation of your commits.</p>
+
+<h2 id='next_steps'>Next Steps</h2>
+
+<p>Once you’ve pushed your blog post or submission branch, you can officially submit to <em>Push</em>. <a href='/learn/pull-requests.html'>Just open a pull request</a>.</p>
+
+    <footer class="issue">
+      <h1>Documentation Is Rarely Perfect</h1>
+      <p>
+        Spot something wrong with this documentation? Please
+        <a href="https://github.com/cwcon/push/issues/new?title=Documentation+Issue:+Backup+and+Share">open an Issue</a>
+        on GitHub and tell us about it, or if you can, fork, clone, fix, and open a pull request.
+      </p>
+    </footer>
   </div>
   <footer id="page_footer">
     <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo-mono-orange.png" alt="Push logo monochrome"></a>

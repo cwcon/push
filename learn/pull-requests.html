@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Push: Blog Submission Instructions</title>
+  <title>Learn: Submit Your Work</title>
   <meta name="description" content="Push: Research &amp; Applied Theory in Writing with Source">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/push.css">
@@ -22,14 +22,14 @@
   </script>
 
 </head>
-<body id="blog_instructions_page">
+<body id="learn_pull_requests_page">
 <div id="page">
     <header id="page_header">
     <div id="logo">
       <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo.png" alt="Push logo" /></a>
     </div>
     <hgroup>
-      <h1><a href="http://push.cwcon.org/" rel="home">Push</a></h1>
+      <h1><a href="http://push.cwcon.org/learn/" rel="home">Push <small>Learn</small></a></h1>
       <h2>Research <i>&amp;</i> Applied Theory in Writing with Source</h2>
     </hgroup>
     <nav id="site_nav">
@@ -43,27 +43,46 @@
   </header>
 
   <div id="content">
-    <h1 id='how_to_write_and_submit_a_post_to_push_blog'>How to write and submit a post to Push Blog</h1>
+    <h1 id='submit_your_work'>Submit your work</h1>
 
-<p>(Initially, the blog will focus on opening up the process and editorial and design decisions behind <em>Push</em>, as well as highlighting contributions and contributors to the journal’s core files and scripts.)</p>
+<p>You can push to your own copy of <em>Push</em> as often as you need to; once you’re ready to have your submission or fix reviewed, you’ll need to open a pull request on GitHub.</p>
+
+<h2 id='stepbystep_instructions'>Step-by-Step Instructions</h2>
+
+<h3 id='on_github'>On GitHub</h3>
+
+<p><em>You’ll do this each time you make a new submission to</em> Push <em>.</em></p>
 
 <ol>
-<li>Fork <a href='https://github.com/cwcon/push'>the <em>Push</em> repository</a> on GitHub and clone it to your computer. Create a new branch called <code>post</code>.</li>
+<li>
+<p>Navigate to your copy of <em>Push</em> in your GitHub account; switch to your submission branch using the branch pulldown menu on GitHub.</p>
+</li>
 
-<li>Make a copy of the post starter file, <code>_starter.md</code> in the <code>_posts</code> directory, and name it <code>YYYY-MM-DD-post-title.md</code> (with the date and actual post title, of course).</li>
+<li>
+<p>Click the ‘Pull Request’ button at the top of the page. That will open up a new screen. At the lefthand side, GitHub should have chosen <code>cwcon/push</code> as the base repository, and <code>master</code> as the base branch. On the righthand side, you should see your repository listed as the head repository, and your submission branch as the head branch.</p>
+</li>
 
-<li>Fill in the information at the top of the file, and write up your post in Markdown.</li>
+<li>
+<p>In the box below, you’ll see the name of your most recent commit; if that is not descriptive of the changes you’re submitting, adjust the title (or consider <a href='/learn/squashing-commits.html'>squashing your commits</a> before you start your pull request). Then provide a fuller description of your submission or changes in the larger text box.</p>
+</li>
 
-<li>Track your progress with frequent Git commits.</li>
-
-<li>Push your work to your fork at GitHub.</li>
-
-<li>Submit by opening a pull request to <a href='https://github.com/cwcon/push'>the upstream <em>Push</em> repository</a> by hitting the Pull Request button on GitHub on your fork of the <em>Push</em> repository.</li>
-
-<li>Make adjustments to your post, if necessary, and push to GitHub (your pull request will automatically update after you push your changes).</li>
+<li>
+<p>Hit the ‘Send pull request’ button, and sit tight and wait for feedback.</p>
+</li>
 </ol>
 
-<p>See the <a href='/setup.html'>setup instructions</a> and <a href='/style-guide.html'>style guide</a> for additional information and guidance. And if you need a question answered, just <a href='https://github.com/cwcon/push/issues/new'>open an Issue on the <em>Push</em> repository</a>.</p>
+<h2 id='next_steps'>Next Steps</h2>
+
+<p>Now comes the waiting part, while other <em>Push</em> contributors review your work and offer you comments. Eventually, you almost certainly have to make revisions. <a href='/learn/revise-and-push.html'>Fortunately, Git is made for revision</a>.</p>
+
+    <footer class="issue">
+      <h1>Documentation Is Rarely Perfect</h1>
+      <p>
+        Spot something wrong with this documentation? Please
+        <a href="https://github.com/cwcon/push/issues/new?title=Documentation+Issue:+Submit+Your+Work">open an Issue</a>
+        on GitHub and tell us about it, or if you can, fork, clone, fix, and open a pull request.
+      </p>
+    </footer>
   </div>
   <footer id="page_footer">
     <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo-mono-orange.png" alt="Push logo monochrome"></a>

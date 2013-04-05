@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Learn: Submit as One Commit</title>
+  <meta name="description" content="Push: Research &amp; Applied Theory in Writing with Source">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/push.css">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/assets/img/apple-touch-icon-precomposed.png">
+  <script type="text/javascript" src="//use.typekit.net/gnd2jel.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35853537-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</head>
+<body id="learn_squashing_commits_page">
+<div id="page">
+    <header id="page_header">
+    <div id="logo">
+      <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo.png" alt="Push logo" /></a>
+    </div>
+    <hgroup>
+      <h1><a href="http://push.cwcon.org/learn/" rel="home">Push <small>Learn</small></a></h1>
+      <h2>Research <i>&amp;</i> Applied Theory in Writing with Source</h2>
+    </hgroup>
+    <nav id="site_nav">
+      <ul>
+        <li><a href="/issues/">Issues</a></li>
+        <li><a href="/contribute/">Contribute</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="content">
+    <h1 id='submit_as_one_commit'>Submit as one commit</h1>
+
+<p>Making small, frequent commits is ideal as you’re working independently. But to make for an easier-to-read history when you submit an article, blog post, or fix to <em>Push</em>, you can use Git to squash multiple smaller commits into one larger commit.</p>
+
+<h2 id='stepbystep_instructions'>Step-by-Step Instructions</h2>
+
+<h3 id='on_your_computer'>On Your Computer</h3>
+
+<p>Run <code>git log --pretty=oneline --abbrev-commit</code> to see a list of your most recent commits. This might look something like:</p>
+
+<pre><code>ddef6dd Completed article for submission to Push
+02221a7 Changes to match the Push style guide
+74abb12 Reworking introductory paragraphs
+8ca46ba Initial draft of article
+7255abb Fixed typo on home page
+...other commits from where you forked Push...</code></pre>
+
+<p><em>Note: if you’re not returned to the command line, hit <code>q</code> to exit the Git log listing.</em></p>
+
+<p>The goal here is to squash your four most recent commits (beginning with <code>8ca46ba Intial draft...</code>) into one. To do this, you’ll run <code>git rebase</code> in interactive (<code>-i</code>) mode, telling Git you want to work with your four most recent commits by referring to <code>HEAD</code> followed by a tilde (<code>~</code>) and the number of commits you wish to work with:</p>
+
+<pre><code>$ git rebase -i HEAD~4</code></pre>
+
+<p>Your editor will open with a file that looks something like this (note that the commits are listed in reverse chronological order):</p>
+
+<pre><code>pick 8ca46ba Initial draft of article
+pick 74abb12 Reworking introductory paragraphs
+pick 02221a7 Changes to match the Push style guide
+pick ddef6dd Completed article for submission to Push
+
+# Rebase ddef6dd..7255abb onto 7255abb
+#
+# Commands:
+#  p, pick = use commit
+#  r, reword = use commit, but edit the commit message
+#  e, edit = use commit, but stop for amending
+#  s, squash = use commit, but meld into previous commit
+#  f, fixup = like &quot;squash&quot;, but discard this commit&#39;s log message
+#  x, exec = run command (the rest of the line) using shell
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out</code></pre>
+
+<p>Change the file so that <code>squash</code> appears next to the commits you wish to <code>squash</code>, leaving <code>pick</code> next to the commit message you intende to preserve (in this case, <code>ddef6dd Completed article...</code>). The top of this example file, then, would look like:</p>
+
+<pre><code>squash 8ca46ba Initial draft of article
+squash 74abb12 Reworking introductory paragraphs
+squash 02221a7 Changes to match the Push style guide
+pick ddef6dd Completed article for submission to Push</code></pre>
+
+<p>A new editor may open, in which you can change the commit message if you wish. Otherwise, save and close the file, and you’re done.</p>
+
+<p>If you have pushed to your remote prior to squashing commits, you will need to run <code>git push -f</code> with the name of your branch to force GitHub to update your remote repository. <strong>Please do not squash commits that are already part of an open pull-request.</strong></p>
+
+    <footer class="issue">
+      <h1>Documentation Is Rarely Perfect</h1>
+      <p>
+        Spot something wrong with this documentation? Please
+        <a href="https://github.com/cwcon/push/issues/new?title=Documentation+Issue:+Submit+as+One+Commit">open an Issue</a>
+        on GitHub and tell us about it, or if you can, fork, clone, fix, and open a pull request.
+      </p>
+    </footer>
+  </div>
+  <footer id="page_footer">
+    <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo-mono-orange.png" alt="Push logo monochrome"></a>
+    <p>
+    Design &amp; content &copy; Push.
+    Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative
+    Commons</a>. Hosted on <a href="http://pages.github.com/">GitHub Pages</a>. Complete source
+    and all content <a href="https://github.com/cwcon/push">available on GitHub</a>. Powered by
+    <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+    <a href="http://sass-lang.com/">SASS</a>,
+    <a href="https://github.com/hendricius/jekyll-sass">Jekyll-Sass</a>,
+    <a href="https://github.com/necolas/normalize.css">normalize.css</a>,
+    <a href="http://daringfireball.net/projects/markdown/">Markdown</a>,
+    <a href="https://typekit.com/">TypeKit</a>,
+    and <a href="http://github.com/">GitHub</a>.
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

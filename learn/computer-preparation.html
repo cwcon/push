@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Learn: Computer Preparation</title>
+  <meta name="description" content="Push: Research &amp; Applied Theory in Writing with Source">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/push.css">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/assets/img/apple-touch-icon-precomposed.png">
+  <script type="text/javascript" src="//use.typekit.net/gnd2jel.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35853537-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</head>
+<body id="learn_computer_preparation_page">
+<div id="page">
+    <header id="page_header">
+    <div id="logo">
+      <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo.png" alt="Push logo" /></a>
+    </div>
+    <hgroup>
+      <h1><a href="http://push.cwcon.org/learn/" rel="home">Push <small>Learn</small></a></h1>
+      <h2>Research <i>&amp;</i> Applied Theory in Writing with Source</h2>
+    </hgroup>
+    <nav id="site_nav">
+      <ul>
+        <li><a href="/issues/">Issues</a></li>
+        <li><a href="/contribute/">Contribute</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="content">
+    <h1 id='step_0_computer_preparation'>Step 0: Computer preparation</h1>
+
+<p>To contribute to <em>Push</em> (and open yourself up to other kinds of development), you’ll probably need to set up your computer with a few technologies that are described below.</p>
+
+<h2 id='github'>GitHub</h2>
+
+<p>This is the easiest part. Head over to GitHub and <a href='https://github.com/signup/free'>sign up</a> for a free account.</p>
+
+<h2 id='operatingsystem_specific_instructions'>Operating-System Specific Instructions</h2>
+
+<p>Find your operating system below, and follow the instructions.</p>
+
+<h3 id='windows'>Windows</h3>
+
+<p>Don’t use Windows. Get a free Linux, like <a href='http://www.ubuntu.com/'>Ubuntu</a>. Windows is a lot of things to a lot of people, but it’s not a great choice for development.</p>
+
+<p>&#8230;OK. So you won’t listen. Fine. Pick up a copy of <a href='http://railsinstaller.org/'>Rails Installer</a>. That will give you the things you need: Git, a Linux-like command line in the form of GitBash, a decent Ruby and Rubygems. Make sure you also get a decent editor, like <a href='http://notepad-plus-plus.org/'>Notepad++</a>.</p>
+
+<p>To set up Pygments, you’ll need to install <a href='http://www.python.org/getit/windows/'>Python for Windows</a>. Then, on the command line, you’ll run</p>
+
+<pre><code>$ easy_install Pygments</code></pre>
+
+<p>Finally, follow the <a href='https://help.github.com/articles/set-up-git'>GitHub instructions</a> for setting up Git and your <a href='https://help.github.com/articles/generating-ssh-keys'>SSH keys</a>. And no matter what GitHub advertises, don’t be tempted by a Git GUI client. Learn the command line, <em>Push</em>-style.</p>
+
+<p><strong>Next Steps</strong>: With your computer prepared and Git aware of your email address and name, you can now <a href='/learn/fork-and-clone.html'>get your own copy of the <em>Push</em> repository</a>.</p>
+
+<h3 id='mac'>Mac</h3>
+
+<p>First, you’ll need to install XCode. Lion and Mountain Lion users can grab a copy from the Mac App Store. For Snow Leopard and older versions of OS X, you’ll need to download a copy from the <a href='https://developer.apple.com/xcode/'>Apple Developer site</a>.</p>
+
+<p>You will need to register as an Apple Developer (this is free, versus the $99/yearly dev programs); go to <a href='https://developer.apple.com/programs/register'>https://developer.apple.com/programs/register</a> and choose the Sign In button to use your existing Apple ID if you already have one. Otherwise, create a new Apple ID.</p>
+
+<p>Once XCode’s installed (it takes awhile) and you have registered as an Apple Developer, open XCode and install the Command Line Tools under XCode &gt; Preferences &gt; Downloads.</p>
+
+<p>Then install <a href='http://mxcl.github.com/homebrew/'>Homebrew</a> and <a href='https://rvm.io/rvm/install/'>RVM</a>.</p>
+
+<p>You’ll also need to set up Pygments, to handle syntax highlighting. Fortunately, OS X comes with Python installed, so just run</p>
+
+<pre><code>$ sudo easy_install Pygments</code></pre>
+
+<p>(If the account you use on your Mac isn’t an administrative account, you can either run <code>$ su Administrator</code>, replacing <code>Administrator</code> with the name of your administrative account, before running the <code>sudo</code> command above; or you can install Python via Homebrew. As a last resort, just disable running Pygments by changing the <em>Push</em> <code>_config.yml</code> file by changing the line <code>pygments: true</code> to <code>pygments: false</code>.)</p>
+
+<p>Finally, follow the <a href='https://help.github.com/articles/set-up-git'>GitHub instructions</a> for setting up Git and your <a href='https://help.github.com/articles/generating-ssh-keys'>SSH keys</a>. And no matter what GitHub advertises, don’t be tempted by a Git GUI client. Learn the command line, <em>Push</em>-style.</p>
+
+<p><strong>Next Steps</strong>: With your computer prepared and Git aware of your email address and name, you can now <a href='/learn/fork-and-clone.html'>get your own copy of the <em>Push</em> repository</a>.</p>
+
+<h3 id='linux'>Linux</h3>
+
+<p>If you’re on Linux, you probably know what you’re doing. Be sure to use your package manager to install Git, and it’s a good idea to install <a href='https://rvm.io/rvm/install/'>RVM</a> to manage your Ruby environment.</p>
+
+<p>Install Python, too, if it’s not already on your system, and use <code>easy_install</code> to install Pygments.</p>
+
+<p>Then, follow the <a href='https://help.github.com/articles/set-up-git'>GitHub instructions</a> for setting up Git and your <a href='https://help.github.com/articles/generating-ssh-keys'>SSH keys</a>. And no matter what GitHub advertises, don’t be tempted by a Git GUI client. Learn the command line, <em>Push</em>-style.</p>
+
+<p><strong>Next Steps</strong>: With your computer prepared and Git aware of your email address and name, you can now <a href='/learn/fork-and-clone.html'>get your own copy of the <em>Push</em> repository</a>.</p>
+
+    <footer class="issue">
+      <h1>Documentation Is Rarely Perfect</h1>
+      <p>
+        Spot something wrong with this documentation? Please
+        <a href="https://github.com/cwcon/push/issues/new?title=Documentation+Issue:+Computer+Preparation">open an Issue</a>
+        on GitHub and tell us about it, or if you can, fork, clone, fix, and open a pull request.
+      </p>
+    </footer>
+  </div>
+  <footer id="page_footer">
+    <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo-mono-orange.png" alt="Push logo monochrome"></a>
+    <p>
+    Design &amp; content &copy; Push.
+    Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative
+    Commons</a>. Hosted on <a href="http://pages.github.com/">GitHub Pages</a>. Complete source
+    and all content <a href="https://github.com/cwcon/push">available on GitHub</a>. Powered by
+    <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+    <a href="http://sass-lang.com/">SASS</a>,
+    <a href="https://github.com/hendricius/jekyll-sass">Jekyll-Sass</a>,
+    <a href="https://github.com/necolas/normalize.css">normalize.css</a>,
+    <a href="http://daringfireball.net/projects/markdown/">Markdown</a>,
+    <a href="https://typekit.com/">TypeKit</a>,
+    and <a href="http://github.com/">GitHub</a>.
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

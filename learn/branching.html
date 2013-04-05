@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Learn: Set Up Your Workspace</title>
+  <meta name="description" content="Push: Research &amp; Applied Theory in Writing with Source">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/push.css">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/assets/img/apple-touch-icon-precomposed.png">
+  <script type="text/javascript" src="//use.typekit.net/gnd2jel.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35853537-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</head>
+<body id="learn_branching_page">
+<div id="page">
+    <header id="page_header">
+    <div id="logo">
+      <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo.png" alt="Push logo" /></a>
+    </div>
+    <hgroup>
+      <h1><a href="http://push.cwcon.org/learn/" rel="home">Push <small>Learn</small></a></h1>
+      <h2>Research <i>&amp;</i> Applied Theory in Writing with Source</h2>
+    </hgroup>
+    <nav id="site_nav">
+      <ul>
+        <li><a href="/issues/">Issues</a></li>
+        <li><a href="/contribute/">Contribute</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="content">
+    <h1 id='set_up_your_workspace'>Set up your workspace</h1>
+
+<p>Git keeps workspaces organized by branches, and that organization will help simplify the process of submitting to <em>Push</em>. Fortunately, once you’ve created and checked out a branch, you don’t have to think too much about branches (except when it’s time to create your next submission or fix).</p>
+
+<h2 id='stepbystep_instructions'>Step-by-Step Instructions</h2>
+
+<h3 id='on_your_computer'>On Your Computer</h3>
+
+<p><em>You’ll do this each time you want to start work on a new submission/contribution.</em></p>
+
+<ol>
+<li>
+<p>Once you have <a href='/learn/fork-and-clone.html'>your copy of <em>Push</em></a>, change into the directory where it’s stored on your computer (<code>~/Projects/push/</code>, if you’re following the instructions here):</p>
+
+<pre><code> $ cd ~/Projects/push</code></pre>
+</li>
+
+<li>
+<p>Run the <code>git branch</code> command to learn which branch you are on, and which other branches are in your copy of the <em>Push</em> repository:</p>
+
+<pre><code> $ git branch
+ * master</code></pre>
+
+<p>In Git, work always takes place on a particular branch. Branches function like separate timelines or alternate universes for the files that make up a project, like <em>Push</em>. When you first clone <em>Push</em>, you’ll have access to its <code>master</code> branch. Think of the <code>master</code> branch as the official, approved version of <em>Push</em>.</p>
+</li>
+
+<li>
+<p>To prepare a submission, you’ll create your own branch to work on. Don’t do any work on the <code>master</code> branch itself; it’ll simplify your life if you leave it to only contain the official version of <em>Push</em>. For example, to set up your workspace to begin writing an article submission to <em>Push</em>, you’ll set up a <code>submission</code> branch for yourself to work on:</p>
+
+<pre><code> $ git branch submission</code></pre>
+
+<p>Run <code>git branch</code> again, and you’ll see that Git now lists a <code>submission</code> branch:</p>
+
+<pre><code>$ git branch
+* master
+submission</code></pre>
+</li>
+
+<li>
+<p>To actually do work on your <code>submission</code> branch, you’ll need to check the branch out. “Checking out a branch” is just Git’s phrase for switching to a branch:</p>
+
+<pre><code> $ git checkout submission
+ Switched to branch &#39;submission&#39;</code></pre>
+</li>
+
+<li>
+<p>You can always see which branch you’re currently working on by running <code>git branch</code>:</p>
+
+<pre><code> $ git branch
+ master
+ * submission</code></pre>
+
+<p>Just look for the branch with an asterisk (<code>*</code>) next to its name.</p>
+</li>
+</ol>
+
+<h3 id='branches_for_blog_posts_or_featuresfixes_to_push'>Branches for Blog Posts or Features/Fixes to <em>Push</em></h3>
+
+<ol>
+<li>
+<p>If you’re working on a blog post for <em>Push</em>, you would want to create a branch just for that purpose. Always create your branches off of the <code>master</code> branch, so that you’re working with only the official copy of <em>Push</em>. First, checkout the <code>master</code> branch:</p>
+
+<pre><code> $ git checkout master
+ Switched to branch &#39;master&#39;</code></pre>
+
+<p>You can then create a branch for your blog post:</p>
+
+<pre><code> $ git branch blogpost
+ $ git checkout blogpost
+ Switched to branch &#39;blogpost&#39;</code></pre>
+
+<p>Or, to create and checkout a branch at the same time, just run <code>git checkout -b blogpost</code>:</p>
+
+<pre><code> $ git checkout -b blogpost
+ Switched to a new branch &#39;blogpost&#39;</code></pre>
+</li>
+
+<li>
+<p>If you’re planning to submit a fix or new feature to the core files of the journal (layouts, stylesheets, etc.), use the same procedures described above, but keep the name of your branch descriptive of the change you’re making. For example, if you’re making some fixes to the typographic styles of <em>Push</em>’s pages, you might do something like this:</p>
+
+<pre><code> $ git checkout master
+ $ git checkout -b typography
+ Switched to a new branch &#39;typography&#39;</code></pre>
+
+<p>Be sure to keep each feature fix in its own branch, and always create any new branch off of <code>master</code>. <a href='/learn/stay-updated.html'>Read how to keep <code>master</code> up to date</a> with the main <em>Push</em> repository.</p>
+</li>
+</ol>
+
+<h2 id='next_steps'>Next Steps</h2>
+
+<p>With a branch created and checked out for you to work, <a href='/learn/yaml-and-markdown.html'>you can begin writing in YAML and Markdown</a> for your blog post or article submissions.</p>
+
+    <footer class="issue">
+      <h1>Documentation Is Rarely Perfect</h1>
+      <p>
+        Spot something wrong with this documentation? Please
+        <a href="https://github.com/cwcon/push/issues/new?title=Documentation+Issue:+Set+Up+Your+Workspace">open an Issue</a>
+        on GitHub and tell us about it, or if you can, fork, clone, fix, and open a pull request.
+      </p>
+    </footer>
+  </div>
+  <footer id="page_footer">
+    <a href="http://push.cwcon.org/" rel="home"><img src="/assets/img/key-logo-mono-orange.png" alt="Push logo monochrome"></a>
+    <p>
+    Design &amp; content &copy; Push.
+    Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative
+    Commons</a>. Hosted on <a href="http://pages.github.com/">GitHub Pages</a>. Complete source
+    and all content <a href="https://github.com/cwcon/push">available on GitHub</a>. Powered by
+    <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+    <a href="http://sass-lang.com/">SASS</a>,
+    <a href="https://github.com/hendricius/jekyll-sass">Jekyll-Sass</a>,
+    <a href="https://github.com/necolas/normalize.css">normalize.css</a>,
+    <a href="http://daringfireball.net/projects/markdown/">Markdown</a>,
+    <a href="https://typekit.com/">TypeKit</a>,
+    and <a href="http://github.com/">GitHub</a>.
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

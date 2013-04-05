@@ -91,11 +91,6 @@ deeper and impress your friends, dive into some of these advanced topics.
   Keep reviewers’ lives easier. Let Git help you submit a single, seamless commit containing your
   changes.
 
-* ### [Collaborate with Others](/learn/multiple-remotes.html)
-
-  Sometimes a comment on GitHub isn’t enough. Sometimes you want to write an article
-  collaboratively. Learn how to collaborate like a pro.
-
 [^prepnote]: If anyone would like to make screencasts of the computer setup instructions, please
 [open an issue](https://github.com/cwcon/push/issues/new) on GitHub to coordinate uploading the file
 to the [*Push* YouTube account](http://www.youtube.com/p117sh).

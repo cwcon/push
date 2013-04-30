@@ -29,11 +29,11 @@ All article submissions to *Push* should be:
 * 1500-2500 words + references and source examples
 * Written in [Markdown](http://daringfireball.net/projects/markdown/syntax)
 * Compliant with the *Chicago Manual of Style*, 16th ed., including for
-  [footnote citations](//learn/style-guide.html#footnotes_and_citation)
+  [footnote citations](/learn/style-guide.html#footnotes_and_citation)
 * Tracked in Git on a dedicated `submission` branch in your copy of the repository
 * Submitted as a pull request on GitHub
 
-See the [setup guide](/learn/) and the [style guide](//learn/style-guide.html) for more information.
+See the [setup guide](/learn/) and the [style guide](/learn/style-guide.html) for more information.
 
 ## Queries Prior to Writing & Submitting
 

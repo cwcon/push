@@ -29,7 +29,7 @@ restart the local Web server that runs on your computer.*
 2. *Push*’s reliance on Jekyll makes it ready-made to preview on a real, live web server running
    right on your computer. All you have to do is run
 
-        $ ./serve.sh
+        $ jekyll serve
 
    on your command line from within the `/push` directory. You will see some output on the
    command line that looks something like:

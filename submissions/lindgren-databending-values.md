@@ -1,7 +1,7 @@
 ---
 title: Rhetorical Figures of Code Databending Values in The Garden of Eloquence
 summary: >
-           In this article, I examine the rhetorical stylistics of a glitch art practice called databending in the context of new media artist Nick Briz's "Glitch Codec Tutorial" \(GCT\). I argue that databending functions stylistically as a destructive, or what I call _metaplasmic act_, which bends the conventions of traditional programming methodologies and consequently instigates new ways people engage source code. I suggest new values also emerge through such code-writing practices, and through a discussion of databending's stylistic features I suggest that users learn how to perform as glitch artists, providing the opportunity to also espouse the cultural values held by the glitch art community.
+           In this article, I examine the rhetorical stylistics of a glitch art practice called databending in the context of new media artist Nick Briz's "Glitch Codec Tutorial" \(GCT\). I argue that databending functions stylistically as a destructive, or what I call _metaplasmic act_, which bends the conventions of traditional programming methodologies and consequently instigates new ways people engage source code. I suggest new values also emerge through such code-writing practices, and, through a discussion of databending's stylistic features, I suggest that users learn how to perform as glitch artists, providing the opportunity to also espouse the cultural values held by the glitch art community.
 authors:
   -name: Chris A. Lindgren
    affiliation: University of Minnesota 

@@ -182,7 +182,7 @@ values.
 A glitch artist, depending upon his/her skill level, may either arbitrarily bend the data 
 structures of a source file, or may begin to develop even more nuanced methods of "tactful 
 exploitation"[^briz6] to databending, and/or programming in general. Many glitch artists, such as 
-Briz, Antonio Roberts[^roberts], and Daniel Temkin[^temkin] have developed programming 
+Briz, Antonio Roberts[^roberts], Rosa Menkman[^menkman], and Daniel Temkin[^temkin] have developed programming 
 methodologies in the traditional sense. Accordingly, in relation to databending, glitch artists 
 also depend upon traditional programming methods and methodologies as a means to develop 
 alternative ways of hacking and developing source code to output glitch-like effects. In so doing, 
@@ -288,6 +288,8 @@ _____
 [^briz6]: Nick Briz, "Glitch Codec Tutorial \[glitch art demo\] full tutorial," _Vimeo_ \(2011\), [https://vimeo.com/23653867](https://vimeo.com/23653867).
 
 [^roberts]: See Antonio Roberts' "What Glitch? Scripts" on Github: [https://github.com/hellocatfood/What-Glitch--scripts](https://github.com/hellocatfood/What-Glitch--scripts).
+
+[^menkman]: See Rosa Menkman's glitch art focused on what she calls _acousmatic videoscapes_: [http://videoscapes.blogspot.com/2008/12/blog-post.html](http://videoscapes.blogspot.com/2008/12/blog-post.html).
 
 [^temkin]: See Daniel Temkin's portfolio of work: [http://danieltemkin.com/](http://danieltemkin.com).
 

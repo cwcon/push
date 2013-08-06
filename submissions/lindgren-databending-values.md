@@ -107,7 +107,7 @@ how to manipulate the source code files within the FFMPEG collection. For starte
 directions about how to simply navigate to the h263data.h file[^endnote1], and subsequently scroll 
 down within the file for further directions for the user in the form of comments (see below):
 
-{% highlight java %}
+{% highlight %}
 
 /*
 >>>>>::: GLITCH CODEC TUTORIAL ::: NOTE :::<<<<<<<

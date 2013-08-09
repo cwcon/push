@@ -173,9 +173,8 @@ databending "newbie" can, or should, databend is more or less left open within t
 lists. Emerging from these diverse arrays and databending techniques, the glitch art community, 
 then, has attributed a set of values to databending \(act\) and its datamoshy output 
 \(consequence\). From such source-level practices, Briz attempts to persuade users who conduct his 
-GCT and most likely already have some degree of value placed on its output, to espouse this value, 
-perhaps aready shared by consumers of glitch art on the output-end, through the a person's 
-acclamation to this new method of production: databending.
+GCT, and most likely already share some degree of value placed on the poetics of its datamoshy 
+output, to espouse this value through their acclamation to databending: a new method of production.
 
 In many ways, databending has become the "Hello World" method of the glitch art community's craft; 
 perhaps, due to its inclusive approach to source code and initial simplicity, inviting end users to 

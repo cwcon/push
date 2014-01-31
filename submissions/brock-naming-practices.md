@@ -2,12 +2,12 @@
 title: Practices of Naming in Code as Rhetorical Strategies
 summary: >
            This article explores the rhetorical significance of naming 
-           practices as applied to software development (in file names, 
-           functions, variables, and so on). Despite the apparent triviality of
-           such a component of code, naming practices shine a light on the 
-           goals and values of a programmer in addition to the functional
-           intentions that he or she might have for the use of a given body of
-           code.
+           practices as applied to software development (as demonstrated 
+           in file names, functions, variables, and so on). Despite the
+           apparent triviality of such a component of code, naming 
+           practices shine a light on the goals and values of a programmer 
+           in addition to the functional intentions that he or she might 
+           have for the use of a given body of code.
 authors:
   -name: Kevin Brock
    affiliation: University of South Carolina

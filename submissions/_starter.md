@@ -1,11 +1,12 @@
 ---
-title:
+title: Using a Wilcoxon-test based partial order for selection in
+evolutionary algorithms with noisy fitness
 summary: >
            Summary starts here. This will appear on the issue page.
 authors:
-  -name:
-   affiliation:
-   github_username:
+  -name: JJ Merelo
+   affiliation: University of Granada
+   github_username: JJ
    bio: >
           Bio starts here...
 
@@ -24,5 +25,11 @@ issue: 00
 layout: article
 ---
 
-And start writing your article here, in Markdown. See the style guide at
-http://push.cwcon.org//learn/style-guide.html
+# Using a Wilcoxon-test based partial order for selection in evolutionary algorithms with noisy fitness
+
+
+##Introduction
+
+##Method description
+
+##A bit of code

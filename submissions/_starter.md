@@ -34,7 +34,7 @@ layout: article
 
 # Using a Wilcoxon-test based partial order for selection in evolutionary algorithms with noisy fitness
 
-##Introduction
+## Introduction
 
 Evolutionary algorithms are stochastic optimization methods inspired
 in evolution. They search for solution to a problem by creating a
@@ -154,8 +154,10 @@ libraries for statistics will have to be included too.
  will have its fitness raised by one while the other will have it
  lowered by the same amount.
  
- ## Results
  
+## Results
+ 
+
  Several experiments have been performed using the [4-Trap function](http://search.cpan.org/dist/Algorithm-Evolutionary/lib/Algorithm/Evolutionary/Fitness/Trap.pm) (a
  deceptive function usually used as a benchmark in evolutionary
  algorithms) with a length of 10 blocks. Tests were performed on the
@@ -165,7 +167,7 @@ libraries for statistics will have to be included too.
  (WPO). [Results (including R data files) can be found in its GitHub repository](https://github.com/JJ/Algorithm-Evolutionary/tree/master/examples/PPSN2014),
  and are resumed in the table below
  
- | Method       | Number of evaluations  | Time  |
+| Method       | Number of evaluations  | Time  |
 | ------------- |-------------:| -----:|
 | Baseline       | 20752 ± 2528 | 1.2907 ± 0.16 |
 | 0-Memory      |  190855   ± 22370  |  2.643924 ± 0.31  |
